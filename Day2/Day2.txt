@@ -1,0 +1,73 @@
+			
+
+				》》》python基础《《《
+
+			1.
+[root@lenovo~ ]# python3	 	##在python3交互界面 换行的方法
+>>> print('hello  \		## “\“ 反斜杠
+... world')
+hello  world
+>>> 
+
+	
+		  	2.同行多个语句
+				分号；	允许你将多个语句写在同一行上	
+				但是某些语句不能在这行开始一个新的代码快
+				因为可读性会变差，不推荐使用
+
+
+
+			3.帮助文档
+
+			print（）
+
+>>> help(print)
+			
+Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+    
+    Prints the values to a stream, or to sys.stdout by default.
+    Optional keyword arguments:
+    file:  a file-like object (stream); defaults to the current sys.stdout.
+    sep:   string inserted between values, default a space.		##value之间默认值空格
+    end:   string appended after the last value, default a newline.	##最后一个之后面换行
+    flush: whether to forcibly flush the stream.
+
+
+
+>>> print("hello","world")
+hello world
+>>> print("hello","world",sep=";")
+hello;world						##value之间以；分割
+						
+>>> print ("hello print",end="")		##end 以空结合
+hello print>>> 
+
+
+			4.input()
+
+ >>> user=input("请输入用户名:")
+请输入用户名:yy
+>>> print(user)
+yy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
