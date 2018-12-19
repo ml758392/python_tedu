@@ -1,0 +1,274 @@
+石博文 1311794174
+教学群	616720276	
+
+打开pycharm
+选择Create New Project
+在左上角找到File --Settings
+左侧Editor -- Font --size 修改字体大小
+左Project --Project Interpreter
+右侧小齿轮 Add Local
+选择虚拟环境  /usr/local/bin/python3.6
+
+
+
+[root@lenovo ~]# yum -y install git 
+[root@lenovo ~]# git config  --global   user.name  'yy'
+[root@lenovo ~]# git config --global user.email  'yy.tedu.cn'
+[root@lenovo ~]# git config --global core.editor vim 
+[root@lenovo ~]# git config --list 
+user.name=yy
+user.email=yy.tedu.cn
+core.editor=vim
+[root@lenovo ~]# cat ~/.gitconfig 
+[user]
+	name = yy
+	email = yy.tedu.cn
+[core]
+	editor = vim
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+					》》》git 原理《《《 
+			工作区
+			暂存区  stage
+			版本库
+
+ 
+					》》》创建版本库《《《
+
+[root@lenovo Day1]# mkdir   devops 
+[root@lenovo Day1]# git init devops
+初始化空的 Git 版本库于 /root/桌面/NoteBook/5_张志刚/Day1/devops/.git/
+
+
+
+				》》》向暂存区添加文件《《《
+
+[root@lenovo devops]# echo  'print("hello world")'  > hello.py
+[root@lenovo devops]# git add hello.py 
+[root@lenovo devops]# git status 
+# 位于分支 master
+#
+# 初始提交
+#
+# 要提交的变更：
+#   （使用 "git rm --cached <file>..." 撤出暂存区）
+#
+#	新文件：    hello.py
+#
+
+[root@lenovo devops]# git status -s
+A  hello.py
+							##-A 添加  -D删除				
+					
+[root@lenovo devops]# git add .     		##添加当前所有内容到暂存区中
+ 
+
+
+				》》》从暂存区提交内容到版本库《《《
+
+[root@lenovo devops]# git commit -m '初始化仓库，添加文件'    	## -m 提示信息
+[master（根提交） ed1bfab] 初始化仓库，添加文件
+ 2 files changed, 2 insertions(+)
+ create mode 100644 hello.py
+ create mode 100644 welcome.py
+
+[root@lenovo devops]# echo 'print("Welcone to Tarena")' > hello.py 
+   
+[root@lenovo devops]# git commit  -am  '向hello.py中添加内容'  	## -am 先添加再提交
+[master 0719fac] 向hello.py中添加内容
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+								##-am之追踪已经提交过的文件，新文件还是需要县追踪在再提交
+				》》》查看版本库中的文件《《《
+
+
+[root@lenovo devops]# git ls-files
+hello.py
+welcome.py
+ 
+
+
+					》》》删除跟踪文件《《《
+
+
+[root@lenovo devops]# git rm 1.txt 
+rm '1.txt'
+[root@lenovo devops]# git commit  -m 'rm 1.txt'
+[master 662356d] rm 1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 1.txt
+[root@lenovo devops]# git ls-files
+hello.py
+test.txt
+welcome.py
+
+
+
+			##git diff
+
+
+[root@lenovo devops]# git diff 
+diff --git a/hello.py b/hello.py
+index 4def8f4..6794e66 100644
+--- a/hello.py
++++ b/hello.py
+@@ -1 +1,2 @@
+ print("Welcone to Tarena")
++print("hello world")
+
+					   》》》git log命令《《《
+
+
+[root@lenovo devops]# git log
+commit d3abba5ab61485fd27c941b281edf948f40d206a		##git版本号
+Author: yy <yy.tedu.cn>
+Date:   Tue Dec 18 20:31:20 2018 +0800
+
+    kk
+
+commit 662356dd9d8bde257a7255ed951fa7acdc2edf92
+Author: yy <yy.tedu.cn>
+Date:   Sun Dec 16 19:21:00 2018 +0800
+
+    rm 1.txt
+									##git log命令显示从最近到最远的提交日志。
+
+									## git log  --pretty=oneline 
+
+[root@lenovo devops]# git log --pretty=oneline  
+d3abba5ab61485fd27c941b281edf948f40d206a kk
+662356dd9d8bde257a7255ed951fa7acdc2edf92 rm 1.txt
+2bbec38ee5eec74e70d091f03b0e3f6f62c57c0b add test.txt
+					》》》 恢复版本《《《
+
+
+
+[root@lenovo devops]# git reset  --hard HEAD		##恢复到git的当前版本
+
+									##恢复到git的上一个版本
+[root@lenovo devops]# git reset  --hard HEAD^
+HEAD 现在位于 662356d rm 1.txt
+
+[root@lenovo devops]# git reset  --hard HEAD^^
+[root@lenovo devops]# git reset  --hard HEAD～100 	##恢复到git的100个版本
+
+
+[root@lenovo devops]# git reset  --hard  2b76 		##恢复到制定UUID的版本
+
+
+
+
+
+									##删除文件，然后从git仓库中恢复
+								
+[root@lenovo devops]# git log   --pretty=oneline
+2b7636e924e20598c21da95933a0baad7f67690d add a.txt
+ed1bfabe9ca8650f52bb84a641fecf1417ffe16a 初始化仓库，添加文件
+[root@lenovo devops]# ls
+a.txt  hello.py  welcome.py
+[root@lenovo devops]# rm -rf a.txt 
+[root@lenovo devops]# ls
+hello.py  welcome.py
+[root@lenovo devops]# git reset  --hard HEAD
+HEAD 现在位于 2b7636e add a.txt
+[root@lenovo devops]# ls
+a.txt  hello.py  welcome.py
+
+
+				》》》git reflog 《《《
+				
+							##记录git的每一次命令
+[root@lenovo devops]# git  reflog
+2b7636e HEAD@{0}: reset: moving to 2b76
+ed1bfab HEAD@{1}: reset: moving to HEAD^
+2b7636e HEAD@{2}: commit: add a.txt
+ed1bfab HEAD@{3}: reset: moving to HEAD^
+75dea46 HEAD@{4}: commit: add test.sh
+ed1bfab HEAD@{5}: reset: moving to HEAD^
+0719fac HEAD@{6}: reset: moving to HEAD^^
+2bbec38 HEAD@{7}: reset: moving to HEAD^
+662356d HEAD@{8}: reset: moving to HEAD^
+
+							##可以从中找到以前的版本号
+
+
+
+				》》》关联远程仓库《《《
+
+要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+
+
+
+
+					》》》撤销修改《《《
+								--没有提交的操作
+
+[root@lenovo devops]# echo 123456 》 passwd.txt
+[root@lenovo devops]# git  add passwd.txt
+[root@lenovo devops]# git commit -m "add passwd.txt"
+
+
+[root@lenovo devops]# echo 8098990 > passwd.txt		##修改passwd.txt
+[root@lenovo devops]# git status
+# 位于分支 master
+# 尚未暂存以备提交的变更：
+#   （使用 "git add <file>..." 更新要提交的内容）
+#   （使用 "git checkout -- <file>..." 丢弃工作区的改动）
+#
+#	修改：      passwd.txt
+#
+修改尚未加入提交（使用 "git add" 和/或 "git commit -a"）
+[root@lenovo devops]# git checkout -- passwd.txt		##checkout -- (files)恢复
+[root@lenovo devops]# cat passwd.txt
+123456
+[root@lenovo devops]# 
+
+
+
+								--已经提交的操作
+
+
+[root@lenovo devops]# echo commit > passwd.txt  		
+[root@lenovo devops]# git add passwd.txt			##提交到暂存区
+[root@lenovo devops]# git status			
+# 位于分支 master
+# 要提交的变更：
+#   （使用 "git reset HEAD <file>..." 撤出暂存区）		
+#
+#	修改：      passwd.txt
+#
+[root@lenovo devops]# git reset HEAD passwd.txt		##git reset 撤销暂存区文件 passwd.txt
+重置后撤出暂存区的变更：
+M	passwd.txt
+[root@lenovo devops]# cat passwd.txt				
+commit
+[root@lenovo devops]# git status 				##查看暂存区状态
+# 位于分支 master
+# 尚未暂存以备提交的变更：
+#   （使用 "git add <file>..." 更新要提交的内容）
+#   （使用 "git checkout -- <file>..." 丢弃工作区的改动）
+#
+#	修改：      passwd.txt
+#
+修改尚未加入提交（使用 "git add" 和/或 "git commit -a"）	
+[root@lenovo devops]# git checkout -- passwd.txt 		##git chekout 恢复
+[root@lenovo devops]# cat passwd.txt
+123456
+
+
+
+
+
+
+
+
+
+
+
+
+
+
