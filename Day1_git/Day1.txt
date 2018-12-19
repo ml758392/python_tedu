@@ -194,14 +194,6 @@ ed1bfab HEAD@{5}: reset: moving to HEAD^
 
 
 
-				》》》关联远程仓库《《《
-
-要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
-关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
-此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
-
-
-
 
 
 					》》》撤销修改《《《
@@ -258,6 +250,106 @@ commit
 [root@lenovo devops]# git checkout -- passwd.txt 		##git chekout 恢复
 [root@lenovo devops]# cat passwd.txt
 123456
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+				》》》关联远程仓库《《《
+
+要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+
+				》》》克隆远程仓库《《《《
+				
+
+git clone https://github.com/python_tuling
+git clone git://github.com:ml758393/python_tedu.git
+
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+					》》》创建与合并分支《《《
+
+创建分支
+[root@lenovo devops]# git  branch dev 	##创建分支
+[root@lenovo devops]# git checkout dev 	##切换分支
+合并等同于
+[root@lenovo devops]# git  checkout  -b dev  #创建并且切换分支
+切换到一个新分支 'dev'
+
+查看当前分支
+[root@lenovo devops]# git branch 
+* dev							##  *为当前分支
+  master
+
+[root@lenovo devops]# echo 00000 > test.txt
+[root@lenovo devops]# git add test.txt 
+[root@lenovo devops]# git commit -m "test dev"
+
+
+[root@lenovo devops]# git ls-files		##查看分支dev版本库中的文件
+a.txt
+hello.py
+passwd.txt
+test.txt
+welcome.py
+[root@lenovo devops]# git  branch
+* dev
+  master
+[root@lenovo devops]# git checkout master  ##切换到主分支master
+切换到分支 'master'
+[root@lenovo devops]# git ls-files		##查看主分枝的文件
+a.txt				
+hello.py						##没有test.txt文件
+passwd.txt
+welcome.py
+
+				合并分支
+
+[root@lenovo devops]# git branch
+  dev
+* master
+[root@lenovo devops]# git merge  dev		##用于合并指定分支到当前分支
+更新 3d596e5..6270c2b
+Fast-forward					##直接将master指向dev的当前提交
+ test.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+[root@lenovo devops]# git ls-files
+a.txt
+hello.py
+passwd.txt
+test.txt						##合并了test.txt 
+welcome.py
+
+
+				删除分支
+
+[root@lenovo devops]# git  branch  -d dev
+已删除分支 dev（曾为 6270c2b）。
+[root@lenovo devops]# git branch
+* master
+
+
+					Git鼓励大量使用分支：
+
+					查看分支：git branch
+
+					创建分支：git branch <name>
+
+					切换分支：git checkout <name>
+
+					创建+切换分支：git checkout -b <name>
+
+					合并某分支到当前分支：git merge <name>
+
+					删除分支：git branch -d <name>
+
 
 
 
