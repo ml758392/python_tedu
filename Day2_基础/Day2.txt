@@ -370,6 +370,17 @@ False
 	
 		
 				
+				》》》扩展if《《《
+
+	扩展if格式：
+			if exp：
+			    if_suit
+			elif exp2:
+			    if_suit2
+			else:
+			    if_suit3				
+
+
 
 
 
