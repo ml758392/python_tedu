@@ -380,6 +380,59 @@ False
 			else:
 			    if_suit3				
 
+	
+		
+
+		>>> grade = input("请输入你的成绩：")
+		请输入你的成绩：99
+		>>> grade == 99		##input 会将输入转换为字符串类型
+		False
+		>>> grade 
+		'99'
+
+		>>> int(grade) == 99	## int()函数将数据类型转换为整数
+		True
+
+		……………………………………………………………………
+		条件表达式：
+			三元运算符：
+				格式：
+				X if C esle Y
+				
+				
+			>>> x,y=3,4		##相当于 x=3，y=4
+			>>> smaller = x if x<y else y	
+			>>> print(smaller)
+			3
+
+
+		意思和下面的代码一样	
+			x=3;y=4
+			if x<y:
+			    smaller = x
+			else:
+			    smaller = y
+			smaller
+			
+			3	
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
