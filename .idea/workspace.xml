@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day2_基础/pycharm/while_continue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day2_基础/pycharm/while_else.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day2_基础/pycharm/while_guess.py" afterDir="false" />
+    <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="done Day2">
+      <change afterPath="$PROJECT_DIR$/Day2_基础/pycharm/game_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day2_基础/Day2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day2_基础/Day2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day2_基础/pycharm/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day2_基础/pycharm/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day2_基础/pycharm/while_break.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day2_基础/pycharm/while_break.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +12,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="234">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/game_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -51,31 +55,21 @@
         <option value="$PROJECT_DIR$/Day2_基础/pycharm/guess.py" />
         <option value="$PROJECT_DIR$/Day2_基础/pycharm/while_guess.py" />
         <option value="$PROJECT_DIR$/Day2_基础/pycharm/game.py" />
+        <option value="$PROJECT_DIR$/Day2_基础/pycharm/game_1.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="531" />
-    <option name="y" value="59" />
-    <option name="width" value="858" />
-    <option name="height" value="697" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="622" />
+    <option name="y" value="51" />
+    <option name="width" value="940" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,6 +87,17 @@
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
               <item name="Day2_基础" type="462c0819:PsiDirectoryNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -129,6 +134,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day2_基础/pycharm/game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="game_1" type="PythonConfigurationType" factoryName="Python">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day2_基础/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day2_基础/pycharm/game_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -346,7 +372,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545439762518</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="done Day2">
+      <created>1545465272547</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545465272554</updated>
+    </task>
+    <task id="LOCAL-00008" summary="done Day2">
+      <created>1545465419452</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545465419452</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -359,22 +399,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1600" height="838" extended-state="6" />
+    <frame x="622" y="51" width="838" height="698" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49875313" visible="true" weight="0.1320635" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49875313" visible="true" weight="0.25461254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50124687" side_tool="true" weight="0.24969988" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969988" visible="true" weight="0.22190201" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969988" weight="0.4293948" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39963832" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49819928" weight="0.2875226" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49819928" weight="0.32911393" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49714285" weight="0.44668588" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49819928" weight="0.32853025" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32911393" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49819928" weight="0.32911393" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030012" side_tool="true" weight="0.278481" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49819928" weight="0.32853025" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50285715" side_tool="true" weight="0.44668588" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -386,7 +426,8 @@
     <MESSAGE value="add  grade.py" />
     <MESSAGE value="update Day2.txt" />
     <MESSAGE value="mkdir pycharm_day2" />
-    <option name="LAST_COMMIT_MESSAGE" value="mkdir pycharm_day2" />
+    <MESSAGE value="done Day2" />
+    <option name="LAST_COMMIT_MESSAGE" value="done Day2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Day2_基础/Day2.txt">
@@ -409,9 +450,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/guess.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/guess.py" />
     <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/while_break.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -435,8 +474,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="234">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/game_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
