@@ -43,8 +43,177 @@ d
 
 
 
+				>>>列表解析<<<
+
+		格式：
+			[expr for iter_var n iterable]
+
+			expr 的值为列表的元素
+			
+	##把alist的所有元素平方
+
+>>> alist = [1,2,3]
+>>> [i**2 for i in alist]
+[1, 4, 9]
 
 
+	##把1～20之间所有的奇数放入列表
+>>> [i for i in range(1,21) if i%2 == 1]
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+				》》》文件对象《《《
+
+	open（）
+	格式：
+		file_object = open(file_name,access_mode='r',buffering=-1)
+					三个参数：
+						file_name	文件名
+						access_mode	文件访问模式
+						buffering 	缓存
+
+			文件模式：
+				r读	以读方式打开（文件不存在报错）
+				w写	文件存在则清空，不存在则创建
+				
+				
+				
+
+>>> a = open("Day3.txt")			##打开文件返回一个文件对象 存在变量a中
+>>> a 
+<_io.TextIOWrapper name='Day3.txt' mode='r' encoding='UTF-8'>
+
+>>> a.close()				##关闭文件
+
+
+
+				》》read()《《
+		
+		
+		>>> fobj = open("test.txt")
+		>>> fobj.read()		##第一次读取，指针会移动到文件的最后
+		'天王盖地虎\n宝塔镇河妖\n'
+		>>> fobj.read()		##第二次读取，指针后没有内容会返回空的字符串
+		''
+
+[root@lenovo pycharm]# ls /mnt/
+passwd
+>>> a = open("/mnt/passwd")
+>>> a.read(5)				
+'root:'
+>>> a.readline()				
+'x:0:0:root:/root:/bin/bash\n'
+>>> a.readline(5)				##readline(size)读取指定字节数，默认读取一整行(\n为止)
+'bin:x'			
+>>> a.readline()
+':1:1:bin:/bin:/sbin/nologin\n'	##指针移动了5字节 读取一行剩下的内容
+
+
+				》》readlines()《《
+			
+			以列表的形式返回所有行
+			  --------
+>>> a.readlines(1)			##readlines(size)读取指针到行末尾
+['root:x:0:0:root:/root:/bin/bash\n']
+>>> a.readlines()				##readlines()读取执政到末尾行
+['daemon:x:2:2:daemon:/sbin:/sbin/nologin\n', 'adm:x:3:4:adm:/var/adm:/sbin/nologin\n', 'lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin\n', 'sync:x:5:0:sync:/sbin:/bin/sync\n', 'shutdown:x
+
+
+			   	》》文件模式《《
+		写入文件
+			函数:
+		write()	   添加字符串
+		writelines()   添加列表
+		
+			w  若文件有内容清空，文件不存在则自动创建
+		文件对象的访问模式需要支持写入
+		默认的情况下文件的写入不会立即生效，需要文件对象关闭后生效
+		文件写如时不会添加换行\n,如果需要手动添加
+	
+	
+	函数：	
+		write()  
+
+	
+>>> a = open("open_w.txt","w")
+>>> a.write("hello world")		##write() 
+11
+>>> a.write("ni hao")
+6
+>>> a.close()				##关闭文件对象
+
+[root@lenovo pycharm]# cat  open_w.txt 
+hello worldni hao[root@lenovo pycharm	##write没有换行
+
+ 
+
+
+>>> a = open("open_w.txt","w")
+>>> a,write("hello world\n")
+>>> a.write("123456\n")			##加入换行符
+
+[root@lenovo pycharm]# cat open_w.txt 
+[root@lenovo pycharm]# 
+
+>>> a.close()				##当文件对象关闭时 才会写入文件
+
+[root@lenovo pycharm]# cat open_w.txt 
+hello world
+123456
+
+			
+		函数：
+			writelines()	#写入列表数据
+
+
+>>> data = ["123456\n","Taren1\n"]
+>>> a = open("open_w.txt","w")
+>>> a.writelines(data)
+>>> a.close()
+
+[root@lenovo pycharm]# cat open_w.txt 
+123456
+Taren1
+
+
+
+				>>> a = open("open_w.txt")
+				>>> for i in a:
+				...     print(i)
+				... 
+				123456
+
+				Taren1
+
+
+				》》》with《《《
+	
+
+>>> a =open("open_w.txt")	##a.closed 判断文件对象是否关闭
+>>> a.closed 
+False
+>>> a.close()
+>>> a.closed
+True
+
+		with格式：
+			with open("hello.py") as a:    ##关键字 with  open("文件名")   as  文件对象:
+				f.read()			##缩进			               ---------
+			
+			a.closed  判断文件对象是否关闭
+		
+	
+	案例：
+	
+	>>> with open("open_w.txt") as a:
+	...     a.readlines()
+	... 
+	['123456\n', 'Taren1']
+	>>> a.closed
+	True
 
 
 
