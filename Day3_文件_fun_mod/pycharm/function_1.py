@@ -4,8 +4,8 @@ def foo():
 
 
 foo()
-print(foo)  # 直接输出函数名，查找函数对象
-print(foo())#默认返回None
+print(foo)    # 直接输出函数名，查找函数对象
+print(foo())  # 默认返回None
 #######################################
 
 
