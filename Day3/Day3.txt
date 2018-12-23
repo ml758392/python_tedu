@@ -179,7 +179,8 @@ hello world
 Taren1
 
 
-
+		##文件对象也是可迭代的 
+			 
 				>>> a = open("open_w.txt")
 				>>> for i in a:
 				...     print(i)
@@ -212,17 +213,62 @@ True
 	...     a.readlines()
 	... 
 	['123456\n', 'Taren1']
-	>>> a.closed
+	>>> a.closed	
 	True
+		
+			》》》文件内移动指针《《《
+		seek(offset[,whence]):移动文件指针到不同的位置
+		
+		offset是相对与whence的偏移量
+		whence的值：
+			      0表示文件开头，
+			      1表示当前位置，
+			      2表示文件的结尾
+			      
+		tell():返回当前文件指针的位置
+	
+	
+	>>> with open("open_w.txt") as a:
+	...     a.read()			
+	...     a.seek(0,0)		## 0偏移，0表示文件开头
+	...     a.read()
+	... 
+	'123456\nTaren1'
+	0
+	'123456\nTaren1'
+
+
+	>>> with open("open_w.txt") as a:
+	...     a.read()
+	...     a.seek(6,0)	 	##6偏移，0表示文件开头
+	...     a.read()
+	... 
+	'123456\nTaren1'
+	6
+	'\nTaren1'
+ 	
+ 	
+	>>> with open("open_w.txt","rb") as a:
+	...     a.seek(-2,2)		##将指针移动到末尾的前两个字节
+	...     a.read()
+	... 
+	17
+	b'n1'
+
+ 	
+
+		##将文件对象作为可迭代对象
+		>>> with open("open_w.txt") as a:
+		...     for i in a:
+		...             print(i)
+		... 
+		123456     
+		Taren1Taren1
 
 
 
-
-
-
-
-
-
+[root@lenovo 5_张志刚]# diff /root/ls  /bin/ls
+[root@lenovo 5_张志刚]# 
 
 
 

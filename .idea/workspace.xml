@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Day3/pycharm/cp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day3/Day3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/Day3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day3/pycharm/九九乘法表.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/pycharm/九九乘法表.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/pycharm/open_w.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/pycharm/open_w.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,28 +16,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day3/pycharm/test.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Day3/pycharm/open_w.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day3/pycharm/Readline.py">
+        <entry file="file://$PROJECT_DIR$/Day3/pycharm/cp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <state relative-caret-position="162">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -81,6 +73,7 @@
         <option value="$PROJECT_DIR$/Day3/pycharm/readline.py" />
         <option value="$PROJECT_DIR$/Day3/pycharm/test.txt" />
         <option value="$PROJECT_DIR$/Day3/pycharm/Readline.py" />
+        <option value="$PROJECT_DIR$/Day3/pycharm/cp.py" />
       </list>
     </option>
   </component>
@@ -146,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.readline">
+  <component name="RunManager" selected="Python.cp">
     <configuration name="斐波那契数列" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,6 +174,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day3/pycharm/九九乘法表.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="九九乘法表" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day3/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day3/pycharm/九九乘法表.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day3/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day3/pycharm/cp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -244,27 +279,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day2_基础/pycharm/game_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="game_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day2_基础/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day2_基础/pycharm/game_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -359,10 +373,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cp" />
+        <item itemvalue="Python.九九乘法表" />
         <item itemvalue="Python.readline" />
         <item itemvalue="Python.斐波那契数列" />
         <item itemvalue="Python.for_range1" />
-        <item itemvalue="Python.game_2" />
       </list>
     </recent_temporary>
   </component>
@@ -461,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545531500002</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add Day3">
+      <created>1545550221345</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545550221345</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,18 +497,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="16" y="34" width="887" height="727" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.751938" visible="true" weight="0.23665893" />
-      <window_info id="Structure" order="1" sideWeight="0.24806201" side_tool="true" visible="true" weight="0.23665893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7528604" visible="true" weight="0.23665893" />
+      <window_info id="Structure" order="1" sideWeight="0.24713959" side_tool="true" weight="0.23665893" />
       <window_info id="Favorites" order="2" sideWeight="0.24806201" side_tool="true" weight="0.23665893" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49535963" weight="0.37010676" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49535963" visible="true" weight="0.36878216" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39963832" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49535963" visible="true" weight="0.3361921" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49535963" weight="0.25042883" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49819928" weight="0.32590052" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49617487" weight="0.23131673" />
@@ -620,24 +641,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day3/pycharm/九九乘法表.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day3/pycharm/斐波那契数列.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day3/pycharm/readline.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day3/pycharm/Readline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -648,17 +662,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day3/pycharm/open_w.txt">
+    <entry file="file://$PROJECT_DIR$/Day3/pycharm/九九乘法表.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day3/pycharm/Readline.py">
+    <entry file="file://$PROJECT_DIR$/Day3/pycharm/斐波那契数列.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        <state relative-caret-position="216">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day3/pycharm/open_w.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day3/pycharm/cp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
