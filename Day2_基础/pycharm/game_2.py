@@ -3,7 +3,6 @@ import random
 all_choice = ['剪刀', '石头', '布']
 win = [['剪刀', '布'], ['石头', '剪刀'], ['布', '石头']]
 
-
 num_player = 2
 num_computer = 2
 while num_player > 0 and num_computer > 0:
