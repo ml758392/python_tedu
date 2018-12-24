@@ -81,7 +81,7 @@ d
 				
 				
 				
-
+ 
 >>> a = open("Day3.txt")			##打开文件返回一个文件对象 存在变量a中
 >>> a 
 <_io.TextIOWrapper name='Day3.txt' mode='r' encoding='UTF-8'>
@@ -123,6 +123,8 @@ passwd
 
 
 			   	》》文件模式《《
+			   	
+			   	
 		写入文件
 			函数:
 		write()	   添加字符串
@@ -233,7 +235,7 @@ True
 	...     a.seek(0,0)		## 0偏移，0表示文件开头
 	...     a.read()
 	... 
-	'123456\nTaren1'
+	    '123456\nTaren1'
 	0
 	'123456\nTaren1'
 
@@ -261,7 +263,7 @@ True
 		>>> with open("open_w.txt") as a:
 		...     for i in a:
 		...             print(i)
-		... 
+		  ... 
 		123456     
 		Taren1Taren1
 
@@ -282,21 +284,126 @@ True
 				
 	函数参数：
 		参数时函数运行时必须要的值
-		把参数给函数的过程叫做传参		
+		把参数给函数的过程叫做传参
+
+			》》形参《《
+	>>> def foo(x,y):
+	...     print("x=%d,y=%d"%(x,y))
+	... 
+	>>> foo(3,4)
+	x=3,y=4
+		
+		
+			》》》python3 位置参数《《《
+			
+		与shell脚本类似，程序名以及参数都以位置参数的方式传递给python程序
+		使用sys模块的argv列表接收
+			
+			
+[root@lenovo pycharm]# vim args.py 
+#!/usr/bin/env python3
+import sys
+print(sys.argv)
+		
+[root@lenovo pycharm]# python3 args.py  1 2	##实质上是向列表中添加元素 
+['args.py', '1', '2']					##列表中第一个元素脚本名
+			
 				
 				
+
+		 	》》默认参数《《
+				
+		def pstar(num=5):       # 默认参数
+		    print("*"*num)
+
+
+		pstar()	  fffff1
+		
+		******			
+				az[]
+33		1
+
 				
 				
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+			》》》模块《《《
+		
+		自定义模块名不要和已存在模块名重复
+		
+		import  模块名   as  别名				
+		>>> import sys	 
+		>>> sys.argv	## 模块名.属性
+		['']			##没有文件列表值为空
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+		
+	
+		单独导入模块中的某些属性				
+		>>> from random import randint 
+		>>> randint(1,10)
+		9
+	
+	
+		
+		>>load<<
+		一个模块只被加载一次，无论他被导入多少次
+		只加载一次可以阻止多重导入时代码被多次执行
+		如果两个文件相互导入，防止了无限的相互加载
+		模块加载时，顶层代码会自动执行，所以只将函数放入
+		模块的顶层是良好的编程习惯
+		
+		vim a.py
+		import b
+		print("a.py")
+		
+		
+		vim b.py
+		import a
+		print("b.py")
+		
+		
+		执行a.py 		
+		a.py		
+		b.py
+		a.py
+
+
+		>>模块导入的特性<<
+		模块据有一个__name__特殊属性
+		当模块文件直接执行时，__name__的值为"__main__"
+		当模块被零一个文件导入时，__name__的值就是该模块的名字
+
+		[root@lenovo~ ]# vim  __name__.py
+		import hello
+		print(__name__)
+		print(hello.__name__)
+
+		[root@lenovo~ ]# python3 __name__.py 
+		hello world
+		__main__		
+		hello
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
 				
 				
 				

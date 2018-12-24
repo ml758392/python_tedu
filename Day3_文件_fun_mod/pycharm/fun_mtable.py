@@ -6,5 +6,6 @@ def foo(num):
         print("")
 
 
-foo(6)
-foo(8)
+def fooo():
+    foo(6)
+    foo(8)
