@@ -1,0 +1,188 @@
+
+
+				》》》shutil模块《《《
+
+			
+	----》》》
+		复制文件的五种方法
+
+
+
+[root@lenovo~ ]# vim test_shutil
+
+		import shutil
+
+	# 方法一	
+		shutil.copyfileobj(open('/etc/passwd','rb'),open('/mnt/passwd1','wb'))	
+
+	
+	# 方法二
+		shutil.copyfile('/etcpasswd','/mnt/passwd2')
+
+	
+
+	shutil.copyfileobj(fsrc,fdst[,length])
+	将类似文件对象fsrc的内容复制到类似文件的对象fdst。
+
+	shutil.copyfile(src,dst,*,follow_symlinks=True)
+	将名为src的文件的内容（无元数据）复制到名为dst的文件，然后返回dst 
+
+#######################
+	查看文件
+[root@lenovo 5_张志刚]# ls /mnt/
+passwd  passwd1  passwd2
+[root@lenovo 5_张志刚]# diff  /mnt/passwd1  /mnt/passwd2  
+[root@lenovo 5_张志刚]#
+
+
+	# 方法三
+	# copy(src,dst)复制src到dst
+	# src必须为文件，dst可以是文件或目录如果dst为目录，将文件复制到目录中
+	shutil.copy('/etc/shadow', '/mnt')
+	
+	查看文件
+[root@lenovo 5_张志刚]# ls /mnt/shadow 
+/mnt/shadow
+
+
+
+
+	# 方法四
+
+	# copy2(src.dst)
+	# copy2会尝试复制源文件的元数据(权限，最后修改时间，最后访问时间...)
+	shutil.copy2('hello.py','/mnt')
+
+	查看文件属性一致
+[root@lenovo pycharm]# ll hello.py 
+-rw-r--r-- 1 root root 41 12月 24 20:33 hello.py
+[root@lenovo pycharm]# ll /mnt/hello.py 
+-rw-r--r-- 1 root root 41 12月 24 20:33 /mnt/hello.py
+
+	
+………………………………………………………………………………
+	
+	----》》》
+		移动文件或者目录	
+
+	# move(src,dst)将src移动到dst
+	# src可以是文件或者目录 dst是一个目录
+	shutil.copyfile('/etc/passwd', '/opt/move.txt')
+	shutil.move('/opt/move.txt', '/mnt/move.txt')
+
+	查看移动的文件
+[root@lenovo pycharm]# diff  /mnt/move.txt   /mnt/passwd
+[root@lenovo pycharm]# 
+
+	
+	移动目录
+	>>> from shutil import move 
+	>>> move('/mnt/repos.d','/opt/repos.d')
+	'/opt/repos.d'
+
+[root@lenovo pycharm]# ls /opt/repos.d/
+mnt.repo  packagekit-media.repo  redhat.repo
+
+	
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+	--->>
+		复制目录
+	
+	# copytree(src,dst)递归的复制src目录到dst目录
+	# dst目录不能是一个已存在的目录
+	shutil.copytree('/etc/yum.repos.d', '/mnt/repos.d/')
+	
+	查看目录
+[root@lenovo pycharm]# ls /mnt/repos.d/
+mnt.repo  packagekit-media.repo  redhat.rep
+
+
+
+	# rmtree(path) 删除目录 (只能删除目录)
+	shutil.rmtree('/mnt/repos.d')
+
+[root@lenovo pycharm]# ls /mnt/repos.d
+ls: 无法访问/mnt/repos.d: 没有那个文件或目录
+
+				## 不能删除文件
+>>> shutil.rmtree('/mnt/passwd')
+....
+...
+NotADirectoryError: [Errno 20] Not a directory: '/mnt/passwd'
+		
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+					》》》权限管理《《《
+
+1.
+	# copymode(src,dst)将src的权限复制给dst
+	# 只复制权限，不会复制内容
+
+	shutil.copymode('/etc/shadow','/mnt/passwd')
+
+	
+	查看权限
+[root@lenovo pycharm]#  ll /mnt/passwd
+---------- 1 root root 2166 12月 23 11:44 /mnt/passwd
+   
+
+
+
+2.
+	##查看文件的元数据
+
+[root@lenovo pycharm]# stat /etc/shadow
+  文件："/etc/shadow"
+  大小：1059            块：8          IO 块：4096   普通文件
+设备：803h/2051d        Inode：43990520    硬链接：1
+权限：(0000/----------)  Uid：(    0/    root)   Gid：(    0/    root)
+最近访问：2018-12-24 20:40:01.037961010 +0800
+最近更改：2018-12-19 20:32:09.710071566 +0800
+最近改动：2018-12-19 20:32:09.711064598 +0800
+创建时间：-
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
