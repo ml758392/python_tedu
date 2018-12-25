@@ -48,6 +48,11 @@ shutil.rmtree('/mnt/repos.d')
 
 # copymode(src,dst)将src的权限复制给dst
 # 只复制权限，不会复制内容
-shutil.copymode('/etc/shadow','/mnt/passwd')
+shutil.copymode('/etc/shadow', '/mnt/passwd')
 
-# copystat(src,dst)
+# copystat(src,dst) 复制元数据（权限位，最后访问时间，上次修改时间）
+shutil.copystat('/etc/shadow', '/mnt/passwd')
+
+
+# chown(path,user=None,group=None) 更改给定的路径的所有这用户和/或组
+shutil.chown('/mnt/shadow', user='yy', group='yy')

@@ -49,8 +49,9 @@ passwd  passwd1  passwd2
 
 	# 方法四
 
-	# copy2(src.dst)
-	# copy2会尝试复制源文件的元数据(权限，最后修改时间，最后访问时间...)
+	# copy2(src.dst)：
+			 copy2会尝试复制源文件的元数据(权限，最后修改时间，最后访问时间...)
+
 	shutil.copy2('hello.py','/mnt')
 
 	查看文件属性一致
@@ -65,8 +66,10 @@ passwd  passwd1  passwd2
 	----》》》
 		移动文件或者目录	
 
-	# move(src,dst)将src移动到dst
-	# src可以是文件或者目录 dst是一个目录
+	# move(src,dst)：
+			将src移动到dst
+			src可以是文件或者目录 dst是一个目录
+
 	shutil.copyfile('/etc/passwd', '/opt/move.txt')
 	shutil.move('/opt/move.txt', '/mnt/move.txt')
 
@@ -89,8 +92,10 @@ mnt.repo  packagekit-media.repo  redhat.repo
 	--->>
 		复制目录
 	
-	# copytree(src,dst)递归的复制src目录到dst目录
-	# dst目录不能是一个已存在的目录
+	# copytree(src,dst)：
+				递归的复制src目录到dst目录
+				# dst目录不能是一个已存在的目录
+
 	shutil.copytree('/etc/yum.repos.d', '/mnt/repos.d/')
 	
 	查看目录
@@ -117,7 +122,8 @@ NotADirectoryError: [Errno 20] Not a directory: '/mnt/passwd'
 					》》》权限管理《《《
 
 1.
-	# copymode(src,dst)将src的权限复制给dst
+	# copymode(src,dst)：
+				将src的权限复制给dst
 	# 只复制权限，不会复制内容
 
 	shutil.copymode('/etc/shadow','/mnt/passwd')
@@ -143,32 +149,107 @@ NotADirectoryError: [Errno 20] Not a directory: '/mnt/passwd'
 最近改动：2018-12-19 20:32:09.711064598 +0800
 创建时间：-
 
+	
+	
+	# copystat(src,dst)：
+				 复制元数据（权限位，最后访问时间，上次修改时间）
 
+	shutil.copystat('/etc/shadow', '/mnt/passwd1')
 
-  
-
-
-
-
-
-
-
-
-
-
+	查看文件  
+[root@lenovo 5_张志刚]# ll  /mnt/passwd1
+---------- 1 root root 2166 12月 19 20:32 /mnt/passwd1
 
 
 
 
 
+	# chown(path,user=None,group=None)：
+						 更改给定的路径的所有这用户和/或组、
+
+	shutil.chown('/mnt/shadow', user='yy', group='yy')
+
+	查看文件
+[root@lenovo 5_张志刚]# ll /mnt/shadow 
+---------- 1 yy yy 1059 12月 25 09:08 /mnt/shadow
 
 
+**********************************************************************************************************
 
 
+					》》》语法风格《《《
+	链式赋值：	
+
+		>>> x=y=10
+		>>> x
+		10
+		>>> y
+		10
 
 
+	多元赋值：
+		>>> (a,b,c) = (1,2,3)
+		>>> a
+		1
+		>>> b
+		2
+		>>> c
+		3
 
 
+	交换a，b的值
+	
+	传统方法：
+		借助第三个变量
+		a=10 b=20
+		c=a
+	
+		a=b
+		b=c
+		a=20 b=10
+
+
+	python中：
+		>>> a,b = 10,20
+		>>> a,b = b,a
+		>>> a
+		20
+		>>> b
+		10
+
+
+				》》关键字《《
+
+>>> import keyword
+	
+	## 列出所有的关键字	
+	
+>>> print(keyword.kwlist)
+['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'wi
+
+	
+
+	## 判断str是否为关键字
+
+	1.	
+		运用kwlist列表判断
+
+	>>> "def" in keyword.kwlist
+	True
+	>>> "dachui" in keyword.kwlist
+	False
+
+
+	2.
+		运用iskeyword函数判断
+
+	>>> keyword.iskeyword("def")
+	True
+	>>> keyword.iskeyword("tachui")
+	False
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
