@@ -251,7 +251,425 @@ NotADirectoryError: [Errno 20] Not a directory: '/mnt/passwd'
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+		练习：
+			创建文件：
+			编写程序要求用户输入用户名
+			如果文件名存在 要求重新输入
+			
 
+
+
+
+*******************************************************************************************************
+
+				》》》序列《《《
+			
+
+		>>> a= [1,2]
+		>>> b = [3,4]
+		>>> a + b
+		[1, 2, 3, 4]
+
+
+	内建函数：
+list(iter)	把可迭代对象转换为列表
+	
+			可迭代对象：
+			1.	字符串
+			>>> list("abcdef")
+			['a', 'b', 'c', 'd', 'e', 'f']
+	
+			2.	列表
+			>>> list([1,2,3])
+			[1, 2, 3]
+	
+			3.	文件对象
+			>>> with open("/mnt/yy") as a:
+			...     list(a)
+			... 
+			['pp\n', 'pp\n']
+			
+			4.	字典
+		
+			>>> a = {"yy":18,"pp":20}
+			>>> list(a)
+			['yy', 'pp']	##将字典的键作为元素生成列表
+
+
+
+str(obj)	把obj对象转换为字符串
+
+			数字类型的对象
+
+			>>> a = 1
+			>>> type(a)
+			<class 'int'>
+			>>> type(str(a))
+			<class 'str'>
+		
+
+			》》元组函数《《			
+
+ tuple(iter) 把一个可迭代对象转换成一个元组对象
+
+				
+			>>> tuple("123")
+			('1', '2', '3')
+
+
+len(seq):返回seq的长度
+		
+			>>> len([1,2])
+			2
+			>>> len([1,2,[1,3]])
+			3
+
+		max(iter,key=None):返回iter中的最大值
+			
+			>>> max([1,2,45])
+			45
+			>>> max("po")
+			'p'
+					
+		
+
+
+			》》》枚举函数《《《
+
+		
+		enumerare(): 接受一个可迭代对象作为参数，返回一个enumerate对象
+
+			>>> enumerate("abcd")
+			<enumerate object at 0x7f51f6743168>
+
+
+			返回序列的索引值和对应的元素
+			>>> alist = ['hello','world']
+			>>> for i,j in enumerate(alist):
+			...     print('index %d:%s'%(i,j))
+			... 
+			index 0:hello
+
+	
+
+
+reversed(seq): 接受一个序列作为参数，返回一个以逆序访问的迭代器
+		
+		
+			>>> a = "123"
+			>>> for i in reversed(a):
+			...     print(i)
+			... 
+			3
+			2
+			1
+			
+
+			》》sorted()《《《
+	
+sorted(iter):接受一个可迭代对象作为参数，返回一个有序的列表
+
+		>>> sorted("321")		##返回一个列表
+		['1', '2', '3']
+				
+		>>> a= {"yy":18,"pp":20}	##字典作为参数，返回一个以键为元素的列表
+		>>> sorted(a)
+		['pp', 'yy']
+		>>> 
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+				》》》格式化字符串《《《
+	格式化字符串：
+		模板 % 参数 或 模板 % （参数1，参数2...）
+		模板就是一个包含格式符的字符串
+		格式符：%s  %d %f
+		运行格式化字符串时，将参数按照顺序传入格式符
+		注意参数的个数和格式符的个数一致，顺序对应
+		
+	
+		
+		>>> '%08d' % 123
+		'00000123'
+		
+
+			》》》format函数《《《
+			对格式化字符串的封装
+			
+			位置传参
+			'my name is {}'.format('bob')
+			
+			关键字参数
+			my name is{name},I am {age} year old'.format(name='bob',age=18)
+			
+			索引传参
+			>>> 'my name is {0[0]},I am {0[1]} years old'.format(['bob',23])
+			'my name is bob,I am 23 years old'
+
+
+format函数：填充与格式化
+			{:[填充字符][对其方式<^>][宽度]}
+			
+			<左对齐 ^ 居中对齐 >右对齐
+
+
+				hello在20个- 中居中对齐
+			>>> '{:-^20}'.format('hello')
+			'-------hello--------'
+							
+									 
+			>>> '{:-<20}'.format('hello')
+			'hello---------------'
+			>>> '{:->20}'.format('hello')
+			'---------------hello'
+		
+			
+
+line1:lucky! lucky!
+line2:dinner checken 
+line3:end
++************************************************+
++                 lucky! lucky!             +
++                dinner checken              +
++************************************************+
+
+
+			>>原始字符串<<
+		
+		在原始字符串李，所有的字符都是直接按住字面的意思来使用，没有转义特殊或不能打印的字符
+		
+>>> winpath = 'C:\windos\newfile'
+>>> print(winpath)
+C:\windos
+ewfile					##出现\反斜杠 转义
+
+
+
+>>> winpath = r'C:\windos\newfile'	##在字符串前加一个 r
+>>> print(winpath)
+C:\windos\newfile
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+		
+					》》》字符串内建函数《《《
+函数
+title()
+capitalize()	
+		
+	>>> str = "hello"
+	>>> print(str.title())
+	Hello
+	>>> print(str.capitalize())
+	Hello
+	
+>>> print(str.center(50,'*'))		##居中 宽度 填充字符				*********************hello***********************						
+	
+函数
+count()
+	
+	>>> str = "hello"
+	>>> print(str.count('l'))
+	2
+		
+		count(str,start,end) start起始位置，end结束位置(索引)
+		
+	>>> str = "this is a test string"	
+	>>> print(str.count("is"))
+	2
+	>>> print(str.count("is",4,20))
+	1
+	
+
+
+endswith()函数：	
+		endswith(obj,beg=0,end=len(string))
+		检查字符串是否以obj结束
+		如果beg或着end指定则检查指定的范围内是否以obj结束，如果时，返回True，否着返回False
+		
+		
+	>>> str = "this is a test string"
+	>>> str.endswith("ing")
+	True
+
+	>>> str.endswith("is",0,4)	##和切片一样 不包含结束的索引
+	True
+
+	
+upper函数
+lower函数
+		upper函数:将字符串变成大写
+		lower函数:将字符串变成小写
+			>>> str.upper()
+			'THIS IS A TEST STRING'
+	
+		
+		
+isupper函数
+islower函数
+		isupper函数：判断字符串是否全部为大写   若是 返回 True 
+		islower函数：判断字符串是否全部为小写
+					
+			>>> str.islower()
+			True
+		
+isdigit()函数
+		isdigit()：判断字符串是否全部为数字			
+	
+	
+			>>> num ="12346"
+			>>> num.isdigit()
+			True
+			>>> num ="12346pp"
+			>>> num.isdigit()
+			False
+	
+isalpha()函数
+		isalpha():判断字符串是否全部为字母
+			
+			>>> letter = "ABCD"
+			>>> letter.isalpha()
+			True
+
+
+split()函数
+		split()函数： 
+				string.split(str="",num=string.count(str))
+				以str为分隔符切片string，如果num有指定值，则仅分隔num个子字符串 	
+				
+		>>> str = "A#B#C#D"
+		
+		>>> str.count("#")
+		3
+		
+		>>> str.split("#")
+		
+		>>> str.split("#",2)	## 指定 分隔符为 # ，只切片前两个
+		['A', 'B', 'C#D']
+
+		>>> str.split("#",3)
+		['A', 'B', 'C', 'D']
+
+	
+
+		>>> with open("/etc/passwd") as a:
+		...     str = a.readlines(1)
+		...     print(str[0].split(":"))
+		... 
+		['root', 'x', '0', '0', 'root', '/root', '/bin/bash\n']
+
+
+
+strip()函数
+		去除字符串两端的空格
+
+		rstrip()函数	去除字符串右边的空格
+		lstrip()函数	去除字符串左边的空格
+		
+
+**************************************************************************************************************
+
+					》》》列表操作《《《
+
+在列表中添加元素：
+
+append()函数:					
+		>>> alist = [1,2,3]
+		>>> alist.append(4)
+		>>> alist
+		[1, 2, 3, 4]
+		>>> alist.append([5,6])	 ##append将添加的数据作为一个元素，追加到列表中
+		>>> alist
+		[1, 2, 3, 4, [5, 6]]
+
+extend()函数:
+		可以将有序列的数据中每一个元素添加到列表中
+		
+		>>> alist = [1,2,3]
+		>>> alist.extend([4,5])	
+		>>> alist.extend((6,7))
+		>>> alist.extend("89")
+		>>> alist.extend({10:1,11:2})
+		>>> alist
+		[1, 2, 3, 4, 5, 6, 7, '8', '9', 10, 11]
+
+		
+index()函数：
+		返回obj对象的下标
+		>>> alist = [1,2,3]
+		>>> alist.index(3)
+		2
+					
+			
+insert()函数：
+		insert(index,obj)
+		可以传递两个参数  index索引 和obj
+		
+		>>> alist = [1,2,3]
+		>>> alist.insert(-1,4)	
+		>>> alist			##插入内容后，原位置的元素向后移
+		[1, 2, 4, 3]
+		
+
+
+
+			》》》组织列表《《《
+
+	sort()函数:
+		永久性的排列列表（从大到小排列）
+	 
+		>>> alist = [3,2,1]
+		>>> alist.sort()
+		>>> alist
+		[1, 2, 3]
+
+			
+	
+sorted():
+		临时排序列表
+		sorted(alist,reserver=True)	##按照从大到小的顺序排列
+
+
+reverse():
+		倒着打印列表
+		
+		>>> alist = [1,3,2]
+		>>> alist.reverse()
+		>>> alist
+		[2, 3, 1]
+		>>> 
+
+		
+				》》》从列表中删除元素《《《
+	
+	1.使用del与语句删除元素
+		
+		>>> alist = [1,2,3,4]
+		>>> del alist[-1]
+		>>> alist
+		[1, 2, 3]
+
+	2.根据值删除元素  remove()函数
+	
+		>>> alist = [1,2,3,4]
+		>>> alist.remove(4)
+		>>> a = alist[2]
+		>>> alist.remove(a)
+		>>> alist
+		[1, 2]
+		
+	3.使用方法pop()删除元素
+		
+		pop()函数：
+			删除列表末尾的值，并返回该值
+		
+		>>> alist = [1,2,3,4]
+		>>> last = alist.pop()
+		>>> alist
+		[1, 2, 3]
+		>>> last
+		4
+						
 
 
 

@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Day4/pycharm/make_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day4/pycharm/shutil_copy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day4/pycharm/shutil_copy2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day4/pycharm/shutil_copyfile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day4/pycharm/shutil_copyfileobj.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day4/pycharm/shutil_copytree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day4/pycharm/shutil_move.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day4/pycharm/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day4/pycharm/三因号.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day4/pycharm/格式化输出.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day4/pycharm/检查标示符.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day2_基础/Day2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day2_基础/Day2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day4/Day4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Day4/Day4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day4/pycharm/test_shutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Day4/pycharm/test_shutil.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +19,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day4/pycharm/make_file.py">
+        <entry file="file://$PROJECT_DIR$/Day4/pycharm/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="144">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -94,6 +91,10 @@
         <option value="$PROJECT_DIR$/Day4/pycharm/shutil_move.py" />
         <option value="$PROJECT_DIR$/Day4/pycharm/shutil_copytree.py" />
         <option value="$PROJECT_DIR$/Day4/pycharm/make_file.py" />
+        <option value="$PROJECT_DIR$/Day4/pycharm/三因号.py" />
+        <option value="$PROJECT_DIR$/Day4/pycharm/检查标示符.py" />
+        <option value="$PROJECT_DIR$/Day4/pycharm/格式化输出.py" />
+        <option value="$PROJECT_DIR$/Day4/pycharm/test.py" />
       </list>
     </option>
   </component>
@@ -161,7 +162,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.make_file">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="三因号" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/三因号.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="检查标示符" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/检查标示符.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="格式化输出" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/格式化输出.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="九九乘法表" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -246,7 +310,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shutil_copy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,70 +322,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/shutil_copy.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="shutil_copy2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/shutil_copy2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="shutil_copyfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/shutil_copyfile.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="shutil_copyfileobj" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/shutil_copyfileobj.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -395,11 +396,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.格式化输出" />
+        <item itemvalue="Python.检查标示符" />
+        <item itemvalue="Python.三因号" />
         <item itemvalue="Python.make_file" />
-        <item itemvalue="Python.shutil_copy2" />
-        <item itemvalue="Python.shutil_copy" />
-        <item itemvalue="Python.shutil_copyfileobj" />
-        <item itemvalue="Python.shutil_copyfile" />
       </list>
     </recent_temporary>
   </component>
@@ -547,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545659238913</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add Day4">
+      <created>1545708567091</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1545708567091</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -562,8 +570,8 @@
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="984" height="706" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75247526" visible="true" weight="0.2148071" />
-      <window_info id="Structure" order="1" sideWeight="0.24713959" side_tool="true" weight="0.23665893" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7303754" visible="true" weight="0.2148071" />
+      <window_info id="Structure" order="1" sideWeight="0.26962456" side_tool="true" visible="true" weight="0.2148071" />
       <window_info id="Favorites" order="2" sideWeight="0.24752475" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -571,8 +579,8 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39963832" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49426487" weight="0.28113878" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49819928" weight="0.32590052" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" sideWeight="0.49426487" visible="true" weight="0.47864768" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49819928" weight="0.32562277" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49617487" weight="0.22984563" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50573516" side_tool="true" weight="0.28113878" />
@@ -617,12 +625,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add Day4" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day2_基础/login1.py" />
-    <entry file="file://$PROJECT_DIR$/Day2_基础/grade.py" />
-    <entry file="file://$PROJECT_DIR$/Day2_基础/game.py" />
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day2_基础/test_while.py" />
     <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/guess.py" />
     <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/while_break.py">
@@ -919,10 +921,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Day4/pycharm/三因号.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day4/pycharm/格式化输出.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day4/pycharm/检查标示符.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Day4/pycharm/make_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="-18">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Day4/pycharm/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
