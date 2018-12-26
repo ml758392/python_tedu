@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ppts/python2/NSD_PYTHON2_01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppts/python2/NSD_PYTHON2_02.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppts/python2/NSD_PYTHON2_03.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppts/python2/NSD_PYTHON2_04.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/python1/Day4/pycharm/stack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python1/Day4/Day4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python1/Day4/Day4.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +13,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python1/Day4/pycharm/stack.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,6 +91,7 @@
         <option value="$PROJECT_DIR$/Day4/pycharm/检查标示符.py" />
         <option value="$PROJECT_DIR$/Day4/pycharm/格式化输出.py" />
         <option value="$PROJECT_DIR$/Day4/pycharm/test.py" />
+        <option value="$PROJECT_DIR$/python1/Day4/pycharm/stack.py" />
       </list>
     </option>
   </component>
@@ -119,12 +129,20 @@
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="ppts" type="462c0819:PsiDirectoryNode" />
+              <item name="python1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
               <item name="python1" type="462c0819:PsiDirectoryNode" />
+              <item name="Day4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
+              <item name="python1" type="462c0819:PsiDirectoryNode" />
+              <item name="Day4" type="462c0819:PsiDirectoryNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
@@ -153,7 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.stack">
     <configuration name="三因号" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -280,7 +298,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="make_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="stack" type="PythonConfigurationType" factoryName="Python">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,11 +306,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python1/Day4/pycharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/make_file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python1/Day4/pycharm/stack.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -391,7 +409,6 @@
         <item itemvalue="Python.格式化输出" />
         <item itemvalue="Python.检查标示符" />
         <item itemvalue="Python.三因号" />
-        <item itemvalue="Python.make_file" />
       </list>
     </recent_temporary>
   </component>
@@ -546,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545708567091</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="sort directory">
+      <created>1545818009615</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1545818009615</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -566,15 +590,15 @@
       <window_info id="Favorites" order="2" sideWeight="0.24752475" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49535963" weight="0.30960855" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49535963" visible="true" weight="0.2366548" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39963832" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49426487" visible="true" weight="0.23487544" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49426487" weight="0.2153025" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49819928" weight="0.32562277" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49617487" weight="0.22984563" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50573516" side_tool="true" weight="0.23487544" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50573516" side_tool="true" weight="0.3505338" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -613,10 +637,10 @@
     <MESSAGE value="add files to Day3" />
     <MESSAGE value="done Day3" />
     <MESSAGE value="add Day4" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Day4" />
+    <MESSAGE value="sort directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="sort directory" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day2_基础/test_while.py" />
     <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/guess.py" />
     <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/while_break.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -944,6 +968,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python1/Day4/pycharm/stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
