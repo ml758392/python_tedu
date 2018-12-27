@@ -1,0 +1,207 @@
+
+				》》》字典《《《		
+
+1.创建字典
+	
+	1.通过dict()方法：
+		>>> dict()
+		{}
+	
+		debug
+		字符串报错：
+		>>> dict("ab")
+		Traceback (most recent call last):
+		  File "<stdin>", line 1, in <module>
+		ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+
+		>>> dict(["ab"])
+		{'a': 'b'}
+	
+		debug
+		列表元素只有一个序列报错：
+		>>> dict(["a","b"])			
+		Traceback (most recent call last):
+		  File "<stdin>", line 1, in <module>
+		ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
+		>>> dict(["ab","bc"])
+		{'a': 'b', 'b': 'c'}
+
+		>>> dict([[1,2],[3,4]])
+		{1: 2, 3: 4}
+
+	2.通过fromkeys(）创建具有相同值的默认字典
+		
+		>>> adict = {}.fromkeys(["bob","tom","alice"],7)
+		>>> adict
+		{'bob': 7, 'tom': 7, 'alice': 7}
+		
+
+
+
+
+			》》》2.访问字典《《《
+
+	1.遍历列表	
+		>>> adict = dict((["name","bob"],["age",23]))
+		>>> adict
+		{'name': 'bob', 'age': 23}
+		>>> for key in adict:
+		...     print('%s:%s' % (key,adict[key]))
+		... 
+		name:bob
+		age:23
+
+
+		>>> print('%(name)s' % adict)	##在字符串中表示value的方法
+		bob
+		>>> 
+		
+		>>> print(adict["name"])
+		bob
+
+	2.更新字典
+						
+		>>> adict
+		{'name': 'bob', 'age': 23}
+		>>> adict["name"] = "yy"		##更改以存在键的值
+		>>> adict["city"] = "BJ"		##添加不存在的对象
+		>>> adict
+		{'name': 'yy', 'age': 23, 'city': 'BJ'}
+
+	3.删除字典
+		
+		1.del删除字典中的元素或者整个字典
+			
+			>>> adict
+			{'name': 'yy', 'age': 23, 'city': 'BJ'}
+			>>> del adict["city"]
+			>>> adict					##删除键city
+			{'name': 'yy', 'age': 23}
+			>>> del adict				##删除整个字典
+			>>> adict
+			Traceback (most recent call last):
+			  File "<stdin>", line 1, in <module>
+			NameError: name 'adic' is not defined
+
+
+		2.pop()函数弹出字典中的元素，并返回value
+
+			
+			>>> adict
+			{'name': 'bob', 'age': 23}
+			>>> adict.pop("age")		##字典是无序的，要加key参数
+			23
+			>>> adict
+			{'name': 'bob'}
+
+		3.clear()函数清空字典
+			>>> adict.clear()
+			>>> adict
+			{}
+
+
+			》》》字典操作符号《《《
+		
+		in  not in
+
+
+			》》》字典相关函数《《《
+
+	1.作用与字典的函数
+		len()：返回字典中元素的数目
+			
+		>>> adict = {"name": "bob", "age": "22"}
+		>>> len(adict)
+		2
+
+	2.hash()：本身不是为字典设计的，但是可以判断某个对象是否可以作为字典的键
+		
+		字典赋值时，没有key新增，有可以维修修改
+
+		字典的key必须是不可变对象，如数字，字符串，元组
+		
+		>>> adict[[1,2]] = "pp"
+		Traceback (most recent call last):
+		  File "<stdin>", line 1, in <module>
+		TypeError: unhashable type: 'list'
+
+		>>> hash(10)
+		10
+		>>> hash("yy")
+		-7937131228255789768
+		>>> hash(["pp"])			## 不可hash类型 list 不可作为key
+		Traceback (most recent call last):
+		  File "<stdin>", line 1, in <module>
+		TypeError: unhashable type: 'list'
+
+
+
+			》》》字典的内建函数《《《
+
+	get()函数		
+
+		>>> adict
+		{'name': 'bob', 'age': 18}
+		>>> adict.
+		adict.clear(       adict.get(         adict.pop(         adict.update(
+		adict.copy(        adict.items(       adict.popitem(     adict.values(
+		adict.fromkeys(    adict.keys(        adict.setdefault(  
+		>>> adict.get("name")		## 获取name的值
+		'bob'
+		>>> adict.get("city","BJ")	##若key不存在，则返回 “BJ”
+
+
+	keys（）函数：
+			返回所有的key
+
+		>>> adict.keys()			##返回字典所有的key
+		dict_keys(['name', 'age'])
+		
+		
+
+	
+	values（）函数：
+			返回所有的值
+		>>> adict.values()
+		dict_values(['bob', 18])
+		
+
+	items()函数：
+			返回一个包含字典中（键，值）对元组的列表
+
+		>>> adict.items()
+		dict_items([('name', 'bob'), ('age', 18)])		
+
+	copy()函数:
+		
+		>>> bdict = adict.copy()
+		>>> adict
+		{'name': 'bob', 'age': 18}
+		>>> bdict
+		{'name': 'bob', 'age': 18}
+
+	update()函数：
+			更新字典            
+		>>> adict
+		{'name': 'bob', 'age': 18}
+		>>> adict.update({"city": "BJ"})
+		>>> adict
+		{'name': 'bob', 'age': 18, 'city': 'BJ'}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

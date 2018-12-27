@@ -1,5 +1,5 @@
 # -*-coding:utf-8-*-
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 import os
 
 
@@ -10,6 +10,7 @@ def get_fname():
         get_fname()
     return name
 
+
 def get_content():
     content = []
     print("输入数据，输入end退出")
@@ -19,6 +20,7 @@ def get_content():
             break
         content.append(data)
     return content
+
 
 def wfile(fname,content):
     content = ['%s\n' % line for line in content]

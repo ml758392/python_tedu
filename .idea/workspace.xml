@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python1/Day4/pycharm/stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day1/pycharm/login_logup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day1/pycharm/login_teacher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day1/pycharm/mydict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python1/Day4/Day4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python1/Day4/Day4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python1/Day4/pycharm/make_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/python1/Day4/pycharm/make_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/Day1/Day1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day1/Day1.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +17,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python2/Day1/pycharm/mydict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python1/Day4/pycharm/stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="468">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python1/Day4/pycharm/make_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python2/Day1/pycharm/login_logup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python2/Day1/pycharm/login_teacher.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -43,8 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day2_基础/grade.py" />
-        <option value="$PROJECT_DIR$/Day2_基础/game.py" />
         <option value="$PROJECT_DIR$/Day2_基础/test_while.py" />
         <option value="$PROJECT_DIR$/Day2_基础/pycharm/while_break.py" />
         <option value="$PROJECT_DIR$/Day2_基础/pycharm/while_continue.py" />
@@ -92,6 +129,10 @@
         <option value="$PROJECT_DIR$/Day4/pycharm/格式化输出.py" />
         <option value="$PROJECT_DIR$/Day4/pycharm/test.py" />
         <option value="$PROJECT_DIR$/python1/Day4/pycharm/stack.py" />
+        <option value="$PROJECT_DIR$/python2/Day1/pycharm/mydict.py" />
+        <option value="$PROJECT_DIR$/python1/Day4/pycharm/make_file.py" />
+        <option value="$PROJECT_DIR$/python2/Day1/pycharm/login_logup.py" />
+        <option value="$PROJECT_DIR$/python2/Day1/pycharm/login_teacher.py" />
       </list>
     </option>
   </component>
@@ -129,25 +170,20 @@
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python1" type="462c0819:PsiDirectoryNode" />
-              <item name="Day4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python1" type="462c0819:PsiDirectoryNode" />
-              <item name="Day4" type="462c0819:PsiDirectoryNode" />
-              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+              <item name="python2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
               <item name="python2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
+              <item name="python2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day1" type="462c0819:PsiDirectoryNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -171,49 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.stack">
-    <configuration name="三因号" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/三因号.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="检查标示符" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day4/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day4/pycharm/检查标示符.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.login_teacher">
     <configuration name="格式化输出" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,6 +284,69 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day2_基础/pycharm/game_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="login_logup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day1/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day1/pycharm/login_logup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="login_teacher" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day1/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day1/pycharm/login_teacher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mydict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day1/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day1/pycharm/mydict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -405,10 +462,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.login_teacher" />
+        <item itemvalue="Python.login_logup" />
+        <item itemvalue="Python.mydict" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.格式化输出" />
-        <item itemvalue="Python.检查标示符" />
-        <item itemvalue="Python.三因号" />
       </list>
     </recent_temporary>
   </component>
@@ -570,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545818009615</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add stack.py">
+      <created>1545832847770</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1545832847770</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -590,15 +655,15 @@
       <window_info id="Favorites" order="2" sideWeight="0.24752475" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49535963" visible="true" weight="0.2366548" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39963832" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49426487" weight="0.22953737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49426487" weight="0.2153025" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49426487" weight="0.5053381" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49819928" weight="0.32562277" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49617487" weight="0.22984563" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50573516" side_tool="true" weight="0.3505338" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50573516" side_tool="true" weight="0.22953737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -638,31 +703,10 @@
     <MESSAGE value="done Day3" />
     <MESSAGE value="add Day4" />
     <MESSAGE value="sort directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="sort directory" />
+    <MESSAGE value="add stack.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add stack.py" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/guess.py" />
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/while_break.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/中文.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/while_continue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/while_else.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -971,10 +1015,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day1/pycharm/mydict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python1/Day4/pycharm/stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state relative-caret-position="468">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python1/Day4/pycharm/make_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day1/pycharm/login_logup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day1/pycharm/login_teacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
         </state>
       </provider>
     </entry>
