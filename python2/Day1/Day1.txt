@@ -504,13 +504,91 @@ if __name__ == '__main__':
 					》》》os模块《《《
 
 
+import os 		
+>>> os.remove('/mnt/yy')		##删除文件，删除目录用shutil.rmtree()
+>>> os.getcwd()			##相当与是pwd
+>>> os.mkdir('/tmp/demo')	## mkdir
+>>> os.makedirs('/mnt/1/2')	##mkdir -p 创建多级目录
+>>> os.listdir()			##ls
+>>> os.listdir('/mnt')		##ls /mnt	
+>>> os.chdir('/mnt')		##cd /mnt
+>>> os.mknod('/mnt/test.txt')	##touch test.txt
+>>> os.symlink('/etc/hosts','/mnt/hosts')	##ln -s /etc/hosts  /mnt/hosts
+>>> os.remove('hello.txt')
+>>> os.chmod('test.txt',0o777) ##linux的权限是8进制数
 
 
 
+			》》》os.path《《《
 
 
+>>> os.path.exists():
+		判断文件是否存在
+	>>> os.path.exists('/etc/passwd')
+	True
+
+>>> os.path.split()
+		分隔路径
+		将文件和路径分隔开
+	>>> os.path.split('/etc/yy/yy.txt')
+	('/etc/yy', 'yy.txt')
+
+>>> os.path.splist()
+		整合路径
+			
+	>>> os.path.join('/etc/','passwd')
+	'/etc/passwd'
+
+>>> os.path.isfile()
+
+>>> os.path.isdir()	
 
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+					》》》pickle模块《《《
+
+	数据写入文件时，常规的文件方法只能把字符串对向写入
+	其它数据许仙转换成字符串在写入文件。
+
+	python提供了一个标准的模块，称为pickle。
+	使用它可以在一个文件中储存任何python对象，之后又可以把他完整无缺的取出来
+
+	
+
+	>>> with open('yy.txt','w') as f: 
+	...     f.write({1:2,3:4})
+	... 
+	Traceback (most recent call last):
+	  File "<stdin>", line 2, in <module>
+	TypeError: write() argument must be str, not dict		
+							## write()参数只能是字符串类型，不是字典
+
+
+	
+	pickle模块方法
+	
+	分别调用dump()和load()可以存储，写入
+	
+pickle.dump()写入
+
+	>>> import pickle as p
+	>>> list = [1,2,3,4]
+	>>> with open('test_pickle','wb') as obj:
+	...     p.dump(list,obj)
+	
+
+	[root@lenovo pycharm]# cat test_pickle 
+	�]q(KKKKe.[root@lenovo pycharm]# 
+
+
+	
+pickle.load()读取
+
+	>>> with open("test_pickle",'rb') as obj:
+	...     p.load(obj)
+	... 
+	[1, 2, 3, 4]
+	
 
 
 
