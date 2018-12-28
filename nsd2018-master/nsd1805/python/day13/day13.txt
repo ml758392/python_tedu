@@ -1,0 +1,102 @@
+Tomcat: 发布java程序(War包）
+
+一、准备jenkins服务器
+1、把虚拟机第一块网卡的连接方式改为NAT，如果不成功，需要把“虚拟系统管理器”网络的
+default连接激活
+2、启动虚拟机后，把虚拟机的virbr0干掉
+[root@localhost ~]# ifconfig virbr0 down
+[root@localhost ~]# brctl delbr virbr0
+3、激活eth0
+[root@localhost ~]# ifup eth0
+4、把jenkins的rpm包拷贝到虚拟机
+5、安装
+[root@node3 ~]# rpm -ihv jenkins-2.121-1.1.noarch.rpm
+6、启动
+[root@node3 ~]# service jenkins start
+7、在物理机上访问http://192.168.122.179:8080
+二、配置git
+jenkins的eth1网络连接改为private1，因为我的gitlab也是用private1连接
+配置jenkins可以和gitlab服务器通信，配置好jenkins可以使用yum
+1、模拟程序员在本地编写代码，并交由git管理
+[root@room8pc16 day13]# git init core_py
+[root@room8pc16 day13]# cd core_py/
+[root@room8pc16 core_py]# echo '<h1>Hello World!</h1>' > index.html
+[root@room8pc16 core_py]# git commit -m "my web init"
+[root@room8pc16 core_py]# git tag 1.0  # 把当前提交标记为1.0
+[root@room8pc16 core_py]# vim index.html
+<h1 style="color: green">Hello World!</h1>
+[root@room8pc16 core_py]# git add .
+[root@room8pc16 core_py]# git commit -m "my web version 2"
+[root@room8pc16 core_py]# git tag 2.0  # 把当前提交标记为2.0
+[root@room8pc16 core_py]# git tag  # 查看所有的版本
+2、配置gitlab服务器
+群组Group：可以为每个团队创建一个群组，群组有属于他的URL
+项目：每个群组都会创建多个项目，每个项目对应一个URL
+成员：团队成员，一个项目不一定需要全员参与，可以为项目指定成员
+3、以第2步创建的信息，上传代码
+[root@room8pc16 core_py]# git remote rename origin old-origin
+如果出现以下错误，可以忽略
+error: 不能重命名配置小节 'remote.origin' 到 'remote.old-origin'
+[root@room8pc16 core_py]# git remote add origin http://192.168.4.1/nsd1805/core_py.git
+[root@room8pc16 core_py]# git push -u origin --all
+[root@room8pc16 core_py]# git push -u origin --tags
+
+升级jenkins
+https://jenkins.io/download/ -> RedHat/Fedora/CentOS
+# service jenkins stop
+# rpm -Uvh 新版本
+# service jenins start
+
+使用jenkins
+1、在jenkins服务器上安装git
+[root@node3 ~]# yum install -y git
+2、安装git parameter插件，以便jenkins可以识别tag
+3、在jenkins首页创建一个自由风格的软件项目
+参数化构建过程->添加参数->git parameter->name: web_tag, parameter Type: Brance or Tag
+源码管理: Git -> Repository URL: http://192.168.4.1/nsd1805/core_py.git
+Branch Specifier -> ${web_tag}
+Additional Behaviours -> check out to a sub directory
+jenkins把代码从gitlab上下载到本机的/var/lib/jenkins/workspace/目录
+Local subdirectory for repo: core_py_${web_tag}
+
+jenkins服务器从gitlab上拉取代码后，需要将其压缩、计算md5值，再把压缩包和md5值文件
+保存到web下载目录下，以便于应用服务器下载
+1、在jenkins上安装httpd
+[root@node3 ~]# yum install -y httpd
+[root@node3 ~]# systemctl start httpd
+2、创建存储目录
+/var/www/html/deploy: 用于存放版本（当前版本、上一个版本）
+/var/www/html/deploy/packages：用于存放压缩包和md5文件
+[root@node3 ~]# mkdir -p /var/www/html/deploy/packages
+[root@node3 ~]# chown -R jenkins:jenkins /var/www/html/deploy
+3、修改工程，为工程增加额外的步骤
+增加构建步骤 -> 执行shell ->
+deploy_dir=/var/www/html/deploy/packages
+cp -r core_py_${web_tag} $deploy_dir/
+rm -rf $deploy_dir/core_py_${web_tag}/.git
+cd $deploy_dir/
+tar czf core_py_${web_tag}.tar.gz core_py_${web_tag}
+rm -rf core_py_${web_tag}
+md5sum core_py_${web_tag}.tar.gz | awk '{print $1}' > core_py_${web_tag}.tar.gz.md5
+
+
+jenkins发布了很多软件包，应用服务器下载的时候，需要知道哪个包是最新版本
+如果部署最新版本后，有问题，应该能够快速回滚到前一个版本。为了弄清当前版本和上一个
+版本，需要创建两个文件，live_version记录最新版本，last_version记录上一个版本
+做法：
+创建一个自由风格的项目，参数化构建过程，选择字符参数。名称：web_tag
+构建 -> 增加构建步骤 -> 执行shell脚本
+deploy_dir=/var/www/html/deploy
+cd $deploy_dir
+[ -f live_version ] && cat live_version > last_version
+echo $web_tag > live_version
+
+编写自动部署软件的python程序
+1、创建相关目录：
+/var/www/download/：存储下载的tar包
+/var/www/deploy/：存储解压的目录
+/var/www/html/nsd1805：是一个指向某一版本的链接
+[root@room8pc16 day13]# mkdir /var/www/{download,deploy}
+2、检查是否有新版本，如果有则下载
+3、校验软件，检查下载的文件是否完整
+4、部署：解压、创建到解压目录的链接

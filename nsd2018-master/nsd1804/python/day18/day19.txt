@@ -1,0 +1,234 @@
+使用django api学习如何操作数据库
+1、进入django python shell
+[root@room8pc16 mysite]# source /opt/djenv/bin/activate
+(djenv) [root@room8pc16 mysite]# python manage.py shell
+2、导入模型
+>>> from polls.models import Question, Choice
+3、django为每个class都建立了一个管理器，叫objects，可以通过objects的各个方法实现
+对数库表的增删改查
+获取所有的问题：
+>>> Question.objects.all()
+4、导入模块。创建Question实例时，有一个DateTimeField，需要用到时间
+>>> from django.utils import timezone
+5、创建实例，方法一：
+>>> q1 = Question(question_text='你那里气温多少度？', publish_date=timezone.now())
+>>> q1.save()
+6、创建实例，方法二：通过管理器
+>>> q2 = Question.objects.create(question_text='秋天去哪赏红叶？', publish_date=timezone.now())
+7、使用同样的方法，也可以创建Choice实例
+>>> c1 = Choice(choice_text='18', question=q1)
+>>> c1.save()
+8、因为两个表有外键约束关系，所以可以通过一个类实例查看到另一个类对应的信息
+Question可以有很多个Choice，django就为Question创建了一个choice_set
+>>> q1.choice_set.all()   # q1.choice_set相当于是固定了问题的Choise.objects
+同样的，通过选项，也可以获得它是谁的选项
+>>> c1.question
+9、访问实例的属性
+>>> q1.question_text
+>>> q1.publish_date
+>>> q1.id
+10、通过属性值的修改，对数据库实现update操作
+>>> q1.question_text = '你所在城市的气温是多少度？'
+>>> q1.save()
+11、通过问题创建选项
+# 获取一个问题的实例
+>>> q1 = Question.objects.get(question_text='你所在城市的气温是多少度？')
+>>> q1.choice_set.create(choice_text="25")  # 创建choice
+>>> q1.choice_set.all()   # 查看结果
+
+
+查询：
+1、可以通过管理器的all方法得到全部数据，它是由全部实例构成的一个集合
+>>> Question.objects.all()
+2、通过get方法。要求只能返回一个值，否则报错，该值是class的实例
+>>> Question.objects.get(id=1)
+>>> Question.objects.get(question_text='你所在城市的气温是多少度？')
+# 获得2018年所有的问题，报错
+>>> Question.objects.get(publish_date__year=2018)
+3、通过filter获取多个值，构成查询集合
+>>> Question.objects.filter(publish_date__month=10)
+>>> Question.objects.filter(publish_date__month=9)
+4、排序，得到的结果也是查询集合
+>>> Question.objects.order_by('publish_date')
+>>> Question.objects.order_by('-publish_date')
+5、通过问题获取所有选项
+>>> q1.choice_set.all()  # 返回该问题对应的所有的选项集合
+
+
+为模型创建方法
+1、为Question增加方法，判断该问题是不是一周内发布的
+# vim polls/models.py  # Question修改为以下内容
+from django.db import models
+from datetime import timedelta
+from django.utils import timezone
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    publish_date = models.DateTimeField('date published')
+
+    def __str__(self):
+        return self.question_text
+
+    def was_pub_recently(self):
+        return self.publish_date > timezone.now() - timedelta(days=7)
+
+为polls主页编写视图函数
+1、修改视图
+# vim polls/views.py
+from django.shortcuts import render, HttpResponse
+from .models import Question
+
+def index(request):
+    questions = Question.objects.all()  # 获取所有的问题
+    # render用于向用户返回一个网页(模板)，字典是传给网页的数据
+    return render(request, 'polls/index.html', {'questions': questions})
+2、创建模板目录。应用的模板目录默认叫templates
+[root@room8pc16 mysite]# mkdir -p polls/templates/polls/
+3、创建模板文件
+[root@room8pc16 mysite]# vim polls/templates/polls/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>polls主页</title>
+</head>
+<body>
+{{ questions }}
+</body>
+</html>
+4、访问http://127.0.0.1/polls/可以看到所有的问题了
+
+
+页面规划：
+1、http://127.0.0.1/polls/是投票首页，显示有哪些问题。每个问题是个超链接，
+点击后进入该问题的详情页
+2、1号问题的详情页是http://127.0.0.1/polls/1/，n号问题的详情页是http://127.0.0.1/polls/n/
+这个页面包含一个表单。表单有问题，有问题所有的选项，用户可以选择，然后提交。
+提交的数据发给http://127.0.0.1/polls/1/vote/，该URL对应一个函数，用于写数据库
+3、1号问题的投票结果是http://127.0.0.1/polls/1/result/。这个页面中显示问题，
+以及问题每个选项得到了多少票
+
+编写视图函数
+1、为问题详情页设置URL
+# vim polls/urls.py
+urlpatterns = [
+    ... ...
+    url(r'(?P<question_id>\d+)/$', views.detail, name='detail'),
+]
+(?P<question_id>\d+) -> \d+表示至少一个数字 -> (\d+)将数字保存到一个分组
+?P<question_id>表示将(\d+)这个分组的内容保存到一个名为question_id的变量中，
+将该变量作为views.detail函数的参数
+2、为问题详情页编写视图函数
+from django.shortcuts import render, HttpResponse, get_object_or_404
+
+def detail(request, question_id):
+    # question = Question.objects.get(id=question_id)
+    question = get_object_or_404(Question, id=question_id)
+    return render(request, 'polls/detail.html', {'question': question})
+3、为问题详情页编写html模板
+# vim polls/templates/polls/detail.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投票详情页</title>
+</head>
+<body>
+{{ question }}
+</body>
+</html>
+
+编写投票结果
+1、设计URL
+url(r'(?P<question_id>\d+)/result/$', views.result, name='result'),
+2、编写视图函数
+def result(request, question_id):
+    question = get_object_or_404(Question, id=question_id)
+    return render(request, 'polls/result.html', {'question': question})
+3、编写html模板文件result.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投票结果</title>
+</head>
+<body>
+{{ question }}
+</body>
+</html>
+
+完善首页模板
+1、模板中使用变量，表示符号为{{}}，也可以使用循环、判断。循环语法是：
+{% for i in xxx %}
+{% endfor %}
+2、在变量和其他语法的外面字符，是直接显示在网页中的
+3、修改index.html，body元素中改为以下内容
+<ul>
+    {% for q in questions %}
+        <li>
+{#            <a href="http://127.0.0.1/polls/{{ q.id }}">#}
+            <a href="{% url 'detail' question_id=q.id %}">
+                {{ q.question_text }}
+            </a>
+            {{ q.publish_date }}</li>
+    {% endfor %}
+</ul>
+
+
+完善结果页面
+将result.html的body元素，改为以下内容：
+<table border="1px">
+    <tr>
+        <td colspan="2">{{ question.question_text }}</td>
+    </tr>
+    {% for c in question.choice_set.all %}
+        <tr>
+            <td>{{ c.choice_text }}</td>
+            <td>票数：{{ c.votes }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+完善detail.html页面
+1、该页面有投票功能，投票时将数据发给http://127.0.0.1/polls/n/vote/
+准备URL：
+url(r'(?P<question_id>\d+)/vote/$', views.vote, name='vote'),
+2、表单在提交时，CSRF报错（安全选项）。将CSRF功能关闭
+# vim mysite/settings.py
+MIDDLEWARE = [
+    ... ...
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    ... ...
+]
+3、修改detail.html的body元素为以下内容：
+<form action="{% url 'vote' question_id=question.id %}" method="post">
+    <p>{{ question.question_text }}</p>
+    {% for c in question.choice_set.all %}
+        <label>
+            <input type="radio" name="c_id" value="{{ c.id }}">{{ c.choice_text }}
+        </label>
+    {% endfor %}
+    <input type="submit" value="提交">
+</form>
+4、编写vote函数
+def vote(request, question_id):
+    choice_id = request.POST.get('c_id')
+    c = get_object_or_404(Choice, id=choice_id)
+    c.votes += 1
+    c.save()
+    return redirect('result', question_id=question_id)
+
+
+为detail.html和result.html加上返回到主页的链接
+<a href="{% url 'index' %}">返回首页</a>
+
+
+
+
+
+
+
+
+
+
+

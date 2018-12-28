@@ -1,0 +1,20 @@
+/* margin是边距，设置时有4个数字，表示上右下左；只有两个，表示上下和左右 */
+/* 左右设置为auto可以实现居中效果 */
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+.header{
+    height: 100px;
+    background: gray;
+}
+.main{
+    height: 400px;
+    background: azure;
+}
+.footer{
+    text-align: center;
+    height: 50px;
+    background: gray;
+}

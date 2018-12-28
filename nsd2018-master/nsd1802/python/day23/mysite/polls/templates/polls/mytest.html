@@ -1,0 +1,31 @@
+{% extends "polls/base.html" %}
+
+{% block title %}
+mytest mytest
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {{ i }}<br>
+        {{ alist }}<br>
+        {{ adict }}
+        <hr>
+        {{ alist.1 }}
+        <hr>
+        {{ adict.age }}
+        <hr>
+        {% for name in alist %}
+        {{ name | capfirst }}<br>
+        {% endfor %}
+        <hr>
+        {% for key in adict %}
+        {{ key }}<br>
+        {% endfor %}
+        <hr>
+        {% for val in adict.values %}
+        {{ val }}
+        {% endfor %}
+        <hr>
+    </div>
+{% endblock %}
+

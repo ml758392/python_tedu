@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+body{
+    background: silver;
+    font-size: 15pt;
+}
+.c1{
+    color: #5f58ff;
+}
+.f1{
+    font-size: 2em;
+}
+.f2{
+    font-size: 20pt;
+}
+.f3{
+    font-size: 2rem;
+}
+.p1{
+    font-size: 20px;
+}
+.warning{
+    color: orange;
+}
+.important{
+    font-weight: bold;
+}
+p.p6{
+    font-size: 50px;
+}
+#id8{
+    color: darkgreen;
+    font-size: 40px;
+}
+.p1,.p6{
+    background: darkolivegreen;
+}
+p .p10{
+    font-size: 30px;
+    background: darkorange;
+}
+a:link{
+    color: black;
+    font-size: 20px;
+}
+a:hover{
+    color: purple;
+    font-size: 60px;
+}
+a:visited{
+    color: indianred;
+}
+
+
+
+
+
+
+
+
+
+
+

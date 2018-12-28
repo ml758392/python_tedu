@@ -1,0 +1,80 @@
+re贪婪匹配
+将tomorrow中的morr分组
+>>> m = re.search('to(morr)ow', 'I will see you tomorrow')
+>>> m.group()   # 总是匹配全部的模式
+>>> m.group(1)  # 匹配第一个分组，也就是模式中第一个括号中的部分
+>>> m = re.search('to(morr)(ow)', 'I will see you tomorrow')
+>>> m.group(1)
+>>> m.group(2)
+>>> m = re.search('.+', 'My phone number: 13312345678')
+>>> m.group()  # 匹配到了所有字符
+>>> m = re.search('.+\d+', 'My phone number: 13312345678')
+>>> m.group()  # 匹配到了所有字符
+>>> m = re.search('.+(\d+)', 'My phone number: 13312345678')
+>>> m.group(1)  # 只得到了一个8，因为+/*都是贪婪匹配，也就是匹配尽量多的字符
+>>> m = re.search('.+?(\d+)', 'My phone number: 13312345678')
+>>> m.group(1)   # .+后面的问号取消了贪婪匹配，让?后面的模式尽量多的匹配
+http://down.51cto.com  -> 《正则表达式必知必会》
+
+fork
+[root@room8pc16 day09]# vim chdir.sh
+#!/bin/bash
+cd /home
+[root@room8pc16 day09]# bash chdir.sh
+[root@room8pc16 day09]# chmod +x chdir.sh
+[root@room8pc16 day09]# ./chdir.sh
+[root@room8pc16 day09]# source chdir.sh
+前两种方式都没有切换路径，因为采用fork执行方式。fork就是父进程将自身资源拷贝一份，
+生成子进程，代码在子进程中执行，子进程结束之后销毁。
+第三种方式执行脚本将改变路径，因为它是在当前进程中执行脚本
+
+GIL: 全局解释器锁
+GIL不允许多个线程同时占用解释器，也就是不能同时把多个线程的代码发往CPU处理。某个
+时间点，只能有一个线程被解释，也就是某个时刻，只能有一个线程的代码发往CPU。
+计算密集型应用：瓶颈来自于处理器，因为不能同时使用多个核心，所以无法提升性能
+IO密集型应用：瓶颈来自于输入输出，多线程可以提升性能
+
+运维过程中会用到的模块：
+os
+sys
+shutil
+time
+tarfile
+hashlib
+pstuil
+
+pip ->用于在线安装python软件包（模块）
+如果安装过程比较慢，可以使用国内镜像站点
+https://www.cnblogs.com/wqpkita/p/7248525.html
+# cat ~/.pip/pip.conf
+[global]
+index-url = http://pypi.douban.com/simple/
+[install]
+trusted-host=pypi.douban.com
+# pip3 install psutil
+https://www.jianshu.com/p/bc10e79847cb  # pstuil使用的文章
+>>> psutil.cpu_count()  # CPU核心数
+>>> help(psutil.cpu_count)  # 获取帮助
+>>> psutil.cpu_count(logical=False)  # 物理核心数，不包含超线程
+>>> psutil.cpu_times()  # 获取CPU所有的信息
+>>> psutil.cpu_percent()  # CPU使用率的百分比
+>>> psutil.virtual_memory()  # 获取内存信息
+>>> psutil.disk_partitions()
+>>> psutil.disk_usage('/')  # 根分区信息
+>>> root = psutil.disk_usage('/')
+>>> root.total    # 总大小，以字节为单位
+>>> root.percent  # 已用百分比
+>>> psutil.net_io_counters()  # 网络收发数据的统计
+
+
+
+
+
+
+
+
+
+
+
+
+

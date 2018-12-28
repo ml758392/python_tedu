@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}调查详情{% endblock %}
+
+{% block content %}
+    <h1>{{ question.question_text }}</h1>
+    <form action="{% url 'vote' question_id=question.id %}" method="post">
+        {% for c in question.choice_set.all %}
+            <label>
+                <input type="radio" name="choice" value="{{ c.id }}">{{ c.choice_text }}
+            </label><br>
+        {% endfor %}
+        <input type="submit" value="提交">
+    </form>
+    <a href="{% url 'index' %}">返回首页</a>
+{% endblock %}

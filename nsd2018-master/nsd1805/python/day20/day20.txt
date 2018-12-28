@@ -1,0 +1,327 @@
+模拟用户登陆
+1、地址规划
+http://127.0.0.1/market/    # 用于显示登陆界面
+http://127.0.0.1/market/protected/  # 受保护页面，如果用户非登陆，跳转到登陆页
+http://127.0.0.1/market/login/   # 用于验证用户是否合法
+2、创建项目
+(djenv) [root@room8pc16 day20]# django-admin startproject mysite
+3、创建应用
+(djenv) [root@room8pc16 day20]# cd mysite/
+(djenv) [root@room8pc16 mysite]# python manage.py startapp market
+4、修改配置
+# vim mysite/settings.py
+ALLOWED_HOSTS = '*'
+INSTALLED_APPS = [
+    ... ...
+    'market',
+]
+MIDDLEWARE = [
+    ... ...
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    ... ...
+]
+LANGUAGE_CODE = 'zh-hans'
+TIME_ZONE = 'Asia/Shanghai'
+USE_TZ = False
+5、配置URL
+# vim mysite/urls.py
+from django.conf.urls import url, include
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^market/', include('market.urls')),
+]
+
+# vim market/urls.py
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.home, name='home'),
+    url(r'^protected/$', views.protected, name='protected'),
+    url(r'^login/$', views.login, name='login'),
+]
+6、编写用于登陆页的函数
+# vim market/views.py
+def home(request):
+    return render(request, 'home.html')
+# mkdir market/templates/
+# vim market/templates/home.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+</head>
+<body>
+<form action="{% url 'login' %}">
+    <label>用户：</label><input type="text" name="username"><br>
+    <label>密码：</label><input type="password" name="password"><br>
+    <input type="submit" value="登陆">
+</form>
+</body>
+</html>
+7、为其他功能编写基础视图函数
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'home.html')
+
+def login(request):
+    pass
+
+def protected(request):
+
+    return render(request, 'protected.html')
+8、为用户创建模型
+# vim market/models.py
+from django.db import models
+
+class Userdb(models.Model):
+    username = models.CharField(max_length=20)
+    salt = models.CharField(max_length=8)
+    password = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.username
+9、生成数据库
+(djenv) [root@room8pc16 mysite]# python manage.py makemigrations
+(djenv) [root@room8pc16 mysite]# python manage.py migrate
+10、创建管理员
+(djenv) [root@room8pc16 mysite]# python manage.py createsuperuser
+11、编写login函数
+def login(request):
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    user = Userdb.objects.get(username=username)
+    if not user:
+        return redirect('home')
+
+    h = hmac.new(user.salt.encode(), password.encode(), digestmod='MD5')
+    if user.password != h.hexdigest():
+        return redirect('home')
+
+    request.session['LOGINED'] = True
+    return redirect('protected')
+
+11、编写受保护页面的函数
+def protected(request):
+    is_login = request.session.get('LOGINED', False)
+    if not is_login:
+        return redirect('home')
+    return render(request, 'protected.html')
+
+
+12、编写受保护页面模板
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>受保护页面</title>
+</head>
+<body>
+<h1>对于已登陆用户可见</h1>
+</body>
+</html>
+13、登陆时，如果用户名不存在，login函数的get方法将会报错，可以这样修改
+from django.shortcuts import render, redirect, get_object_or_404
+def login(request):
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    # user = Userdb.objects.get(username=username)
+    user = get_object_or_404(Userdb, username=username)
+    if not user:
+        return redirect('home')
+
+    h = hmac.new(user.salt.encode(), password.encode(), digestmod='MD5')
+    if user.password != h.hexdigest():
+        return redirect('home')
+
+    request.session['LOGINED'] = True
+    return redirect('protected')
+
+
+
+密码：
+[root@room8pc16 nsd2018]# grep root /etc/shadow | cut -d: -f2
+$6$C4I7vQVB$.eduxvFXMG00jhPIA60B9PRUzhso8Ksm8WP8xCsq2EaDxy0XfIv5enGyYzockoCp7wLzoVfE67aNj/ohG2TeD0
+密码格式：$6$salt$加密密码
+6 -> sha512
+salt -> 创建密码时生成的随机字符串
+哈希算法包括：md5/sha/sha256/sha512。如果输入的源相同，结果一定相同。
+
+>>> import hashlib
+>>> m = hashlib.md5(b'123456')
+>>> m.hexdigest()
+'e10adc3949ba59abbe56e057f20f883e'
+访问http://www.cmd5.com，把加密值输入后，可以查到明文密码
+
+
+14、编写注册用户的页面
+（1）创建url
+urlpatterns = [
+    url(r'^$', views.home, name='home'),
+    url(r'^protected/$', views.protected, name='protected'),
+    url(r'^login/$', views.login, name='login'),
+    url(r'^register/$', views.register, name='register'),
+]
+（2）编写register函数
+def randpass(number=8):
+    all_chs = ascii_letters + digits
+    salt_list = [choice(all_chs) for i in range(number)]
+    return ''.join(salt_list)
+
+def register(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        salt = randpass()
+        h = hmac.new(salt.encode(), password.encode(), digestmod='MD5')
+        Userdb.objects.create(
+            username=username,
+            salt=salt,
+            password=h.hexdigest()
+        )
+
+    return render(request, 'register.html')
+
+（3）编写register模板
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册用户</title>
+</head>
+<body>
+<form action="" method="post">
+    <label>用户：</label><input type="text" name="username"><br>
+    <label>密码：</label><input type="password" name="password"><br>
+    <input type="submit" value="注册">
+</form>
+</body>
+</html>
+
+15、注册模型到后台管理页面
+# vim market/admin.py
+from django.contrib import admin
+from .models import Userdb
+
+admin.site.register(Userdb)
+访问http://127.0.0.1/admin
+
+
+
+模板变量的应用
+1、创建url
+    url(r'^vartest/$', views.vartest, name='vartest'),
+2、创建函数
+def vartest(request):
+    atuple = ('张三', '李四')
+    alist = ['bob', 'alice']
+    user_dict = {'name': '王五', 'age': 23, 'phone': '15099776644'}
+    context = {
+        'astr': 'hello world!',
+        'num': 100,
+        'atuple': atuple,
+        'alist': alist,
+        'user_dict': user_dict
+    }
+    return render(request, 'vartest.html', context)
+3、创建模板
+
+
+在day18的polls应用中使用bootstrap
+1、将day17目录中的static拷贝到polls应用中
+[root@room8pc16 mysite]# cp -r ../../day17/static/ polls/
+2、编辑index.html模板文件
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polls首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+<h1>Polls首页</h1>
+<ul>
+    {% for q in questions %}
+        <li><a href="{% url 'detail' question_id=q.id %}" target="_blank">{{ q.question_text }}</a> {{ q.pub_date }}</li>
+{#        <li><a href="/polls/{{ q.id }}/" target="_blank">{{ q.question_text }}</a> {{ q.pub_date }}</li>#}
+    {% endfor %}
+</ul>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
+
+配置模板继承
+1、如果有有非常多的web页面，它们的格式完全一样，如果每个页面单独制作，重复工作非常多。为了简化工作，可以使用模板继承
+2、配置基础模板文件base.html
+[root@room8pc16 templates]# cp index.html base.html
+[root@room8pc16 templates]# vim base.html
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
+3、配置其他web页面继承模板
+[root@room8pc16 templates]# vim index.html
+{% extends 'base.html' %}
+
+{% block title %}Polls首页{% endblock %}
+{% block content %}
+    <h1>Polls首页</h1>
+        <ul>
+            {% for q in questions %}
+                <li><a href="{% url 'detail' question_id=q.id %}" target="_blank">{{ q.question_text }}</a> {{ q.pub_date }}</li>
+            {% endfor %}
+        </ul>
+{% endblock %}
+
+[root@room8pc16 templates]# vim detail.html
+{% extends 'base.html' %}
+
+{% block title %}调查详情{% endblock %}
+
+{% block content %}
+    <h1>{{ question.question_text }}</h1>
+    <form action="{% url 'vote' question_id=question.id %}" method="post">
+        {% for c in question.choice_set.all %}
+            <label>
+                <input type="radio" name="choice" value="{{ c.id }}">{{ c.choice_text }}
+            </label><br>
+        {% endfor %}
+        <input type="submit" value="提交">
+    </form>
+    <a href="{% url 'index' %}">返回首页</a>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

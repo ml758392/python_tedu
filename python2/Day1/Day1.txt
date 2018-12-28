@@ -189,8 +189,319 @@
 		>>> adict.update({"city": "BJ"})
 		>>> adict
 		{'name': 'bob', 'age': 18, 'city': 'BJ'}
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	
+				》》》集和《《《
+
+		集合对象是一组无序排列的和哈希的值（集和的每一个元素布不可变）  （数字，字符串，元组）
+		集合是不允许重复的
+	
+	1.创建集合
+		>>> s1 = set("hello")
+		>>> s1
+		{'e', 'h', 'o', 'l'}
+				
+		>>> s2 = set([1,2,3])	##集和是没有valmue的字典
+		>>> s2
+		{1, 2, 3}
+
+		>>> a = set("lllooo")	##集和不允许重复，所以自动出重
+		>>> a
+		{'o', 'l'}
+
+
+		>>> a = set(([a,b]))			##debug 集和不可hash
+		Traceback (most recent call last):
+		  File "<stdin>", line 1, in <module>
+		TypeError: unhashable type: 'set'
+
+	
+	2.遍历集和
+		>>> for item in s1:
+		...     print(item,end='')
+		... 
+		ehol>>> 
+
+
+
+	3.集和类型操作赋
+
+	in  not in
+	len（）
+	for迭代集和成员
+	不能区切片，没有键
+
+	| :联合，取并集
+			
+		>>> a = set("abc")
+		>>> b = set("bcd")
+		>>> a | b			## | 取并集
+		{'a', 'b', 'd', 'c'}
+
+		>>> a & b			## & 取交集
+		{'c', 'b'}
+
+		>>> a - b		##取差补
+		{'a'}
+		>>> b - a		##取差补
+		{'d'}
+
+
+	集和内建方法
+
+>>> a.
+a.add(                          a.intersection(                 a.remove(
+a.clear(                        a.intersection_update(          a.symmetric_difference(
+a.copy(                         a.isdisjoint(                   a.symmetric_difference_update(
+a.difference(                   a.issubset(                     a.union(
+a.difference_update(            a.issuperset(                   a.update(
+a.discard(                      a.pop(                          
+
+
+	add()添加：
+
+		>>> a.add("d")
+		>>> a
+		{'d', 'a', 'c', 'b'}
+
+
+	update():
+		>>> a.update("ef")	##批量添加成员
+		>>> a
+		{'a', 'f', 'b', 'd', 'e', 'c'}
+
+		>>> a.update(["g","h"])
+		>>> a
+		{'h', 'a', 'f', 'b', 'd', 'g', 'e', 'c'}
+
+	remove():
+		移出成员
+		>>> a
+		{1, 2}
+		>>> a.remove(2)
+		>>> a
+		{1}
+
+	
+		>>> a = set("abc")
+		>>> b = set("ab")
+
+	issubset()	: 判断子集
+
+		>>> b.issubset(a)		##issubset() 子集判断
+		True	
+	issuperset()：判断超集
+		>>> a.issuperset(b)	##issuperset()超集判断
+		True
+
+	union()：并集
+		>>> b = set("bcd")
+		>>> a = set("abc")
+		>>> a.union(b)		## 返回一个并集
+		{'a', 'b', 'd', 'c'}	
+
+
+	intersection(): 交集
+		>>> a.intersection(b)
+		{'c', 'b'}
+
+
+	difference():返回一个集和，该集和是a的成员，但不是b的成员
+		
+							##差补
+		>>> a.difference(b)		##相当于 a - b
+		{'a'}
+		>>> b.difference(a)		##相当与 b - a 
+		{'d'}
+
+	
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+			
+					》》》time模块《《《
+import time
+
+time.time():
+	时间戳	显示从1970-1-1 00：00：00 开始到现在过了多少秒
+	
+	>>> time.time()
+	1545979505.8814023
+	
+localtion():
+	localtion([secs]):将一个时间戳转换为当前时区的struct_time.
+	secs参数为提供，则以当前时间为准
+	显示结构化时间信息
+	
+	返回一个元组
+
+	>>> time.localtime()
+	time.struct_time(tm_year=2018, tm_mon=12, tm_mday=28, tm_hour=14, tm_min=46, 		tm_sec=52, tm_wday=4, tm_yday=362, tm_isdst=0)
+	
+
+	tm_wday 表示周 	 0-6	（0表示周一）
+	tm_yday	（一年中的第几天）	1-366
+	tm_isdst	(是否为dst时间)	默认为-1
+
+	>>> time.localtime(0)		##时间戳为0 显示1970-1-1 
+	time.struct_time(tm_year=1970, tm_mon=1, tm_mday=1, tm_hour=8, tm_min=0, tm_sec=0, 		tm_wday=3, tm_yday=1, tm_isdst=0)
+
+
+gmtime():			
+	和localtime()方法类似
+	是将一个时间戳转换为UTC是取（0时区）的struct_time
+	
+	返回一个元组
+	>>> time.gmtime()       
+	time.struct_time(tm_year=2018, tm_mon=12, tm_mday=28, tm_hour=6, tm_min=54, 		tm_sec=26, tm_wday=4, tm_yday=362, tm_isdst=0)	
+	
+
+	
+
+
+mktime():
+	将一个struct_time转化为时间戳
+
+
+sleep():
+	线程推迟指定的时间运行，单位为秒。
+	time.sleep()
+
+
+asctime():
+	把一个表示时间的元组或者struct_time表示为这种形式：‘Sun Jun 20 23:21:05 1993’.
+	如果没有参数，将会将time.localtime()作为参数传入
+
+	>>> time.asctime()      
+	'Fri Dec 28 15:00:36 2018'
+
+	>>> time.asctime(time.localtime(0))
+	'Thu Jan  1 08:00:00 1970'
+
+	
+time.ctime():
+	将一个时间戳转化为time.asctime（）形式
+
+	>>> time.ctime(0)
+	'Thu Jan  1 08:00:00 1970'
+
+	>>> time.ctime()
+	'Fri Dec 28 15:05:26 2018'
+
+
+
+strftime(format[,t]):
+	把一个代表时间的元组或者struct_time (如有time.localtime()和time.gmtime())返回
+	转化为格式化的时间字符串。
+
+	strftime('%Y-%m-%d %H:%M:%S')	#返回指定格式的时间
 		
 
+	>>> time.strftime('%a',time.localtime(0))	##1970-1-1 为星期四
+	'Thu'
+
+	format参数参考 https://yiyibooks.cn/  --》python 352文档 --》库参考 
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+				》》》datetime模块《《《
+
+>>> from datetime import datetime,timedelta
+>>> t = datetime.now()
+>>> t
+datetime.datetime(2018, 12, 28, 15, 30, 15, 998518)
+>>> t.year
+2018
+>>> t.month
+12
+>>> t.day
+28
+>>> t.hour
+15
+>>> t.min
+datetime.datetime(1, 1, 1, 0, 0)
+>>> t.minute
+30
+>>> t.second
+15
+
+>>> datetime.ctime(t)
+'Fri Dec 28 15:40:58 2018'
+
+
+
+
+
+				》》》时间计算《《《
+timedelta() 可以很方便的在日期上做天days，小时hour,分钟，毫秒，微妙的时间计算
+
+
+	>>> from datetime import datetime, timedelta  
+	>>> t = datetime.now()
+
+	>>> t + timedelta(days=100)  		## 100天以后的时间
+	datetime.datetime(2019, 4, 7, 15, 40, 58, 163643)
+	>>> t - timedelta(days=100)		## 100天以前的时间
+	datetime.datetime(2018, 9, 19, 15, 40, 58, 163643)
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^	
+
+					》》》异常处理《《《				
+
+try:
+# 异常处理：把有可能发生异常的语句，放到try里执行，发生异常跳转到异常处理代码
+
+else:
+# 把不发生异常才执行的语句放到else中。
+
+finally:
+# 不管是否发生异常都要执行的语句，放到finally中
+
+
+try:							
+    num = int(input('number:'))
+    result = 100 / num
+except (ValueError, ZeroDivisionError):  # 多个报错要加元括号
+    print("Invalid input")
+except (KeyboardInterrupt, EOFError):
+    print('\nBye-bye')
+else:
+    print(result)
+finally:
+    print("Done")
+
+		
+				》》》触发异常《《《《
+
+	raise语句
+	
+def set_age(name,age):
+    if not 0< age <150:
+        raise ValueError('age out of range')
+    print('%s is %d years old' % (name,age))
+
+	
+	
+	断言 assert语句：
+		断言是依据必须等价与布尔值为真的判定
+		此外，发生异常也意味着表达式为假
+		
+
+def set_age2(name,age):
+    assert 0 < age < 150, 'age out of range'
+    print('%s is %d years old' % (name,age))
+
+
+if __name__ == '__main__':
+    set_age('bob', 23)
+    set_age2('bob', 233)
+
+	
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+					》》》os模块《《《
 
 
 
@@ -203,5 +514,40 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 

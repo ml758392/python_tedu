@@ -1,0 +1,163 @@
+(djenv) [root@room8pc16 day20]# cat ~/.pip/pip.conf
+[global]
+index-url = http://pypi.douban.com/simple/
+[install]
+trusted-host=pypi.douban.com
+
+
+配置虚拟环境
+1、创建虚拟环境
+[root@room8pc16 day20]# mkdir -pv /opt/py3env
+[root@room8pc16 day20]# python3 -m venv /opt/py3env/djenv
+2、激活虚拟环境
+[root@room8pc16 day20]# source /opt/py3env/djenv/bin/activate
+激活之后，运行python默认是py3
+3、激活之后，安装django，就是安装在了虚拟环境下
+(djenv) [root@room8pc16 day20]# pip install django==1.11.6
+(djenv) [root@room8pc16 day20]# pip install pymysql
+
+
+查看当前环境安装的软件包
+# pip freeze
+# pip freeze > pkgs.txt
+下载
+# pip install --download /存储目录 pkgs.txt
+
+安装本地软件包
+# pip install 文件名
+
+DJANGO
+1、创建项目
+(djenv) [root@room8pc16 day20]# django-admin startproject mysite
+(djenv) [root@room8pc16 day20]# cd mysite/
+2、pycharm设置，使用虚拟环境
+file -> settings -> project xxx-> project interpreter -> 添加现有环境
+找到/opt/py3env/djenv/bin/python
+3、为django项目创建数据库
+(djenv) [root@room8pc16 mysite]# mysql -uroot -ptedu.cn
+MariaDB [(none)]> create database dj_tedu default charset utf8;
+4、修改django的设置 settings.py
+ALLOWED_HOSTS = '*'  # 允许所有客户端访问
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dj_tedu',
+        'USER': 'root',
+        'PASSWORD': 'tedu.cn',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
+LANGUAGE_CODE = 'zh-Hans'
+TIME_ZONE = 'Asia/Shanghai'
+5、加载连接mysql的模块，在__init__.py中写入以下内容
+import pymysql
+pymysql.install_as_MySQLdb()
+6、启动服务
+(djenv) [root@room8pc16 mysite]# python manage.py runserver 0:8000
+7、生成数据库
+(djenv) [root@room8pc16 mysite]# python manage.py migrate
+8、创建后台管理员
+(djenv) [root@room8pc16 mysite]# python manage.py createsuperuser
+9、启动服务后，访问http://127.0.0.1:8000/admin
+
+django基础测试
+1、新建视图
+# vim mysite/views.py
+from django.shortcuts import HttpResponse
+
+def index(request):
+    return HttpResponse('<h1>Hello World!</h1>')
+2、修改urls.py，访问主页时，使用views模块的index函数响应
+from django.conf.urls import url
+from django.contrib import admin
+from . import views
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^$', views.index, name='index'),  # name='index'是首页URL的名字
+]
+
+管理“投票”应用
+1、创建应用
+(djenv) [root@room8pc16 mysite]# python manage.py startapp polls
+2、在项目中注册应用，修改settings.py
+INSTALLED_APPS = [
+    ... ...
+    'polls',
+]
+3、规划url，polls应用下有很多个页面，但是每个页面访问时，都以
+http://127.0.0.1/polls开头，如http://127.0.0.1/polls/1
+polls应用有自己的URLConf，当访问到http://127.0.0.1/polls开头的网址
+都交给polls应用的urls.py
+# vim mysite/urls.py
+from django.conf.urls import url, include
+urlpatterns = [
+    ... ...
+    url(r'^polls/', include('polls.urls')),
+]
+4、创建应用的url映射文件
+# vim polls/urls.py
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.polls_index, name='polls_index'),
+]
+5、创建视图
+# vim polls/views.py
+from django.shortcuts import render, HttpResponse
+
+def polls_index(request):
+    return HttpResponse('<h1>Polls index</h1>')
+
+6、创建模板
+（1）创建模板目录
+[root@room8pc16 mysite]# mkdir -p polls/templates/polls
+（2）创建模板文件
+# vim polls/templates/polls/polls_index.html
+（3）更改视图views.py
+def polls_index(request):
+    return render(request, 'polls/polls_index.html')
+
+7、添加boostrap样式
+将前面解压的bootstrap拷贝过来
+[root@room8pc16 mysite]# cp -r ../../day19/static/ polls/
+在模板文件polls_index.html中添加引用
+文件顶部增加一行：
+{% load staticfiles %}
+head标签中加入
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+
+建立模型Model
+1、创建ORM映射类
+# vim polls/models.py
+from django.db import models
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    publish_date = models.DateTimeField()
+
+    def __str__(self):
+        return self.question_text
+
+class Choice(models.Model):
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)
+    question = models.ForeignKey(Question, models.CASCADE)
+2、生成数据库中的表
+(djenv) [root@room8pc16 mysite]# python manage.py makemigrations
+(djenv) [root@room8pc16 mysite]# python manage.py migrate
+3、在数据库中show tables查看表名
+4、查看表中字段
+（1）django会在表中自动加入一列id，作为主键
+（2）表中的每个字段与类变量相同
+（3）外键是类变量名加上_id
+5、把模型注册到后台管理界面，修改polls/admin.py如下：
+from django.contrib import admin
+from .models import Question, Choice
+
+admin.site.register(Question)
+admin.site.register(Choice)
+6、访问http://127.0.0.1:8000/admin，在后台可以添加数据

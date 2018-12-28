@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}执行任务{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#host" data-toggle="tab">主机</a></li>
+    <li><a href="#hostgroup" data-toggle="tab">主机组</a></li>
+</ul>
+
+<form action="" method="post" style="margin-top: 10px;">
+    {% csrf_token %}
+    <div class="tab-content">
+        <div class="tab-pane active fade in" id="host">
+            <select name="server" class="form-control">
+                <option value="" selected>无</option>
+                {% for host in hosts %}
+                    <option value="{{ host.ipaddr }}">{{ host.hostname }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="tab-pane fade" id="hostgroup">
+            <select name="hostgroup" class="form-control">
+                <option value="" selected>无</option>
+                {% for group in groups %}
+                    <option value="{{ group.groupname }}">{{ group.groupname }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped table-hover" style="margin-top: 10px">
+        <tr class="info">
+            <th>模块</th>
+            <th>参数</th>
+        </tr>
+        {% for mod in mods %}
+            <tr>
+                <td>
+                    <label>
+                        <input name="module" value="{{ mod.module_name }}" type="radio"> {{ mod.module_name }}
+                    </label>
+                </td>
+                <td>
+                    <ul class="list-unstyled">
+                        {% for arg in mod.modulearg_set.all %}
+                            <li>
+                                <label>
+                                    <input name="param" value="{{ arg.arg_text }}" type="radio"> {{ arg.arg_text }}
+                                </label>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <input class="btn btn-primary center-block" type="submit" value="执 行">
+</form>
+
+{% endblock %}

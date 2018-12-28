@@ -1,0 +1,159 @@
+一、准备工作
+1、安装django
+# pip2 install django==1.11.6
+2、如果没有python2的pip：
+(1) http://pypi.python.org上下载pip
+(2) 解压下载的pip.tar.gz
+(3) 进入解压后的目录，执行python setup.py install
+
+二、django+ansible实现的功能
+1、动态主机清单
+(1)不再使用静态的主机清单文件，将主机和组写到数据库中
+(2)编写动态主机清单脚本，执行脚本，输入主机和组的信息
+2、规划URL(http://127.0.0.1/)
+(1) http://127.0.0.1/  -> 主页、里面有到各个URL的超链接
+(2) /webansi/  -> 交给webansi应用处理
+(3) /webansi/addhosts/   -> 用于创建主机
+(4) /webansi/addmodules/  -> 用于添加模块
+(5) /webansi/tasks/  -> 用于显示任务
+(6) /webansi/  -> 显示所有服务器的信息
+
+三、准备测试虚拟机
+node1.tedu.cn 192.168.4.1  dbservers
+node2.tedu.cn 192.168.4.2  webservers
+node3.tedu.cn 192.168.4.3  webservers
+
+四、创建项目
+1、初始化
+# django-admin startproject myansible
+# cd myansible/
+# python manage.py startapp webansi
+2、修改settings.py
+ALLOWED_HOSTS = '*'
+INSTALLED_APPS = [
+    ... ...
+    'webansi',
+]
+MIDDLEWARE = [
+    ... ...
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    ... ...
+]
+LANGUAGE_CODE = 'zh-Hans'
+TIME_ZONE = 'Asia/Shanghai'
+
+四、配置URL
+(1)设置入口分配
+# vim myansible/urls.py
+from django.conf.urls import url, include
+from django.contrib import admin
+import webansi.views
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^$', webansi.views.mainpage, name='mainpage'),
+    url(r'^webansi/', include('webansi.urls')),
+]
+(2) 编写应用的url
+# vim webansi/urls.py
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+    url(r'^addhosts/$', views.addhosts, name='addhosts'),
+    url(r'^addmodules/$', views.addmodules, name='addmodules'),
+    url(r'^tasks/$', views.tasks, name='tasks'),
+]
+六、创建视图函数
+简单的把几个视图函数定义，主体为HttpResponse('xxxxx')
+完成后启动服务，通过浏览器验证各个URL
+
+七、创建模型
+# vim webansi/models.py
+参见models.py文件
+[root@room8pc16 myansible]# python manage.py makemigrations
+[root@room8pc16 myansible]# python manage.py migrate
+
+八、创建管理员用户
+[root@room8pc16 myansible]# python manage.py createsuperuser
+
+九、注册模型到后台管理
+# vim webansi/admin.py
+from django.contrib import admin
+from .models import Group, Host, Module, Args
+
+for item in [Group, Host, Module, Args]:
+    admin.site.register(item)
+
+十、ansible的动态主机清单
+1、在与manage.py同级的目录下创建工作目录
+[root@room8pc16 myansible]# mkdir ansicfg
+[root@room8pc16 myansible]# cd ansicfg
+[root@room8pc16 ansicfg]# vim ansible.cfg
+[defaults]
+remote_user = root
+inventory = dhosts.py
+2、编写动态主机清单文件，这个文件要求有x权限，输出有固定格式，是json格式
+例如：有三个主机组webservers/lvs/dbservers，每个组中有几台主机
+动态主机清单输出时是个字典，字典的key是主机组名，它的值又是个字典。内层字典
+key是固定的hosts，值是列表，列表中的元素是成员主机的IP地址
+    {
+        "webservers": {
+            "hosts": ["192.168.4.2", "192.168.4.3", "192.168.4.6"]
+        },
+        "lvs": {
+            "hosts": ["192.168.4.4", "192.168.4.5"]
+        },
+        "dbservers": {
+            "hosts": ["192.168.4.1"]
+        },
+    }
+# pip2 install sqlalchemy
+# vim ansicfg/dhosts.py
+详见dhosts.py文件
+注意：因为数据库已经存在了，所以要写ORM，先要分析数据库表和字段
+# sqlite3 db.sqlite3
+sqlite> .tables
+sqlite> .schema webansi_group
+3、执行测试
+[root@room8pc16 ansicfg]# chmod +x dhosts.py
+[root@room8pc16 ansicfg]# ./dhosts.py
+[root@room8pc16 ansicfg]# ansible webservers -m ping
+
+十一、创建模板
+1、创建模板目录
+# mkdir -p webansi/templates/webansi
+2、把bootstrap复制过来，叫static
+# cp -r ../../day23/mysite/polls/static/ webansi/
+3、创建基础模板
+# touch webansi/templates/webansi/base.html
+4、创建图片文件的目录
+# mkdir webansi/static/imgs
+制作一个banner.jgp图片存在这个目录下
+
+十二、创建视图及模板
+1、http://127.0.0.1/出现各路径的超链接
+2、http://127.0.0.1/webansi/显示cmdb
+# ansible all -i 主机清单文件 -m setup --tree 信息保存的目录
+# ansible-cmdb 信息保存存的目录 > html文件
+并将上面两条命令写到计划任务
+例如：
+[root@room8pc16 myansible]# ansible all -i /var/ftp/nsd2018/nsd1803/python/ansible_project/myansible/ansicfg/dhosts.py -m setup --tree /var/ftp/nsd2018/nsd1803/python/ansible_project/myansible/webansi/templates/all
+[root@room8pc16 myansible]# ansible-cmdb /var/ftp/nsd2018/nsd1803/python/ansible_project/myansible/webansi/templates/all > /var/ftp/nsd2018/nsd1803/python/ansible_project/myansible/webansi/templates/webansi/index.html
+生成index.html之后，修改视图函数index，它返回index.html
+3、创建主机
+（1）addhosts.html页面中既有添加主机的表单，又有现有主机的列表
+（2）addhosts.html表单提交数据的网址是自己。addhosts函数判断，如果method
+是post则把主机信息写到数据库
+4、添加模块
+方法与第3步《创建主机》思路完全一样
+5、执行任务
+（1）执行任务是两个表单，一个表单用于给主机执行任务，另一个用于给主机组执行任务
+（2）执行任务的函数，先从表单获取数据，获取的数据如果主机不是None，意味着
+用户提交的是主机表单，那么把主机相关的模块和参数取出来。如果主机是None，意味
+着用户提交的是主机组表单，则把组相关的模块和参数取出来。
+（3）执行任务采用的方法是调用ansible临时命令。把day15的ansible_adhoc.py
+内容复制过来，放到函数里。函数接收的参数是：主机清单文件、要执行任务的主机或组、
+模块以及传递给模块的参数。
+

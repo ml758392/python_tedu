@@ -1,0 +1,100 @@
+# gcc -o hello hello.c
+# ./hello
+
+tomcat部署java程序
+1、将java程序通过ant/maven生成war包
+2、将war包拷贝到tomcat的文档目录下
+3、重启tomcat，将自动解开war包，实现代码上线
+
+CI/CD环境
+1、物理主机作为应用服务器
+2、192.168.4.1作为gitlab服务器
+3、192.168.4.3作为jenkins服务器，它的eth1设置为使用NAT连接，以便可以访问外网
+    rh7_node3它的eth1与物理主机的virbr0相连
+    如果虚拟机上也有virbr0，应该把它删掉
+    [root@node3 ~]# ifconfig virbr0 down
+    [root@node3 ~]# brctl delbr virbr0
+    [root@node3 ~]# nmtui   # 添加eth1网卡，地址默认为自动获得即可
+    [root@node3 ~]# ifup eth1
+
+安装jenkins
+需要jre环境
+[root@node3 ~]# rpm -ihv jenkins-2.121-1.1.noarch.rpm
+[root@node3 ~]# systemctl start jenkins
+访问http://192.168.4.3:8080进行后续初始化工作
+
+模拟程序员开发软件项目
+1、创建软件项目
+[root@room8pc16 nsd1805]# git init /tmp/webpro
+[root@room8pc16 nsd1805]# echo '<h1>Hello World!</h1>' >/tmp/webpro/index.html
+[root@room8pc16 nsd1805]# cd /tmp/webpro
+[root@room8pc16 webpro]# git add .
+[root@room8pc16 webpro]# git commit -m "web project init"
+2、开发达成阶段目标后，将软件标记为1.0版本
+[root@room8pc16 webpro]# git tag 1.0  # 为当前程序打上1.0标签
+3、继续开发
+[root@room8pc16 webpro]# echo 'new line.' >> index.html
+[root@room8pc16 webpro]# git add .
+[root@room8pc16 webpro]# git commit -m "web 2.0"
+4、开发达成另一个阶段目标后，将软件标记为2.0版本
+[root@room8pc16 webpro]# git tag 2.0
+[root@room8pc16 webpro]# git tag
+
+在gitlab上创建项目myproject，程序员用户成为该项目的“主程序员”
+上传代码到服务器
+[root@room8pc16 webpro]# git remote rename origin old-origin
+[root@room8pc16 webpro]# git remote add origin http://192.168.4.1/devops/myproject.git
+[root@room8pc16 webpro]# git push -u origin --all
+[root@room8pc16 webpro]# git push -u origin --tags
+
+jenkins服务器构建工程
+1、因为使用了gitlab，并且使用了tag，所以需要为jenkins服务器准备git插件
+[root@node3 ~]# yum install -y git
+jenkins首页->系统管理->管理插件->可选插件->Git Parameter勾选后点“直接安装”
+Git Parameter插件可以使得jenkins能够解析到gitlab的tag标记和branch分支
+2、创建一个自由风格的项目
+jenkins将gitlab上的代码下载到/var/lib/jenkins/workspace/目录下
+
+配置分发服务器
+1、通过http将gitlab上下载的软件共享给应用服务器（WEB服务器）
+[root@node3 ~]# yum install -y httpd
+[root@node3 ~]# systemctl start httpd
+[root@node3 ~]# systemctl enable httpd
+[root@node3 ~]# mkdir -pv /var/www/html/deploy/packages
+[root@node3 ~]# chown -R jenkins.jenkins /var/www/html/deploy
+2、将软件打包，以便于共享
+3、将打包的软件计算出MD5值，以便于应用服务器下载后，可以校验文件
+修改jenkins的项目，在“构建”部分“增加构建步骤”，使用shell脚本
+deploy_dir=/var/www/html/deploy/packages
+cp -r mp-${mptag} $deploy_dir
+rm -rf $deploy_dir/mp-${mptag}/.git
+cd $deploy_dir
+tar czf mp-${mptag}.tar.gz mp-${mptag}
+rm -rf mp-${mptag}
+md5sum mp-${mptag}.tar.gz | awk '{print $1}' > mp-${mptag}.tar.gz.md5
+4、分发服务器上有很多版本，分发服务器应该记录当前软件版本以及上一个软件版本
+/var/www/html/deploy下创建两个文件，一个名为live_version记录当前版本，另一个
+名为last_version，记录前一个版本。构建时，将live_version中的版本号写入到
+last_version中，live_version中的内容是管理员手工填写的。shell脚本中内容如下：
+deploy_dir=/var/www/html/deploy
+cd $deploy_dir
+[ -f live_version ] && cat live_version > last_version
+echo ${mptag} > live_version
+
+应用服务器部署软件
+1、检查服务器的最新版本和自己的版本，如果有更新则下载
+2、下载完成后检MD5值，如果MD5值相同，则解压
+3、下载的每个项目都保存在/var/www/packages/目录下，
+如/var/www/packages/{mp-1.0,mp-2.0}
+4、发布的软件，是/var/www/packages/目录中某个版本的快捷方式
+/var/www/html/mysite -> /var/www/packages/mp-1.0
+
+
+
+
+
+
+
+
+
+

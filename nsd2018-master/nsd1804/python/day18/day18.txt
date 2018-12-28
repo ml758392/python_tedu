@@ -1,0 +1,198 @@
+django虚拟环境：是一组隔离资源，相当于docker容器
+
+1、创建虚拟环境
+[root@room8pc16 day17]# python3 -m venv /opt/djenv
+2、激活虚拟环境
+[root@room8pc16 day17]# source /opt/djenv/bin/activate
+3、在pycharm中修改项目解释器
+File -> Settings -> Project Interpreter -> 点击齿轮，add local ->
+existing environment -> 找到/opt/djenv/bin/python
+4、在虚拟环境中安装django
+(djenv) [root@room8pc16 day17]# pip install django==1.11.6
+
+管理django项目
+1、创建项目
+(djenv) [root@room8pc16 day18]# django-admin startproject mysite
+(djenv) [root@room8pc16 day18]# cd mysite/
+2、在pycharm中配置django
+file->settings->languages&frame works->Django
+3、django项目最终应该放到apahce/nginx服务器上，对外提供服务。在开发过程中，
+为了方便，django提供了一个内建的服务器。
+4、启动内建服务器，0:80是0.0.0.0:80的简写
+(djenv) [root@room8pc16 mysite]# python manage.py runserver 0:80
+访问http://127.0.0.1/可以看到缺省页面
+5、在mariadb中为django项目创建数据库
+[root@room8pc16 mysite]# mysql -uroot -ptedu.cn
+MariaDB [(none)]> CREATE DATABASE 1804dj DEFAULT CHARSET utf8;
+6、修改数据库设置
+# vim mysite/settings.py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '1804dj',
+        'USER': 'root',
+        'PASSWORD': 'tedu.cn',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    }
+}
+7、配置pymysql模块
+(djenv) [root@room8pc16 mysite]# pip install pymysql
+# vim mysite/__init__.py
+import pymysql
+pymysql.install_as_MySQLdb()
+8、其他常用配置
+# vim mysite/settings.py
+ALLOWED_HOSTS = '*'
+LANGUAGE_CODE = 'zh-hans'
+TIME_ZONE = 'Asia/Shanghai'
+
+9、访问后台管理界面 http://127.0.0.1/admin
+10、生成数据库
+(djenv) [root@room8pc16 mysite]# python manage.py migrate
+11、创建管理员账号
+(djenv) [root@room8pc16 mysite]# python manage.py createsuperuser
+
+
+管理应用APP
+1、创建应用
+(djenv) [root@room8pc16 mysite]# python manage.py startapp polls
+2、将应用添加到项目中
+# vim mysite/settings.py
+INSTALLED_APPS = [
+    ... ...
+    'polls',
+]
+3、配置路由URLConf，当访问http://127.0.0.1/polls/开头的网址，都交由polls应用。
+当用户访问一个网址时，都是找到mysite/urls.py查找使用哪个视图函数去处理。可以在该
+文件中授权将以http://127.0.0.1/polls/开头的网址，交给polls/urls.py处理
+# vim mysite/urls.py
+from django.conf.urls import url, include
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^polls/', include('polls.urls')),
+]
+# vim polls/urls.py
+from django.conf.urls import url
+
+urlpatterns = [
+
+]
+4、创建polls主页URL声明
+# vim polls/urls.py
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r'^$', views.index, name='index')  # http://127.0.0.1/polls/
+]
+5、创建主面的视图文件
+# vim polls/views.py
+from django.shortcuts import render, HttpResponse
+def index(request):
+    return HttpResponse('<h1>Polls OK</h1>')
+6、访问http://127.0.0.1/，404页面不存在
+访问http://127.0.0.1/polls/返回正确结果
+
+模型
+1、模型基础。投票的内容示例出下
+你期望的工资是多少？  发布时间2018-10-16   -> Question
+5000以下       0     每个选项所得票数     -> Choice
+6000～7000     1
+7000～8000     100
+8000～10000    20
+10000以上      5
+2、创建模型
+# vim polls/models.py
+from django.db import models
+
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    publish_date = models.DateTimeField('date published')
+
+class Choice(models.Model):
+    choice_text = models.CharField(max_length=200)
+    votes = models.IntegerField(default=0)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+3、生成数据库中的表
+(djenv) [root@room8pc16 mysite]# python manage.py makemigrations
+(djenv) [root@room8pc16 mysite]# python manage.py migrate
+4、分析表
+数据库中将会为Question和Choice创建polls_question和polls_choice
+polls_question表中有三个字段。我们没有手工指定主键，django自动创建一个名为
+id的字段，将它设置为主键，主键可以自动增长
+polls_choice表中有四个字段。主键与polls_question一样。class中question是
+外键，那么polls_choice表中就会出现一个question_id的外键。如果将class中的
+question改名为q，那么表中的question_id就会变为q_id
+5、将模型注册到管理后台
+# vim polls/admin.py
+from django.contrib import admin
+from .models import Question, Choice
+
+admin.site.register(Question)
+admin.site.register(Choice)
+6、访问管理后台，可以看到两个模型
+7、在后台添加问题后，每个问题都显示为Question object，解决方法如下：
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    publish_date = models.DateTimeField('date published')
+
+    def __str__(self):
+        return self.question_text
+
+django推荐书籍：http://down.51cto.com/search.php?q=django+by+example
+
+自定义管理后台
+1、后面增加显示的字段
+# vim polls/admin.py
+from django.contrib import admin
+from .models import Question, Choice
+
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ('question_text', 'publish_date')
+
+class ChoiceAdmin(admin.ModelAdmin):
+    list_display = ('question', 'choice_text', 'votes')
+
+# admin.site.register(Question)
+# admin.site.register(Choice)
+admin.site.register(Question, QuestionAdmin)
+admin.site.register(Choice, ChoiceAdmin)
+2、为问题增加时间过滤器
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ('question_text', 'publish_date')
+    list_filter = ('publish_date',)   # 增加此项
+3、为Question增加时间轴，点击时间，可以看到某个时间发布的问题
+# vim mysite/settings.py
+USE_TZ = False
+# vim /etc/my.cnf
+[mysqld]
+default-time_zone = '+08:00'
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ('question_text', 'publish_date')
+    list_filter = ('publish_date',)
+    date_hierarchy = 'publish_date'
+4、增加搜索，可以通过问题中的关键字时行搜索
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ('question_text', 'publish_date')
+    list_filter = ('publish_date',)
+    date_hierarchy = 'publish_date'
+    search_fields = ('question_text',)
+5、添加choice时，显示Question的详情(注意，必须是外键关系)
+class ChoiceAdmin(admin.ModelAdmin):
+    list_display = ('question', 'choice_text', 'votes')
+    raw_id_fields = ('question',)
+6、为question增加默认排序，第一标准是时间，第二标准是问题
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ('question_text', 'publish_date')
+    list_filter = ('publish_date',)
+    date_hierarchy = 'publish_date'
+    search_fields = ('question_text',)
+    ordering = ('-publish_date', 'question_text')
+# -publish_date 表示降序排列
+
+
+
+
+

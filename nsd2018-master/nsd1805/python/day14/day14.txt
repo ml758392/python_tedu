@@ -1,0 +1,187 @@
+ansible
+1、生产环境建议yum install ansible安装，因为ansible的稳定版基于python2
+2、安装基于python3的ansible
+[root@room8pc16 day13]# pip3 install ansible
+3、准备三台虚拟机，用于接受ansible的管理
+配置IP地址、主机名
+
+配置ansible工作环境
+1、创建工作目录
+[root@room8pc16 day14]# mkdir kvm_ansi
+[root@room8pc16 day14]# cd kvm_ansi
+2、编写配置文件，指定主机清单文件和连接远程服务器使用的用户
+[root@room8pc16 kvm_ansi]# vim ansible.cfg
+[defaults]
+inventory = hosts
+remote_user = root
+3、配置主机清单
+[root@room8pc16 kvm_ansi]# vim hosts
+[dbservers]
+node4.tedu.cn
+
+[webservers]
+node5.tedu.cn
+node6.tedu.cn
+4、设置名称解析
+[root@room8pc16 kvm_ansi]# for i in {1..254}
+> do
+> echo -e "192.168.4.$i\tnode$i.tedu.cn\tnode$i" >> /etc/hosts
+> done
+5、将远程主机的公钥收集、追加到~/.ssh/known_hosts
+[root@room8pc16 kvm_ansi]# ssh-keyscan node{4..6} node{4..6}.tedu.cn 192.168.4.{4..6} >> ~/.ssh/known_hosts
+6、安装sshpass
+# yum install -y sshpass  # 使用网络yum源
+
+ansible应用一：ad-hoc临时命令
+1、执行ad-hoc临时命令，使用-m加载模块，通过-a向模块传递命令，-k使用密码
+[root@room8pc16 kvm_ansi]# ansible all -m ping -k
+2、没有传递模块，默认采用command模块
+[root@room8pc16 kvm_ansi]# ansible all -a 'id root' -k
+[root@room8pc16 kvm_ansi]# ansible dbservers -m service -a "name=httpd state=started" -k
+
+ansible应用二：playbook
+1、为了更好的书写yaml文件，可以对vim进行设置
+[root@room8pc16 kvm_ansi]# vim ~/.vimrc
+set ai    # 自动缩进
+set ts=4  # 按tab是4个空格
+set et    # 将tab键转换成空格
+autocmd FileType yaml setlocal sw=2 ts=2 et ai  # 如果是yml扩展名的文件，tab键缩进2个空格
+
+2、编写playbook，向所有的主机传送密钥文件，实现免密登陆
+[root@room8pc16 ~]# ansible-doc authorized_key
+[root@room8pc16 kvm_ansi]# vim sshkey.yml
+---
+- name: copy ssh key
+  hosts: all
+  tasks:
+    - name: ssh to remote hosts without pass
+      authorized_key:
+        user: root
+        state: present
+        key: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
+检查语法：
+[root@room8pc16 kvm_ansi]# ansible-playbook --syntax-check sshkey.yml
+执行：
+[root@room8pc16 kvm_ansi]# ansible-playbook sshkey.yml -k
+测试执行命令，不需要密码
+[root@room8pc16 kvm_ansi]# ansible all -m ping
+3、上传yum配置文件
+(1)准备上传的文件
+[root@room8pc16 kvm_ansi]# mkdir files
+[root@room8pc16 kvm_ansi]# vim files/server.repo
+[server]
+name=server
+baseurl=ftp://192.168.4.254/rhel7.4
+gpgcheck=0
+(2)playbook
+[root@room8pc16 ~]# ansible-doc copy
+[root@room8pc16 kvm_ansi]# vim yumrepo.yml
+---
+- name: upload yum repo
+  hosts: all
+  tasks:
+    - name: upload to all hosts
+      copy:
+        src: files/server.repo
+        dest: /etc/yum.repos.d/server.repo
+        owner: root
+        group: root
+        mode: 0644
+[root@room8pc16 kvm_ansi]# ansible-playbook yumrepo.yml
+4、管理服务
+[root@room8pc16 kvm_ansi]# vim service.yml
+---
+- name: configure web service
+  hosts: webservers
+  tasks:
+    - name: install web pkgs
+      yum:
+        name: "{{item}}"
+        state: latest
+      with_items:
+        - httpd
+        - php
+        - php-mysql
+    - name: control web service
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+- name: configure db service
+  hosts: dbservers
+  tasks:
+    - name: install db pkgs
+      yum:
+        name: mariadb-server
+        state: present
+    - name: control db service
+      service:
+        name: mariadb
+        state: started
+        enabled: true
+[root@room8pc16 kvm_ansi]# ansible-playbook service.yml
+
+
+
+http://vault.centos.org/7.4.1708/isos/x86_64/
+http://vault.centos.org/7.4.1708/os/x86_64/Packages/
+
+https://docs.ansible.com/  -> ansible documentation
+搜索python api
+
+http://down.51cto.com/
+荷尔曼标准库
+
+
+命名元组：基于元组，重建数据类型，为元组的下标起名
+>>> from collections import namedtuple
+>>> Point = namedtuple('Point', ['x', 'y', 'z'])
+>>> a = Point(10, 20, 30)
+>>> a[0]
+10
+>>> a[1:]
+(20, 30)
+>>> a.x
+10
+>>> a.y
+20
+>>> a.z
+30
+
+
+编写模块
+1、创建自定义的模块目录
+[root@room8pc16 day14]# mkdir mymodules
+[root@room8pc16 mymodules]# export ANSIBLE_LIBRARY=/var/ftp/nsd2018/nsd1805/python/day14/mymodules
+2、编写模块文件
+[root@room8pc16 mymodules]# vim rcopy.py
+#!/usr/bin/env python3
+
+import shutil
+from ansible.module_utils.basic import AnsibleModule
+
+def main():
+    module = AnsibleModule(
+        argument_spec=dict(
+            yuan=dict(requried=True, type='str'),
+            mudi=dict(required=True, type='str')
+        )
+    )
+    shutil.copy(module.params['yuan'], module.params['mudi'])
+    module.exit_json(changed=True)
+
+if __name__ == '__main__':
+    main()
+3、测试
+[root@room8pc16 kvm_ansi]# ansible webservers -m rcopy -a "yuan=/etc/hosts mudi=/tmp/zhuji"
+
+
+
+ansible-cmdb
+[root@room8pc16 kvm_ansi]# pip3 install ansible-cmdb
+[root@room8pc16 kvm_ansi]# mkdir /tmp/myservers
+[root@room8pc16 kvm_ansi]# ansible all -m setup --tree /tmp/myservers/out/
+[root@room8pc16 kvm_ansi]# ansible-cmdb /tmp/myservers/out/ > /tmp/myservers/hosts.html
+[root@room8pc16 kvm_ansi]# firefox /tmp/myservers/hosts.html &
+

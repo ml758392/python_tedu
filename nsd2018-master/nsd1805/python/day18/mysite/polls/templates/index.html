@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Polls首页{% endblock %}
+{% block content %}
+    <h1>Polls首页</h1>
+        <ul>
+            {% for q in questions %}
+                <li><a href="{% url 'detail' question_id=q.id %}" target="_blank">{{ q.question_text }}</a> {{ q.pub_date }}</li>
+            {% endfor %}
+        </ul>
+{% endblock %}

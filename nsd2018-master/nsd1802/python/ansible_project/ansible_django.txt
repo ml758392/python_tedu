@@ -1,0 +1,139 @@
+一、准备工作
+1、安装django
+# pip2 install django==1.11.6
+2、如果没有python2的pip：
+(1) http://pypi.python.org上下载pip
+(2) 解压下载的pip.tar.gz
+(3) 进入解压后的目录，执行python setup.py install
+
+二、django+ansible实现的功能
+1、动态主机清单
+(1)不再使用静态的主机清单文件，将主机和组写到数据库中
+(2)编写动态主机清单脚本，执行脚本，输入主机和组的信息
+2、规划URL(http://127.0.0.1/)
+(1) http://127.0.0.1/  -> 主页、里面有到各个URL的超链接
+(2) /webansi/  -> 交给webansi应用处理
+(3) /webansi/addhosts/   -> 用于创建主机
+(4) /webansi/addmodules/  -> 用于添加模块
+(5) /webansi/tasks/  -> 用于显示任务
+(6) /webansi/  -> 显示所有服务器的信息
+
+
+三、创建项目
+1、初始化
+# django-admin startproject myansible
+# cd myansible/
+# python manage.py startapp webansi
+2、修改settings.py
+ALLOWED_HOSTS = '*'
+INSTALLED_APPS = [
+    ... ...
+    'webansi',
+]
+MIDDLEWARE = [
+    ... ...
+    # 'django.middleware.csrf.CsrfViewMiddleware',
+    ... ...
+]
+LANGUAGE_CODE = 'zh-Hans'
+TIME_ZONE = 'Asia/Shanghai'
+
+四、配置URL
+(1)设置入口分配
+# vim myansible/urls.py
+from django.conf.urls import url, include
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^$', webansi.views.mainpage, name='mainpage'),
+    url(r'^webansi/', include('webansi.urls')),
+]
+(2) 编写应用的url
+# vim webansi/urls.py
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+    url(r'^addhosts/$', views.addhosts, name='addhosts'),
+    url(r'^addmodules/$', views.addmodules, name='addmodules'),
+    url(r'^tasks/$', views.tasks, name='tasks'),
+]
+
+五、创建视图函数
+简单的把几个视图函数定义，主体为HttpResponse('xxxxx')
+
+六、创建模型
+# vim webansi/models.py
+参见models.py文件
+
+七、生成数据库
+[root@room8pc16 myansible]# python manage.py makemigrations
+[root@room8pc16 myansible]# python manage.py migrate
+
+八、创建管理员用户
+[root@room8pc16 myansible]# python manage.py createsuperuser
+
+九、注册模型到后台管理
+# vim webansi/admin.py
+from django.contrib import admin
+from .models import Group, Host, Module, Args
+
+admin.site.register(Group)
+admin.site.register(Host)
+admin.site.register(Module)
+admin.site.register(Args)
+
+
+
+十、ansible的动态主机清单
+1、在与manage.py同级的目录下创建工作目录
+[root@room8pc16 myansible]# mkdir ansicfg
+[root@room8pc16 myansible]# cd ansicfg
+[root@room8pc16 ansicfg]# vim ansible.cfg
+[defaults]
+remote_user = root
+inventory = dhosts.py
+2、编写动态主机清单文件，这个文件要求有x权限，输出有固定格式，是json格式
+# pip2 install sqlalchemy
+# vim ansicfg/dhosts.py
+详见dhosts.py文件
+注意：因为数据库已经存在了，所以要写ORM，先要分析数据库表和字段
+# sqlite3 db.sqlite3
+sqlite> .tables
+sqlite> .schema webansi_group
+3、执行测试
+[root@room8pc16 ansicfg]# chmod +x dhosts.py
+[root@room8pc16 ansicfg]# ./dhosts.py
+[root@room8pc16 ansicfg]# ansible webservers -m ping
+
+十一、创建模板
+1、创建模板目录
+# mkdir -p webansi/templates/webansi
+2、把bootstrap复制过来，叫static
+# cp -r ../../day23/mysite/polls/static/ webansi/
+3、创建基础模板
+# touch webansi/templates/webansi/base.html
+4、创建图片文件的目录
+# mkdir webansi/static/imgs
+制作一个banner.jgp图片存在这个目录下
+
+十二、创建视图
+
+
+十三、把ansible-cmdb生成的信息保存，并生成web页面
+# ansible -i 主机清单文件 -m setup --tree 信息保存存的目录 all
+# ansible-cmdb 信息保存存的目录 > html文件
+并将上面两条命令写到计划任务
+如：
+# ansible -i /var/ftp/nsd2018/nsd1802/python/day23/mysite/polls/templates/polls/hosts -m setup --tree /var/ftp/nsd2018/nsd1802/python/day23/mysite/polls/templates/polls/out/ all
+# ansible-cmdb /var/ftp/nsd2018/nsd1802/python/day23/mysite/polls/templates/polls/out/ > /var/ftp/nsd2018/nsd1802/python/day23/mysite/polls/templates/polls/mainpage.html
+
+
+
+
+
+
+
+

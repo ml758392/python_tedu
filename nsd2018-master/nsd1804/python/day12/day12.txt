@@ -1,0 +1,59 @@
+网易邮箱需要在右上角点击设置，然后勾选POP3/SMTP服务，手机验证后可以使用
+下方的提示有邮件服务器的地址
+
+JSON：可以方便的在网络中传输各种数据类型
+>>> import json
+>>> n = json.dumps(100)
+>>> json.loads(n)
+
+查看天气预报
+打开百度，搜索“中国天气网 城市代码”
+天气实况：http://www.weather.com.cn/data/sk/城市代码.html
+城市信息：http://www.weather.com.cn/data/cityinfo/城市代码.html
+详细指数：http://www.weather.com.cn/data/zs/城市代码.html
+
+requests: 它的底层采用了urllib3，使用起来更加简化
+# pip3 install requests
+>>> import requests
+>>> r = requests.get('http://www.baidu.com/')
+>>> r.text   返回网页的字符串，因为编码问题，中文可能是乱码
+>>> r.encoding   # 默认是ISO-8859-1
+>>> r.encoding = 'utf8'
+>>> r.text
+>>> data = r.content   # 返回网页的bytes类型
+>>> type(data)
+
+>>> r1 = requests.get('http://www.weather.com.cn/data/sk/101010100.html')
+>>> r1.encoding = 'utf8'
+>>> r1.json()   # 对json格式数据进行解码
+
+>>> r2 = requests.get('http://www.weather.com.cn/m/i/legend.jpg')
+>>> with open('/tmp/tq.jpg', 'wb') as fobj:
+...   fobj.write(r2.content)
+
+>>> r3 = requests.get('http://www.baidu.com/s', params={'wd': '中国天气网'})
+>>> r3.encoding = 'utf8'
+>>> r3.text
+>>> with open('/tmp/bd.html', 'wb') as fobj:
+...   fobj.write(r3.content)
+
+思考：怎么模拟firefox访问服务器
+>>> header = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"}
+>>> r4 = requests.get('http://127.0.0.1/', headers=header)
+
+状态码
+>>> r4.status_code
+>>> requests.codes.not_found  # requests模块将状态码都起了一个有意义的名字
+>>> requests.codes.forbidden
+>>> requests.codes.ok
+
+HTTP是无状态的，也就意味着，用户两次访问同一网站，该网站也不知道是同一客户端
+为了使得服务器可以识别客户端，服务器可以将一些数据（cookie）发送给客户端，客户端
+每次访问服务器时，都会携带cookie去访问服务器
+
+zabbix: https://www.zabbix.com/documentation/3.4/zh/manual/api
+
+
+
+
+

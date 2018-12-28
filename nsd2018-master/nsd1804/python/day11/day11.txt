@@ -1,0 +1,81 @@
+通过telnet访问web服务器
+[root@room8pc16 day10]# telnet www.baidu.com 80
+GET / HTTP/1.1
+HOST: www.baidu.com
+回车
+
+>>> from urllib import request
+>>> html = request.urlopen('http://www.baidu.com/')
+>>> data = html.read()
+>>> type(data)
+<class 'bytes'>
+>>> with open('/tmp/bd.html', 'wb') as fobj:
+...     fobj.write(data)
+[root@room8pc16 day10]# firefox /tmp/bd.html
+>>> img = request.urlopen('https://upload-images.jianshu.io/upload_images/1276176-ce4d97b8f2309161.jpg')>>>
+>>> data = img.read()
+>>> with open('/tmp/myimg.jpg', 'wb') as fobj:
+...     fobj.write(data)
+[root@room8pc16 day10]# eog /tmp/myimg.jpg
+
+模拟客户端
+1、跟踪日志尾部输出
+[root@room8pc16 day10]# tail -f /var/log/httpd/access_log
+2、通过urllib访问
+>>> html = request.urlopen('http://127.0.0.1/')
+日志输出，显示"Python-urllib/3.6"访问
+2、可以模拟urllib用的是Firefox访问
+（1）使用firefox访问服务器，查看日志输出，将浏览器记录下来
+Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0
+（2）构建头部
+>>> header = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'}
+>>> url = 'http://127.0.0.1/'
+（3）创建请求对象
+>>> html = request.Request(url, headers=header)
+（4）获取网页内容
+>>> request.urlopen(html).read()
+日志输出显示客户端的浏览器是firefox
+
+URL只允许一部分ASCII编码，其他字符需要编码成允许的字符才能使用，如
+https://www.baidu.com/s?wd=hello%20world%21
+将字符串编码成URL允许的字符：
+>>> request.quote('hello陈金宇!')
+'hello%E9%99%88%E9%87%91%E5%AE%87%21'
+https://www.baidu.com/s?wd=hello%E9%99%88%E9%87%91%E5%AE%87%21
+
+paramiko -> ssh/scp客户端
+# pip3 install paramiko
+创建三台虚拟机，配置IP地址，用于测试
+# virsh console 虚拟机名字     退出时按ctrl + ]
+
+>>> import paramiko
+>>> ssh = paramiko.SSHClient()
+# 下面一行，相当于服务器问(yes/no)?时，回答yes
+>>> ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+>>> ssh.connect('192.168.4.2', username='root', password='123456')
+>>> ssh.exec_command('useradd zhangsan')
+>>> a = ssh.exec_command('id zhangsan')
+# 返回值是输入、输出、错误的类文件对象组成的元组
+>>> a[1].read()
+>>> a[2].read()
+>>> stdin, stdout, stderr = ssh.exec_command('id wangwu')
+>>> stdout.read()
+>>> stderr.read()
+>>> ssh.close()
+
+网络唤醒
+1、将BIOD设置中的wake on lan打开
+2、网络开机
+# ether-wake -i 从哪块网卡发出  目标主机的MAC地址
+# ether-wake -i enp2s0 12:34:56:78:90:11
+3、获得远程主机MAC地址
+[root@room8pc16 day11]# ping -c2 172.40.50.113 &> /dev/null
+[root@room8pc16 day11]# arp -n 172.40.50.113
+
+
+
+
+
+
+
+
