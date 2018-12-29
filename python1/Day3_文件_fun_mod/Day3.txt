@@ -286,14 +286,102 @@ True
 		参数时函数运行时必须要的值
 		把参数给函数的过程叫做传参
 
+普通参数
 			》》形参《《
 	>>> def foo(x,y):
 	...     print("x=%d,y=%d"%(x,y))
 	... 
 	>>> foo(3,4)
 	x=3,y=4
+
+
+关键字参数
+	
+	>>> def func(name,age):
+	...     print("{0} is {1} years old".format(name,age))
+	... 
+	>>> func(age=18,name="yy")		##可以不按照形参的位置赋值
+	yy is 18 years old
+
+
+默认参数
+	>>> def func(name="yy",age=22):
+	...     print("{0} is {1} years old".format(name,age))
+	... 
+	>>> func()
+	yy is 22 years old			##不提供参数使用默认参数
+
+
+
+收集默认参数：
+	参数是一个列表类型的变量	
+	遍历收集默认参数
+
+		>>> def func(*args):
+		...     print(type(args))
+		...     for item in args:
+		...             print(item)
+		... 
+		>>> func(1,2,3)
+		<class 'tuple'>		##类型元组
+		1
+		2
+		3
+	
+	
+收集关键字参数：
+	参数是字典类型的参数
+	用item()函数可以转化为列表
+ 	
+		>>> def func(**args):
+		...     print(type(args))
+		...     for x,y in args.items():
+		...             print(x,y,sep=":")
+		... 
+		>>> func(name="bob",age=18,addr="BJ")
+		<class 'dict'>			##类型字典
+		name:bob
+		age:18
+		addr:BJ
+
+收集参数混合使用
+		                          
+	>>> def func(name,age,*args,hobby="没有",**kwargs):
+	...     print(name,age)
+	...     for i in args:
+	...             print(i)
+	...     print(hobby)
+	...     for x,y in kwargs.items():
+	...             print(x,y,seq=":")
+
+
+
+			》》》收集参数的解包问题《《《
+
+
+		>>> def stu(*args):
+		...     for i in args:
+		...             print(i)
+		... 
+		>>> stu([1,2,3],1,2)
+		[1, 2, 3]			##把整个列表作为一个参数 打印
+		1
+		2
+		>>> stu(*[1,2,3],1,2)	##在列表前加一个* 可以将列表每个元素打印出来
+		1
+		2
+		3
+		1
+		2
+	
+
+	字典解包
 		
-		
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^	
+	
 			》》》python3 位置参数《《《
 			
 		与shell脚本类似，程序名以及参数都以位置参数的方式传递给python程序

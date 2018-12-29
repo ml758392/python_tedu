@@ -172,7 +172,17 @@
 			返回一个包含字典中（键，值）对元组的列表
 
 		>>> adict.items()
-		dict_items([('name', 'bob'), ('age', 18)])		
+		dict_items([('name', 'bob'), ('age', 18)])	
+
+##利用items()函数遍历字典
+
+	>>> stu = {"bob":18, "yy":22}	
+	>>> for name,age in stu.items():
+	...     print("%s is %d years old" % (name,age))
+	... 
+	bob is 18 years old
+	yy is 22 years old
+	
 
 	copy()函数:
 		
