@@ -24,6 +24,6 @@ def fibs(n):
         return 1
     if n == 1:
         return 1
-    return fibs(n-1) + fibs(n-2)
+    return fibs(n-1) + fibs(n-2)    # 要用return全剧变量 不用else
 
 print(fibs(4))

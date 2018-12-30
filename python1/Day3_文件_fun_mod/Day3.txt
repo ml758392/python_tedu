@@ -338,7 +338,7 @@ True
 		...     for x,y in args.items():
 		...             print(x,y,sep=":")
 		... 
-		>>> func(name="bob",age=18,addr="BJ")
+		>>> func(name="bob",age=18,addr="BJ")		##关键字不加引号
 		<class 'dict'>			##类型字典
 		name:bob
 		age:18
@@ -358,6 +358,7 @@ True
 
 			》》》收集参数的解包问题《《《
 
+	列表解包
 
 		>>> def stu(*args):
 		...     for i in args:
@@ -375,8 +376,53 @@ True
 		2
 	
 
+
 	字典解包
-		
+
+		>>> def func(**argus):
+		...     for key,value in argus.items():
+		...             print(key,value,sep=":")
+		... 
+		>>> dict = {"name": "yy", "age": 18 }
+		>>> func(**dict)
+		name:yy
+		age:18
+	
+
+
+					》》》函数返回值《《《
+	
+		>>> def test():
+		...     print(123)
+		...     return 20
+		... 
+		>>> a = test()	##用变量保存函数的返回值
+		123			##标准输出
+		>>> a
+		20			##函数返回值
+	
+
+		>>> def test():
+		...     return 20	##函数遇到return终止 
+		...     print(123)
+		... 
+		>>> test()		##只有函数返回值
+		20
+
+
+			》》》eval函数和exec()函数《《《
+	
+
+		>>> eval("1+2")
+		3
+		>>> a = eval("1+2")	将执行结果作为返回值
+		>>> a
+		3
+		>>> exec("1+2")
+		>>> a = exec("1+2")	没有返回值
+		>>> a
+		>>> 
+
 
 
 

@@ -31,12 +31,27 @@
 		>>> dict([[1,2],[3,4]])
 		{1: 2, 3: 4}
 
+
+		>>> dict(name="bob",age=18)
+		{'name': 'bob', 'age': 18}
+
+
 	2.通过fromkeys(）创建具有相同值的默认字典
 		
 		>>> adict = {}.fromkeys(["bob","tom","alice"],7)
 		>>> adict
 		{'bob': 7, 'tom': 7, 'alice': 7}
 		
+
+
+			》》》字典解析《《《
+
+	>>> adict = {"num1":1,"num2":2,"num3":3}
+	>>> bdict = {k:v**2 for k,v in adict.items()}
+	>>> bdict
+	{'num1': 1, 'num2': 4, 'num3': 9}
+
+
 
 
 
@@ -60,6 +75,8 @@
 		
 		>>> print(adict["name"])
 		bob
+	
+		
 
 	2.更新字典
 						
@@ -156,17 +173,32 @@
 	keys（）函数：
 			返回所有的key
 
-		>>> adict.keys()			##返回字典所有的key
-		dict_keys(['name', 'age'])
-		
+		>>> adict.keys()			##以列表的形式返回字典所有的key
+		dict_keys(['name', 'age'])	
+	
+		遍历所有的key
+	dict_keys(['name', 'age'])
+	>>> for key in a.keys():
+	...     print(key)
+	... 
+	name
+	age
+
 		
 
 	
 	values（）函数：
 			返回所有的值
 		>>> adict.values()
-		dict_values(['bob', 18])
-		
+		dict_values(['bob', 18])		##以列表的形式返回字典所有的value
+
+	遍历所有的value
+	>>> for value in a.values():
+	...     print(value)
+	... 
+	bob
+	18
+
 
 	items()函数：
 			返回一个包含字典中（键，值）对元组的列表
@@ -200,11 +232,12 @@
 		>>> adict
 		{'name': 'bob', 'age': 18, 'city': 'BJ'}
 
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 	
 				》》》集和《《《
 
-		集合对象是一组无序排列的和哈希的值（集和的每一个元素布不可变）  （数字，字符串，元组）
+		集合对象是一组无序排列的和哈希的值（集和的每一个元素布不可变）  （数字，浮点数，字符串，元组）
 		集合是不允许重复的
 	
 	1.创建集合
@@ -233,7 +266,20 @@
 		... 
 		ehol>>> 
 
+	带元组的集和遍历
+		>>> s = {(1,2),(3,4)}
+		>>> for x,y in s:
+		...     print(x,y)
+		... 
+		1 2
+		3 4
+		
+	
+	集和解析
+		>>> {x**2 for x in range(1,9) if x % 2 == 0}
+		{16, 64, 4, 36}		##无序的排序
 
+	
 
 	3.集和类型操作赋
 
