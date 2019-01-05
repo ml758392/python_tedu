@@ -383,8 +383,8 @@ time.time():
 	>>> time.time()
 	1545979505.8814023
 	
-localtion():
-	localtion([secs]):将一个时间戳转换为当前时区的struct_time.
+localtimr():
+	localtime([secs]):将一个时间戳转换为当前时区的struct_time.
 	secs参数为提供，则以当前时间为准
 	显示结构化时间信息
 	

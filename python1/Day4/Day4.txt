@@ -466,7 +466,8 @@ capitalize()
 	>>> print(str.capitalize())
 	Hello
 	
->>> print(str.center(50,'*'))		##居中 宽度 填充字符				*********************hello***********************						
+>>> print(str.center(50,'*'))		##居中 宽度 填充字符				
+*********************hello***********************						
 	
 函数
 count()
