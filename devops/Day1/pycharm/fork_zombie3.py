@@ -7,7 +7,7 @@ print('Start...')
 pid = os.fork()
 if pid:
     print('in parent...')
-    print(os.waitpid(-1, 0))  # 挂起父进程 先执行子进程返回值（pid,0）
+    print(os.waitpid(-1, 1))  # 不挂起父进程  （0，0）子进程没有结束返回0
     time.sleep(30)
 else:
     print('in child....')
