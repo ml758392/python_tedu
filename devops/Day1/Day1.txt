@@ -1,0 +1,101 @@
+
+			
+shell脚本执行，如执行chdir.sh
+# cat chdir.sh
+#！/bin/bash
+cd /tmp
+
+1.明确声明脚本使用bash来解释的，这样脚本第一行的解释其将产生任何作用
+[root@lenovo~ ]# bash chdir.sh
+
+2.根据脚本第一行的解释器决定脚本该怎么执行，如果没有指定，默认使用bash解释
+[root@lenovo~ ]#  ./chdir.sh
+
+以上两种是
+frok子进程
+
+3.上述两种执行方法，都是fork子进程执行的，source不产生子进程
+source chdir.sh 或  . chdir.sh
+
+		[root@lenovo ~]# vim name.sh
+		[root@lenovo ~]# bash name.sh
+		[root@lenovo ~]# echo $name
+
+		[root@lenovo ~]# chmod +x  name.sh
+		[root@lenovo ~]# ./name.sh 
+		[root@lenovo ~]# echo $name
+
+		[root@lenovo ~]# source name.sh
+		[root@lenovo ~]# echo $name
+		zhangsan
+
+
+
+			》》》进程的生命周期《《《
+
+	僵尸进程没有任何可执行的代码，也不可能被调度	
+	僵尸进程：
+		1.消耗内存
+		2.消耗PID号（有限的PID）
+
+	可以试图杀死它的父进程
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+				》》》fork编程《《《
+
+	import os
+	print("hello world")
+
+	os.fork()
+	print('你好'
+
+	[root@lenovo pycharm]# python3 /root/桌面/5_张志刚/devops/Day1/pycharm/fork_1.py
+	hello world
+	你好
+	你好
+
+
+
+pythom中，绝大多数的函数值返回一次，os.fork将返回两次	
+父进程返回子进程的PID，对于子进程，返回PID 0
+
+
+	[root@lenovo pycharm]# python3 /root/桌面/5_张志刚/devops/Day1/pycharm/fork_1.py
+	hello world
+	12590					
+	你好
+	[root@lenovo pycharm]# 0
+	你好
+
+	import os
+	print("hello world")
+
+	pid = os.fork()			## 生成子进程，以下代码分别在父子进程中执行
+	if pid:
+	    print('父进程.......')		##os.fork()
+	else:
+	    print('子进程.......')
+	print('你好')
+
+
+	[root@lenovo pycharm]# python3 /root/桌面/5_张志刚/devops/Day1/pycharm/fork_2.py 
+	hello world
+	父进程.......
+	你好
+	子进程.......
+	你好
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python2/Day3/pycharm/oop_1_factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3/pycharm/oop_2_组合.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3/pycharm/oop_3_继承.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3/pycharm/oop_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3/pycharm/oop_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3/pycharm/oop_6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day1/pycharm/fork_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day1/pycharm/fork_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day1/pycharm/fork_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day1/pycharm/fork_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day1/pycharm/fork_ping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day4/pycharm/ze.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day4/ze.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python1/Day2_基础/Day2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python1/Day2_基础/Day2.txt" afterDir="false" />
     </list>
@@ -22,39 +22,48 @@
     <favorites_list name="5_张志刚" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_4.py">
+        <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+            <state relative-caret-position="108">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_5.py">
+        <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="108">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_6.py">
+        <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <state relative-caret-position="126">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py">
+        <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_ping.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+            <state relative-caret-position="36">
+              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -79,13 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/fun_fibs.py" />
-        <option value="$PROJECT_DIR$/Day3_文件_fun_mod/fun_位置参数.py" />
-        <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/fun_位置参数.py" />
-        <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/fun_默认参数.py" />
-        <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/fun_mtable.py" />
-        <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/test_modules.py" />
-        <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/a.py" />
         <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/hello.py" />
         <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/b.py" />
         <option value="$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/__name__.py" />
@@ -130,14 +132,21 @@
         <option value="$PROJECT_DIR$/python2/Day3/pycharm/oop_5.py" />
         <option value="$PROJECT_DIR$/python2/Day3/pycharm/oop_6.py" />
         <option value="$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py" />
+        <option value="$PROJECT_DIR$/python2/Day4/ze.txt" />
+        <option value="$PROJECT_DIR$/python2/Day4/pycharm/ze.py" />
+        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_2.py" />
+        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_1.py" />
+        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_3.py" />
+        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_4.py" />
+        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_ping.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="22" />
-    <option name="y" value="106" />
+    <option name="x" value="-50" />
+    <option name="y" value="28" />
     <option name="width" value="882" />
-    <option name="height" value="645" />
+    <option name="height" value="706" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -147,17 +156,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,31 +166,31 @@
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python1" type="462c0819:PsiDirectoryNode" />
+              <item name="devops" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python1" type="462c0819:PsiDirectoryNode" />
-              <item name="Day3_文件_fun_mod" type="462c0819:PsiDirectoryNode" />
+              <item name="devops" type="462c0819:PsiDirectoryNode" />
+              <item name="Day1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day3" type="462c0819:PsiDirectoryNode" />
+              <item name="devops" type="462c0819:PsiDirectoryNode" />
+              <item name="Day1" type="462c0819:PsiDirectoryNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -216,28 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.oop_6">
-    <configuration name="收集参数" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python1/Day3_文件_fun_mod/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python1/Day3_文件_fun_mod/pycharm/收集参数.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.fork_3">
     <configuration name="关键字收集参数" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -251,6 +228,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python1/Day3_文件_fun_mod/pycharm/关键字收集参数.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fork_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day1/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day1/pycharm/fork_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fork_3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day1/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day1/pycharm/fork_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,90 +320,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="oop_2_组合" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day3/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day3/pycharm/oop_2_组合.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="oop_3_继承" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day3/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day3/pycharm/oop_3_继承.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="oop_4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day3/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day3/pycharm/oop_4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="oop_5" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day3/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day3/pycharm/oop_5.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="oop_6" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -398,6 +333,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day3/pycharm/oop_6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="oop_7_method" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day3/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -490,13 +446,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ze" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day4/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day4/pycharm/ze.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.fork_3" />
+        <item itemvalue="Python.fork_2" />
+        <item itemvalue="Python.ze" />
+        <item itemvalue="Python.oop_7_method" />
         <item itemvalue="Python.oop_6" />
-        <item itemvalue="Python.oop_5" />
-        <item itemvalue="Python.oop_4" />
-        <item itemvalue="Python.oop_3_继承" />
-        <item itemvalue="Python.oop_2_组合" />
       </list>
     </recent_temporary>
   </component>
@@ -699,19 +676,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="955" height="732" extended-state="6" />
+    <frame x="0" y="28" width="915" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.20107527" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.15617977" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49247313" visible="true" weight="0.25170067" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49247313" weight="0.23979592" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4918919" weight="0.30442178" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4918919" visible="true" weight="0.24489796" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49819928" weight="0.32562277" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49617487" weight="0.22953737" />
@@ -761,13 +738,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="done  Day5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/game.py" />
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/game_1.py" />
-    <entry file="file://$PROJECT_DIR$/Day4/hello.py" />
-    <entry file="file://$PROJECT_DIR$/Day4/pycharm/hello.py" />
-    <entry file="file://$PROJECT_DIR$/Day4/pycharm/shutil_copyfileobj.py" />
-    <entry file="file://$PROJECT_DIR$/Day2_基础/pycharm/game_2.py" />
-    <entry file="file://$PROJECT_DIR$/Day3_文件_fun_mod/pycharm/randpass.py" />
     <entry file="file://$PROJECT_DIR$/Day4/pycharm/shutil_copy.py" />
     <entry file="file://$PROJECT_DIR$/Day4/pycharm/shutil_copy2.py" />
     <entry file="file://$PROJECT_DIR$/Day4/pycharm/shutil_copytree.py" />
@@ -953,24 +923,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_3_继承.py">
+    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="324">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -981,10 +937,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py">
+    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="292">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4/ze.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_3_继承.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/ze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_ping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
       </provider>
     </entry>
