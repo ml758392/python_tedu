@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/1.thread.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/2.线程之间共享数据.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/3.线程锁解决数据混乱.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/4.Threadlocal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day1_fork_thread/Day1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/Day1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/multi大量子进程.py" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/multi大量子进程.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/Day4/ze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day4/ze.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,89 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/进程间通信/进程中通信.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding>
-                <element signature="e#21#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/1.thread.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="e#21#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/2.线程之间共享数据.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="29" lean-forward="true" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/multiprocessing_3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding>
-                <element signature="e#21#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/3.线程锁解决数据混乱.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/4.Threadlocal.py">
+        <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="33" lean-forward="true" selection-start-line="31" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/multi大量子进程.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="e#21#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/multiprocessing_4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding>
-                <element signature="e#21#56#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -132,7 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python2/Day1/pycharm/passwd2" />
         <option value="$PROJECT_DIR$/python2/Day1/pycharm/time.py" />
         <option value="$PROJECT_DIR$/python2/Day1/pycharm/异常.py" />
         <option value="$PROJECT_DIR$/python2/Day1/pycharm/异常2.py" />
@@ -183,10 +100,11 @@
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/multi大量子进程.py" />
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/3.线程锁解决数据混乱.py" />
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/4.Threadlocal.py" />
+        <option value="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="43" />
     <option name="y" value="28" />
     <option name="width" value="996" />
@@ -221,20 +139,20 @@
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="devops" type="462c0819:PsiDirectoryNode" />
+              <item name="python2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="devops" type="462c0819:PsiDirectoryNode" />
-              <item name="Day1_fork_thread" type="462c0819:PsiDirectoryNode" />
+              <item name="python2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="devops" type="462c0819:PsiDirectoryNode" />
-              <item name="Day1_fork_thread" type="462c0819:PsiDirectoryNode" />
-              <item name="Thread" type="462c0819:PsiDirectoryNode" />
+              <item name="python2" type="462c0819:PsiDirectoryNode" />
+              <item name="Day4" type="462c0819:PsiDirectoryNode" />
+              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -699,15 +617,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="917" height="727" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="28" width="917" height="727" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.17713004" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.18273543" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4899103" visible="true" weight="0.25900516" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4899103" weight="0.25900516" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39695945" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -715,7 +632,7 @@
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49617487" weight="0.22953737" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5100897" side_tool="true" weight="0.25900516" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48920086" weight="0.24185249" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48920086" visible="true" weight="0.2761578" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -761,13 +678,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="done  Day5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_2_组合.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_1_factory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -781,9 +691,6 @@
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day4/ze.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_3_继承.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1012,13 +919,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/进程间通信/进程中通信.py">
+    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/multiprocessing_3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="288">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
-            <element signature="e#21#30#0" expanded="true" />
+            <element signature="e#21#69#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/3.线程锁解决数据混乱.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/4.Threadlocal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -1032,34 +953,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/multiprocessing_3.py">
+    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/进程间通信/进程中通信.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="75">
+          <caret line="17" selection-start-line="16" selection-end-line="17" />
           <folding>
-            <element signature="e#21#69#0" expanded="true" />
+            <element signature="e#21#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/2.线程之间共享数据.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="29" lean-forward="true" selection-end-line="23" />
+        <state relative-caret-position="360">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/3.线程锁解决数据混乱.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/python2/Day4/ze.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/4.Threadlocal.py">
+    <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" lean-forward="true" selection-start-line="31" selection-end-line="33" />
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
