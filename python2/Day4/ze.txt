@@ -81,7 +81,7 @@ re.findall(patter,string,flags)
 
 .	匹配处换行符号意外的任意字符
 [  ]  	匹配方括号中所包含的任意一个字符
-
+ 
 [\d]	匹配数字
 [\D]	匹配非数字字符
 [\w]	匹配数字字母下划线
@@ -131,6 +131,263 @@ $	行末匹配
 	>>> re.search(r'er\B','nerve')
 	<_sre.SRE_Match object; span=(1, 3), match='er'>
 	>>> 
+	
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+						》》》匹配多个字符《《《
+( )	匹配小括号内的作为一个整体取匹配
+
+	>>> re.findall('a?','aaa')
+	['a', 'a', 'a', '']
+
+
+
+? 	匹配0个或者1个
+
+	>>> re.findall('a*','aaa')
+	['aaa', '']	
+	>>> re.findall('a*','aaabaa')	#贪婪匹配	# 有空字符
+	['aaa', '', 'aa', '']
+
+
++	 匹配大于等一次个			# 贪婪匹配
+ 
+	>>> re.findall('a+','aaabaa')			# 无空字符
+	['aaa', 'aa']
+
+
+{n}	匹配n次			
+
+
+	>>> re.findall('a{2}','aaabaa')
+	['aa', 'aa']
+	>>> re.findall('a{3}','aaabaa')
+	['aaa']
+
+
+ 
+{n,}	匹配至少n个
+
+	>>> re.findall('a{2,}','aaabaa')
+	['aaa', 'aa']
+
+
+{m,n}	匹配m，n个
+	>>> re.findall('a{2,3}','aaabaa')
+	['aaa', 'aa']
+
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+						》》》特殊《《《
+*？	+？	x？	非贪婪匹配（最小匹配）
+(?:x)	类似（xyz）,但不表示一个组
+
+
+* 贪婪匹配
+	>>> str = 'sunck is a good man ! sunck is a nice man! sunck is very handman man'
+	>>> re.findall(r'sunck.*man', str)
+	['sunck is a good man ! sunck is a nice man! sunck is very handman man']
+	
+*？非贪婪匹配
+
+	>>> re.findall(r'sunck.*?man', str)
+	['sunck is a good man', 'sunck is a nice man', 'sunck is very handman']
+
+
+* 贪婪匹配
+	>>> str = r'/* part1 */ /* part2 */'
+	>>> re.findall(r'/\*.*\*/', str)
+	['/* part1 */ /* part2 */']
+*？非贪婪匹配
+	>>> re.findall(r'/\*.*?\*/', str)
+	['/* part1 */', '/* part2 */']
+
+
+
+
+>>> re.findall('a*?','aaa bb aa a')
+['', '', '', '', '', '', '', '', '', '', '', '']
+>>> re.findall('a+?','aaa bb aa a')
+['a', 'a', 'a', 'a', 'a', 'a']
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+			
+						》》》字符串切割《《《
+
+
+>>> str = "sunck  is a good man"
+>>> str.split(' ')
+['sunck', '', 'is', 'a', 'good', 'man']
+
+
+re.split()函数
+	>>> str = "sunck  is a good man"
+	>>> import re
+	>>> re.split(r' +',str)
+	['sunck', 'is', 'a', 'good', 'man']
+
+
+re.finditer函数
+	原型:finditer(pattern, string, flags=0)
+	参数：
+	patter: 匹配的正则表达式
+	string:要匹配的字符串
+	flags:标志位，用以控制正则表达式的匹配方式
+	功能：与findall类似，扫描整个字符串，返回的是一个迭代器
+	
+	
+
+>>> a
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> b = iter(a)
+>>> print(next(b))
+0
+>>> print(next(b))
+1
+>>> print(next(b))
+2
+>>> print(next(b))
+3
+>>> print(next(b))
+4
+......
+
+
+
+
+>>> a = re.finditer('hello','hello,yy. hello oo')
+>>> for i in a:
+...     print(i)
+... 
+<_sre.SRE_Match object; span=(0, 5), match='hello'>
+<_sre.SRE_Match object; span=(10, 15), match='hello'>
+
+
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+					》》》字符串的替换和修改《《《
+
+
+sub(pattern,repl,string,count=0,flags=0)
+subn(pattern,repl,string.count=0,flags=0)
+
+pattern: 正则表达式（规则）
+repl:	指定的用来替换的字符串
+string：	目标字符串
+count：	最多替换次数
+功能：再目标字符串中以正则表达式的规则匹配字符串，再把他们替换成指定的字符串，可以指定替换此书，如果不指定，替换所有的匹配字符串
+
+区别：
+re.sub()
+	>>> str = "sunck is a good good good man"
+								# 返回值是一个字符串类型
+	>>> print(type(re.sub(r'good',"nice",str)))
+	<class 'str'>		
+	>>> print(re.sub(r'good',"nice",str))	
+	sunck is a nice nice nice man
+								# count =2 替换两次
+	>>> print(re.sub(r'good',"nice",str,2))
+	sunck is a nice nice good man
+
+
+
+re.subn()
+								
+	>>> print(re.subn(r'good',"nice",str))
+	('sunck is a nice nice nice man', 3)		# 返回值是一个元组，第二项是修改次数
+	>>> print(re.subn(r'good',"nice",str,2))
+	('sunck is a nice nice good man', 2)
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+				
+						》》》分组《《《
+
+概念:除了简单的判断是否匹配之外，正则表达式还有提取子串的功能，用（）表示分组 (保留)
+
+group()
+	>>> str = '010-53247654'
+	>>> m = re.match(r'(\d{3})-(\d{8})', str)
+
+	>>> m
+	<_sre.SRE_Match object; span=(0, 12), match='010-53247654'>
+	>>> m.group(0)					# group(0) 代表原始字符串
+ 	'010-53247654'	
+	>>> m.group(1)					#
+	'010'
+	>>> m.group(2)					#
+	'53247654'
+
+	>>> m.groups()					# 不显示组1 
+	('010', '53247654')
+
+
+分组命名
+	>>> m = re.match(r'(?P<first>\d{3})-(?P<second>\d{8})', str)
+
+	>>> m.group("first")
+	'010'
+	>>> m.group("second")
+	'53247654'
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+findall查询结果显示分组
+
+	>>> re.findall(r'\d{4}d$',str)			
+	['2345d']
+
+	>>> re.findall(r'(\d{4})d$',str)	
+	['2345']
+	>>> re.findall(r'\d{4}(d$)',str)
+	['d']
+
+	>>> re.findall(r'((\d{4})(d$))',str)
+	[('2345d', '2345', 'd')]
+
+
+
+…………………………………………………………………………………………………………………………………………………………………………
+
+
+					》》》编译正则《《《
+当我们使用正则表达式时，re模块会干两件事
+1.编译正则表达式，如果正则表达式不正确，回报错
+2.编译后的只能则表达式取匹配对象
+ compile(pattern,flag=0)
+
+pat = r''
+
+
+
+	>>> str
+	'010-53247654'
+	>>> pat = r'(\d{3})-(\d{8})'
+	>>> pat_com = re.compile(pat)	#创建对象，编译
+	>>> pat_com.match(str)		#使用对象方法match
+	<_sre.SRE_Match object; span=(0, 12), match='010-53247654'>
+	>>> pat_com.match(str).group(1)
+	'010'
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 

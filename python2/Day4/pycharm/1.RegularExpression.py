@@ -1,7 +1,12 @@
 # -*-coding:utf-8-*-
 import re
-# pip 包管理工具
 
-...
-re.match()函数
-原型：match(pattern,sring,flags=0)
+
+str3 = "sunck is a good man! sunck is nice man! sunck is a handsome man"
+d = re.finditer(r'(sunck)', str3)
+while True:
+    try:
+        l = next(d)
+        print(d)
+    except StopIteration as e:
+        break

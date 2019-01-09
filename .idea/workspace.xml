@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python2/Day4/ze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day4/ze.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -104,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="43" />
     <option name="y" value="28" />
     <option name="width" value="996" />
@@ -176,8 +175,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.4.Threadlocal">
-    <configuration name="1.thread" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.1.RegularExpression">
+    <configuration name="1.RegularExpression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -185,11 +184,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day4/pycharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/1.thread.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -410,11 +409,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1.RegularExpression" />
         <item itemvalue="Python.4.Threadlocal" />
         <item itemvalue="Python.3.线程锁解决数据混乱" />
         <item itemvalue="Python.multi大量子进程" />
         <item itemvalue="Python.2.线程之间共享数据" />
-        <item itemvalue="Python.1.thread" />
       </list>
     </recent_temporary>
   </component>
@@ -617,22 +616,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="917" height="727" extended-state="7" />
+    <frame x="0" y="28" width="917" height="727" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.18273543" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4899103" weight="0.25900516" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4899103" visible="true" weight="0.25900516" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39695945" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Python Console" order="6" sideWeight="0.49819928" weight="0.32562277" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49617487" weight="0.22953737" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5100897" side_tool="true" weight="0.25900516" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48920086" visible="true" weight="0.2761578" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5100897" side_tool="true" weight="0.2761578" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4899103" weight="0.2761578" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -678,13 +678,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="done  Day5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_1_factory.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" lean-forward="true" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -973,10 +966,17 @@
     <entry file="file://$PROJECT_DIR$/python2/Day4/ze.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/re.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2260">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
