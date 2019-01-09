@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day4/pycharm/ze_qq.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python2/Day4/ze.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day4/ze.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="216">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/ze_qq.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -49,7 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python2/Day1/pycharm/time.py" />
         <option value="$PROJECT_DIR$/python2/Day1/pycharm/异常.py" />
         <option value="$PROJECT_DIR$/python2/Day1/pycharm/异常2.py" />
         <option value="$PROJECT_DIR$/python2/Day1/pycharm/tesst.py" />
@@ -100,6 +109,7 @@
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/3.线程锁解决数据混乱.py" />
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/4.Threadlocal.py" />
         <option value="$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" />
+        <option value="$PROJECT_DIR$/python2/Day4/pycharm/ze_qq.py" />
       </list>
     </option>
   </component>
@@ -617,14 +627,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="917" height="727" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.18273543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.18273543" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
+      <window_info anchor="bottom" id="Thumbnails" weight="0.32933104" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4899103" visible="true" weight="0.25900516" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4899103" weight="0.25900516" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39695945" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -678,13 +688,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="done  Day5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_3_继承.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -975,8 +978,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="216">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/ze_qq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

@@ -268,6 +268,13 @@ re.finditer函数
 <_sre.SRE_Match object; span=(10, 15), match='hello'>
 
 
+>>> m= re.finditer('foo','seafood is food')
+>>> for item in m:
+...     print(item.group())
+... 
+foo
+foo
+
 
 
 
@@ -319,6 +326,10 @@ group()
 
 	>>> m
 	<_sre.SRE_Match object; span=(0, 12), match='010-53247654'>
+
+	>>> m.group()					# group() 默认返回匹配结果 
+	'010-53247654'
+
 	>>> m.group(0)					# group(0) 代表原始字符串
  	'010-53247654'	
 	>>> m.group(1)					#
@@ -371,13 +382,14 @@ pat = r''
 	'010-53247654'
 	>>> pat = r'(\d{3})-(\d{8})'
 	>>> pat_com = re.compile(pat)	#创建对象，编译
+
 	>>> pat_com.match(str)		#使用对象方法match
 	<_sre.SRE_Match object; span=(0, 12), match='010-53247654'>
 	>>> pat_com.match(str).group(1)
 	'010'
 
 
-
+	
 
 
 
