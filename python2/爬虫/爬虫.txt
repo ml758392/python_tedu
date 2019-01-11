@@ -1,0 +1,63 @@
+
+模块
+url.lib.request
+
+
+type(data[1])	# 数据的格式是byte
+
+
+
+
+
+
+
+response = urllib.requese('http://www.baidu.com')
+
+
+返回当前环境的有关信息
+    print(response.info())
+
+	    Bdpagetype: 1
+	    Bdqid: 0xa0eb609a0003d88e
+	    Cache-Control: private
+	    Content-Type: text/html
+	    Cxy_all: baidu+ae6dd913fa3c7580c353fa45ebf078c1
+	    Date: Fri, 11 Jan 2019 01:27:43 GMT
+	    Expires: Fri, 11 Jan 2019 01:27:19 GMT
+	    P3p: CP=" OTI DSP COR IVA OUR IND COM "
+	    Server: BWS/1.1
+	    Set-Cookie: BAIDUID=B4262057A5816EBD590DE33C5DD6A85D:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com
+	    Set-Cookie: BIDUPSID=B4262057A5816EBD590DE33C5DD6A85D; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com
+	    Set-Cookie: PSTM=1547170063; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com
+	    Set-Cookie: delPer=0; path=/; domain=.baidu.com
+	    Set-Cookie: BDSVRTM=0; path=/
+	    Set-Cookie: BD_HOME=0; path=/
+	    Set-Cookie: H_PS_PSSID=26523_1422_21116_28131_26350_28267_27245_22160; path=/; domain=.baidu.com
+	    Vary: Accept-Encoding
+	    X-Ua-Compatible: IE=Edge,chrome=1
+	    Connection: close
+	    Transfer-Encoding: chunked
+
+
+
+				》》》返回状态码《《《《
+
+
+    print(response.getcode())
+    if response.getcode() == 200 or response.getcode() == 304:
+		保存页面
+
+
+状态码
+
+
+				》》》返回当前正在爬取的URL地址《《《
+
+
+
+
+
+
+
+
+
