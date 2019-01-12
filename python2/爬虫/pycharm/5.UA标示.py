@@ -20,4 +20,3 @@ req.add_header('User-Agent', agent)
 response = urllib.request.urlopen(req)
 print(response.read().decode('utf-8'))
 
-req.
