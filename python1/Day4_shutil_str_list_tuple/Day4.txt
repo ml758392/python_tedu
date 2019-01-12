@@ -511,9 +511,19 @@ lower函数
 		
 isupper函数
 islower函数
-		isupper函数：判断字符串是否全部为大写   若是 返回 True 
-		islower函数：判断字符串是否全部为小写
-					
+		isupper函数：判断字符串内的字母是否全部为大写   若是 返回 True 
+		islower函数：判断字符串内的字母是否全部为小写
+			
+			>>> str = 'A1'		# 可以包含非字母符号，不影响判断
+			>>> str.isupper()
+			True
+			>>> str = 'Aa'
+			>>> str.isupper()
+			False
+			>>> str = 'A#'
+			>>> str.isupper()
+			True
+		
 			>>> str.islower()
 			True
 		
@@ -562,6 +572,30 @@ split()函数
 		... 
 		['root', 'x', '0', '0', 'root', '/root', '/bin/bash\n']
 
+splitlines()：
+		以  \n  '\r\n'  \r 分隔多行
+
+	>>> str = '''sunck is a good man
+	... sunck is a nice man
+	... '''
+	>>> str.splitlines()
+	['sunck is a good man', 'sunck is a nice man']
+	
+
+	>>> str.splitlines(keepends=True)	# True是保留换行符
+	['sunck is a good man\n', 'sunck is a nice man\n']
+
+
+join()：
+	将列表中的所有元素组合成字符串
+	>>> alist = ['welcome', 'to', 'beijing']
+	>>> str =  ' '.join(alist)  # 以空格为分隔符
+	>>> str
+	'welcome to beijing'
+
+	
+
+
 
 
 strip()函数
@@ -570,6 +604,30 @@ strip()函数
 		rstrip()函数	去除字符串右边的空格
 		lstrip()函数	去除字符串左边的空格
 		
+
+encode():
+	编码默认为 utf-8	
+		
+	>>> str = 'welcome to beijing'
+	>>> str1 = str.encode()
+	>>> type(str1)
+	<class 'bytes'>
+	>>> str1.decode()	# str1 的方法decode() 
+	'welcome to beijing'
+
+isspace():
+	是否值包含空格
+	>>> ' '.isspace()
+	True
+	>>> '\t'.isspace()
+	True
+	>>> '\r'.isspace()
+	True
+	>>> '\n'.isspace()
+	True
+	>>> '# '.isspace()
+	False
+
 
 **************************************************************************************************************
 
