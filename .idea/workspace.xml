@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/1.冒充飞Q.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/1.装饰器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/2.复杂一点的装饰器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/3.udp_client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python2/Day4_re_socket/socket/1.客户端.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/Day4_re_socket/socket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day4_re_socket/socket.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/1.冒充飞Q.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/1.冒充飞Q.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/2.udp_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/2.udp_server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,17 +20,7 @@
     <favorites_list name="5_张志刚" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/1.冒充飞Q.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,10 +46,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_1.py" />
-        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_3.py" />
-        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_4.py" />
-        <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_zombie.py" />
         <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_ping.py" />
         <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_zombie2.py" />
         <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_zombie4.py" />
@@ -103,10 +93,14 @@
         <option value="$PROJECT_DIR$/python2/Day4_re_socket/socket/2.server.py" />
         <option value="$PROJECT_DIR$/python2/Day4_re_socket/socket/3.client.py" />
         <option value="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/1.冒充飞Q.py" />
+        <option value="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/3.udp_client.py" />
+        <option value="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/2.udp_server.py" />
+        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/1.装饰器.py" />
+        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/2.复杂一点的装饰器.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="31" />
     <option name="width" value="950" />
     <option name="height" value="529" />
@@ -135,22 +129,14 @@
               <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="python2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Day4_re_socket" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Day2_function" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="python2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Day4_re_socket" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="socket" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="python2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Day4_re_socket" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="socket" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="UDP" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Day2_function" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="pycharm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -194,8 +180,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.2.server">
-    <configuration name="12.动态抓取Ajax请求" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.1.装饰器">
+    <configuration name="1.装饰器" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,32 +189,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/爬虫/pycharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day2_function/pycharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/爬虫/pycharm/12.动态抓取Ajax请求.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="1.客户端" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day4_re_socket/socket" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day4_re_socket/socket/1.客户端.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day2_function/pycharm/1.装饰器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -258,6 +223,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="2.udp_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/2.udp_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="3.client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -279,7 +265,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="9.json" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="3.udp_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -287,11 +273,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/爬虫/pycharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/爬虫/pycharm/9.json.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/3.udp_client.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -428,11 +414,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1.装饰器" />
+        <item itemvalue="Python.3.udp_client" />
+        <item itemvalue="Python.2.udp_server" />
         <item itemvalue="Python.3.client" />
         <item itemvalue="Python.2.server" />
-        <item itemvalue="Python.1.客户端" />
-        <item itemvalue="Python.12.动态抓取Ajax请求" />
-        <item itemvalue="Python.9.json" />
       </list>
     </recent_temporary>
   </component>
@@ -635,10 +621,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="950" height="706" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="28" width="895" height="706" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.22378379" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.2229885" />
+      <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
+      <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39695945" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48864865" weight="0.33274022" />
+      <window_info anchor="bottom" id="Python Console" order="6" sideWeight="0.49297297" weight="0.32562277" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32911393" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49513513" weight="0.22953737" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.489154" weight="0.5658363" />
+      <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32933104" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51135135" side_tool="true" weight="0.23131673" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.2229885" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -650,13 +655,13 @@
       <window_info anchor="bottom" id="Python Console" order="6" sideWeight="0.49297297" weight="0.32562277" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49513513" weight="0.22953737" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.489154" visible="true" weight="0.35409254" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.489154" weight="0.5658363" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32933104" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51135135" side_tool="true" weight="0.23131673" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -705,52 +710,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="done  Day5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/fork_ping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#21#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/fork_4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/timeit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/thread_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/fork_zombie4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm_c/thread_ping2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="e#21#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/thread_ping2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1068,10 +1027,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1199943127/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="4677" column="34" lean-forward="true" selection-start-line="4677" selection-start-column="34" selection-end-line="4677" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/UDP.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/3.udp_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/1.冒充飞Q.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#21#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4_re_socket/socket/UDP/2.udp_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/2.复杂一点的装饰器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/1.装饰器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
