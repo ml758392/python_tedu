@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="" />
+    <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/python2/Day4_re_socket/socket/1.客户端.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/爬虫/pycharm/14.一号店.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +16,17 @@
     <favorites_list name="5_张志刚" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python2/Day4_re_socket/socket/1.客户端.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,9 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python2/Day3/pycharm/oop_5.py" />
-        <option value="$PROJECT_DIR$/python2/Day3/pycharm/oop_6.py" />
-        <option value="$PROJECT_DIR$/python2/Day3/pycharm/oop_7_method.py" />
         <option value="$PROJECT_DIR$/python2/Day4/ze.txt" />
         <option value="$PROJECT_DIR$/python2/Day4/pycharm/ze.py" />
         <option value="$PROJECT_DIR$/devops/Day1/pycharm/fork_2.py" />
@@ -88,19 +99,22 @@
         <option value="$PROJECT_DIR$/python2/爬虫/pycharm/10.POST.py" />
         <option value="$PROJECT_DIR$/python2/爬虫/pycharm/12.动态抓取Ajax请求.py" />
         <option value="$PROJECT_DIR$/python2/爬虫/pycharm/13.糗事百科.py" />
+        <option value="$PROJECT_DIR$/python2/爬虫/pycharm/14.一号店.py" />
+        <option value="$PROJECT_DIR$/python2/Day4_re_socket/socket/1.tcp编程.py" />
+        <option value="$PROJECT_DIR$/python2/Day4_re_socket/socket/1.客户端.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="31" />
-    <option name="width" value="986" />
+    <option name="width" value="950" />
     <option name="height" value="529" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -110,6 +124,24 @@
             <path>
               <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="python2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="python2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Day4_re_socket" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="5_张志刚" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="python2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Day4_re_socket" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="socket" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -124,8 +156,12 @@
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
@@ -590,9 +626,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="31" width="986" height="529" extended-state="0" />
+    <frame x="0" y="28" width="950" height="706" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.22476587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.22378379" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -604,7 +641,7 @@
       <window_info anchor="bottom" id="Python Console" order="6" sideWeight="0.49819928" weight="0.32562277" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49617487" weight="0.22953737" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.489154" weight="0.35576922" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.489154" weight="0.35409254" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32933104" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51084596" side_tool="true" weight="0.46085408" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -652,9 +689,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="done  Day5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_3.py" />
-    <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_4.py" />
-    <entry file="file://$PROJECT_DIR$/devops/Day1/pycharm/fork_ping.py" />
     <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/fork_zombie3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -729,13 +763,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day3/pycharm/oop_6.py" />
     <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/fork_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -891,9 +919,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day4/ze.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4/ze.txt" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/re.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2260">
@@ -901,20 +927,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/ze_qq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/ze_qq.py" />
+    <entry file="file://$PROJECT_DIR$/python2/Day4/pycharm/1.RegularExpression.py" />
     <entry file="file://$PROJECT_DIR$/python2/爬虫/files/2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-486" />
@@ -962,13 +976,6 @@
           <folding>
             <element signature="e#21#42#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/5.UA标示.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="69" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -1027,6 +1034,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/5.UA标示.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/14.一号店.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4_re_socket/socket/1.tcp编程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day4_re_socket/socket/1.客户端.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
         </state>
       </provider>
     </entry>
