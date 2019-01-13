@@ -27,7 +27,7 @@ datastr = (b''.join(data)).decode('utf-8')
 
 # 断开连接
 sk.close()
-print(datastr)
+# print(datastr)
 
 headers, HTML = datastr.split('\r\n\r\n', 1)
 print(headers)
