@@ -298,7 +298,7 @@ re.sub()
 								# 返回值是一个字符串类型
 	>>> print(type(re.sub(r'good',"nice",str)))
 	<class 'str'>		
-	>>> print(re.sub(r'good',"nice",str))	
+	>>> print(re.sub(r'good',"nice",str))	#  默认全部替换
 	sunck is a nice nice nice man
 								# count =2 替换两次
 	>>> print(re.sub(r'good',"nice",str,2))
@@ -330,7 +330,7 @@ group()
 	>>> m.group()					# group() 默认返回匹配结果 
 	'010-53247654'
 
-	>>> m.group(0)					# group(0) 代表原始字符串
+	>>> m.group(0)					# 
  	'010-53247654'	
 	>>> m.group(1)					#
 	'010'

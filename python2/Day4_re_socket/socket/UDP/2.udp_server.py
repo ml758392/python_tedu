@@ -10,3 +10,4 @@ while True:
     print('客户端说:', data.decode('utf-8'))
     info = input("请输入数据：")
     udpserver.sendto(info.encode(), addr)
+
