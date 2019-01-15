@@ -37,4 +37,3 @@ if __name__ == '__main__':
     t2.join()
     print('num=', num)
 
-    # num 的值发生了不可预知的改变
