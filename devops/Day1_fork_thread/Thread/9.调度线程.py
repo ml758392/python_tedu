@@ -28,3 +28,4 @@ def thread2():
 if __name__ == '__main__':
     threading.Thread(target=thread1).start()
     threading.Thread(target=thread2).start()
+
