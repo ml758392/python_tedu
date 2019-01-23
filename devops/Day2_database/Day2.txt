@@ -32,3 +32,35 @@ index-url = http://pypi.douban.com/simple/
 trusted-host=pypi.douban.com
 # pip install pymysql
 
+
+
+
+第一范式：
+	所有的有都应该是原子性的
+第二范式：
+	每个实例或者记录必须可以被唯一的区分
+
+第三范式：
+	任何非主属性不依赖与其他非主属性（工资表中的工资总额依赖与工资和奖金，不应出现在表中。需要时临时计算）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
