@@ -27,7 +27,7 @@ class Departments(Base):
 
 class Employees(Base):
     __tablename__ = 'employess'
-    emp_id = Column(Integer, primary_key=True,autoincrement=True)
+    emp_id = Column(Integer, primary_key=True, autoincrement=True)
     emp_name = Column(String(20), nullable=False)
     gender = Column(String(6))
     birth_date = Column(Date)

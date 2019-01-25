@@ -1,5 +1,5 @@
 # -*-coding:utf-8-*-
-from SQLalchemy import Departments, Session, Employees
+from alchemy import Departments, Session, Employees
 
 session = Session()
 
