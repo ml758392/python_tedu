@@ -57,11 +57,13 @@ def run():
     yield 30
 
 
-m = run()
-print(next(m))
-print(next(m))
-print(next(m))
+# m = run()
+# print(next(m))
+# print(next(m))
+# print(next(m))
 
+for i in run():
+    print(i)
 
 
 

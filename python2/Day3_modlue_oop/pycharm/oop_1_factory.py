@@ -15,7 +15,7 @@ if __name__ == '__main__':
     # 创建实例
     big = BearToy('熊大', 'Large', 'Brown')  # 将会调用 __init__ 方法，big传递到self
     second = BearToy('熊二', 'Middle', 'Brown')
-
+    print(dir(big))
     print(big.size)
     print(big.color)
     big.sing()

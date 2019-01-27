@@ -350,7 +350,17 @@ len(seq):返回seq的长度
 			... 
 			index 0:hello
 
-	
+
+			>>> o =  enumerate('abcd', 1) # 第二个参数是从1开始，而不是0
+			>>> for i in o:
+			...     print(i)
+			... 
+			(1, 'a')
+			(2, 'b')
+			(3, 'c')
+			(4, 'd')
+			>>> 
+
 
 
 reversed(seq): 接受一个序列作为参数，返回一个以逆序访问的迭代器

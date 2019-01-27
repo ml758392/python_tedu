@@ -10,7 +10,7 @@ def func2(arg):
     return inner
 
 
-f =func2(func1)
+f = func2(func1)
 
 f()
 
