@@ -51,6 +51,10 @@ if __name__ == '__main__':
     a.put(username='admin', elem='pp')
     print(a.get(username='admin'))
 
+    # a.put('admin', elem=2) 回报错,因为值是从关键字参数中获取的
+    # 解决获取参数的问题
+
+
 
 
 

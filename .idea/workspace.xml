@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/生成器/4.生成器.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/生成器/5.sentence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/5.benchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/6.解决装饰器属性问题.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/7.解决获取参数的问题.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/8.给装饰器传递参数.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/Day2_function/偏函数/1.偏函数.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day1_fork_thread/协程/1.协程.py" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/协程/1.协程.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python1/Day4_shutil_str_list_tuple/Day4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python1/Day4_shutil_str_list_tuple/Day4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python2/Day2_function/pycharm/1.装饰器.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/1.装饰器.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python2/Day2_function/pycharm/2.复杂一点的装饰器.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/2.复杂一点的装饰器.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python2/Day2_function/pycharm/3.复杂一点的装饰器.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/3.复杂一点的装饰器.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python2/Day3_modlue_oop/pycharm/oop_1_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/pycharm/oop_1_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/Day2_function/pycharm/4.栈.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day2_function/pycharm/4.栈.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,31 +20,7 @@
     <favorites_list name="5_张志刚" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/3.复杂一点的装饰器.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/4.栈.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/2.复杂一点的装饰器.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,12 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python2/Tkinter/8.checkbutton多选框控件.py" />
-        <option value="$PROJECT_DIR$/python2/Tkinter/7.带滚动条的Text.py" />
-        <option value="$PROJECT_DIR$/python2/Tkinter/9.Radiobutton单选框控件.py" />
-        <option value="$PROJECT_DIR$/python2/Tkinter/10.listbox控件.py" />
-        <option value="$PROJECT_DIR$/python2/Tkinter/11.listbox控件_中.py" />
-        <option value="$PROJECT_DIR$/devops/Day1_fork_thread/TCP多线程/3.client.py" />
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/4.信号控制线程数量.py" />
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/5.凑够一定数量才能一起执行.py" />
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/5.凑够一定数量才能继续执行.py" />
@@ -128,11 +96,17 @@
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/协程/4，生成器.py" />
         <option value="$PROJECT_DIR$/devops/Day1_fork_thread/生成器/5.sentence.py" />
         <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/3.复杂一点的装饰器.py" />
+        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/6.使用装饰器以后函数属性的变化.py" />
+        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/5.benchmark.py" />
+        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/6.解决装饰器属性问题.py" />
         <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/4.栈.py" />
+        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/7.解决获取参数的问题.py" />
+        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/8.给装饰器传递参数.py" />
+        <option value="$PROJECT_DIR$/python2/Day2_function/偏函数/1.偏函数.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="28" />
     <option name="width" value="1048" />
     <option name="height" value="721" />
@@ -156,19 +130,6 @@
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
               <item name="python2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day2_function" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
-              <item name="Day2_function" type="462c0819:PsiDirectoryNode" />
-              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
@@ -248,8 +209,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.3.复杂一点的装饰器">
-    <configuration name="3.数据传输" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.6.解决装饰器属性问题">
+    <configuration name="1.偏函数" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -257,11 +218,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day1_fork_thread/协程" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day2_function/偏函数" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day1_fork_thread/协程/3.数据传输.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day2_function/偏函数/1.偏函数.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,28 +231,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3.生成器" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day1_fork_thread/协程" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day1_fork_thread/协程/3.生成器.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="3.复杂一点的装饰器" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="4.栈" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,7 +243,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day2_function/pycharm/3.复杂一点的装饰器.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day2_function/pycharm/4.栈.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,7 +252,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4，生成器" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="6.解决装饰器属性问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,11 +260,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day1_fork_thread/协程" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day2_function/pycharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day1_fork_thread/生成器/4.生成器.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day2_function/pycharm/6.解决装饰器属性问题.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,7 +273,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4.协程生产者与消费者" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="7.解决获取参数的问题" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -341,11 +281,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day1_fork_thread/协程" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day2_function/pycharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day1_fork_thread/协程/4.协程生产者与消费者.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day2_function/pycharm/7.解决获取参数的问题.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="8.给装饰器传递参数" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day2_function/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day2_function/pycharm/8.给装饰器传递参数.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -482,11 +443,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.3.复杂一点的装饰器" />
-        <item itemvalue="Python.4，生成器" />
-        <item itemvalue="Python.3.生成器" />
-        <item itemvalue="Python.4.协程生产者与消费者" />
-        <item itemvalue="Python.3.数据传输" />
+        <item itemvalue="Python.1.偏函数" />
+        <item itemvalue="Python.8.给装饰器传递参数" />
+        <item itemvalue="Python.7.解决获取参数的问题" />
+        <item itemvalue="Python.4.栈" />
+        <item itemvalue="Python.6.解决装饰器属性问题" />
       </list>
     </recent_temporary>
   </component>
@@ -689,23 +650,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="853" height="736" extended-state="6" />
+    <frame x="0" y="28" width="853" height="736" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.2826087" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.24758454" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.39564428" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39527026" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48565966" visible="true" weight="0.18243243" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48565966" weight="0.32263514" />
       <window_info anchor="bottom" id="Python Console" order="6" sideWeight="0.49297297" weight="0.32562277" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32740214" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49513513" weight="0.22719142" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48677886" weight="0.33163264" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48677886" weight="0.3310811" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32933104" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51434034" side_tool="true" weight="0.2431942" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51434034" side_tool="true" weight="0.24155405" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -792,58 +753,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="done  Day5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python2/Tkinter/1.简单示例.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="6" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Tkinter/8.checkbutton多选框控件.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Tkinter/9.Radiobutton单选框控件.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Tkinter/10.listbox控件.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" lean-forward="true" selection-start-line="17" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Tkinter/11.listbox控件_中.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/TCP多线程/2.server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#21#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/TCP多线程/3.client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/4.信号控制线程数量.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1146,6 +1055,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/3.复杂一点的装饰器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/2.复杂一点的装饰器.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1153,15 +1069,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/3.复杂一点的装饰器.py">
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/6.使用装饰器以后函数属性的变化.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/5.benchmark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding>
+            <element signature="e#21#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/recursion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/4.栈.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="52" lean-forward="true" selection-start-line="33" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/7.解决获取参数的问题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#21#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/8.给装饰器传递参数.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/pycharm/6.解决装饰器属性问题.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding>
+            <element signature="e#21#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/Day2_function/偏函数/1.偏函数.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
