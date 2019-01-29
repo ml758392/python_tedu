@@ -15,6 +15,7 @@ class NewBearToy(BearToy):  # 新类是BearToy的子类
 
         # BearToy.__init__(self, name, size, date)
         super(NewBearToy, self).__init__(name, size, color)
+
     def run(self):
         print("我能跑了!")
 
@@ -22,7 +23,7 @@ class NewBearToy(BearToy):  # 新类是BearToy的子类
 if __name__ == '__main__':
 
     # 创建实例
-    big = NewBearToy('倒霉熊', 'Large', 'Brown','2018-10-22')
+    big = NewBearToy('倒霉熊', 'Large', 'Brown', '2018-10-22')
 
     big.sing()
     big.run()

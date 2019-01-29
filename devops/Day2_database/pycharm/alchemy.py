@@ -12,8 +12,8 @@ engine = create_engine(
     # echo=True   # 开启日志输出，生产环境设置为false
 )
 
-Session = sessionmaker(bind=engine)
-Base = declarative_base()   # 生成ORM类的基类
+Session = sessionmaker(bind=engine)  # 建立会话
+Base = declarative_base()            # 生成ORM类的基类
 
 
 class Departments(Base):
