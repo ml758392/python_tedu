@@ -1,5 +1,8 @@
 # -*-coding:utf-8-*-
-import threading, time, queue, random
+import queue
+import random
+import threading
+import time
 
 
 def product(id, q):
