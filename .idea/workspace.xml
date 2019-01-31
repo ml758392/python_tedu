@@ -4,22 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/python2/Day3_modlue_oop/动态给实例添加属性/动态给对象添加属性.py" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/devops/Day3/pycharm/1.urllib.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day3/pycharm/2.get_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day3/pycharm/3.163图片.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/property/property.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/动态给实例添加属性/动态给对象添加属性.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/animal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/cat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/mouse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/person.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/对象属性和类属性和方法.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/运算符重载.py" afterDir="false" />
+    <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="done  Day5">
+      <change afterPath="$PROJECT_DIR$/devops/Day3/pycharm/4.header.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python2/爬虫/pycharm/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/8.生产者与消费者.py" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day1_fork_thread/Thread/8.生产者与消费者.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/1.多态.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/1.多态.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python2/Day4_re_socket/ze.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Day3/pycharm/2.get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day3/pycharm/2.get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python1/字符编码/字符编码.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python1/字符编码/字符编码.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/爬虫/pycharm/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/爬虫/pycharm/2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/爬虫/pycharm/5.UA标示.py" beforeDir="false" afterPath="$PROJECT_DIR$/python2/爬虫/pycharm/5.UA标示.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python2/爬虫/爬虫.txt" beforeDir="false" afterPath="$PROJECT_DIR$/python2/爬虫/爬虫.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,35 +33,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/1.urllib爬取网页.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="324">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/2.py">
+        <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/3保存爬取内容.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/1.urllib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="54">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -76,20 +51,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/2.get_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="54">
+              <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/3.163图片.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/4.header.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-              <folding>
-                <element signature="e#21#47#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -98,7 +70,16 @@
         <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/4.UA标示.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+              <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/5.UA标示.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -135,12 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/devops/Day1_fork_thread/协程/3.数据传输.py" />
-        <option value="$PROJECT_DIR$/devops/Day1_fork_thread/协程/3.生成器.py" />
-        <option value="$PROJECT_DIR$/devops/Day1_fork_thread/协程/4，生成器.py" />
-        <option value="$PROJECT_DIR$/devops/Day1_fork_thread/生成器/5.sentence.py" />
-        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/3.复杂一点的装饰器.py" />
-        <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/6.使用装饰器以后函数属性的变化.py" />
         <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/5.benchmark.py" />
         <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/6.解决装饰器属性问题.py" />
         <option value="$PROJECT_DIR$/python2/Day2_function/pycharm/4.栈.py" />
@@ -183,9 +158,15 @@
         <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/pycharm/9.析构函数.py" />
         <option value="$PROJECT_DIR$/devops/Day3/Day3.txt" />
         <option value="$PROJECT_DIR$/devops/Day3/pycharm/1.urllib.py" />
-        <option value="$PROJECT_DIR$/devops/Day3/pycharm/2.get_data.py" />
         <option value="$PROJECT_DIR$/devops/Day3/pycharm/163pic.py" />
         <option value="$PROJECT_DIR$/devops/Day3/pycharm/3.163图片.py" />
+        <option value="$PROJECT_DIR$/python2/爬虫/pycharm/1.urllib爬取网页.py" />
+        <option value="$PROJECT_DIR$/python2/爬虫/pycharm/test.py" />
+        <option value="$PROJECT_DIR$/python2/爬虫/pycharm/2.py" />
+        <option value="$PROJECT_DIR$/devops/Day3/pycharm/2.get_data.py" />
+        <option value="$PROJECT_DIR$/python2/爬虫/pycharm/4.UA标示.py" />
+        <option value="$PROJECT_DIR$/devops/Day3/pycharm/4.header.py" />
+        <option value="$PROJECT_DIR$/python2/爬虫/pycharm/5.UA标示.py" />
       </list>
     </option>
   </component>
@@ -225,32 +206,6 @@
               <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
               <item name="devops" type="462c0819:PsiDirectoryNode" />
               <item name="Day3" type="462c0819:PsiDirectoryNode" />
-              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="devops" type="462c0819:PsiDirectoryNode" />
-              <item name="Day3" type="462c0819:PsiDirectoryNode" />
-              <item name="pycharm" type="462c0819:PsiDirectoryNode" />
-              <item name="163pic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
-              <item name="爬虫" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
-              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
-              <item name="python2" type="462c0819:PsiDirectoryNode" />
-              <item name="爬虫" type="462c0819:PsiDirectoryNode" />
               <item name="pycharm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -333,49 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.3.163图片">
-    <configuration name="运算符重载" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/Day3_modlue_oop" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/Day3_modlue_oop/运算符重载.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="1.urllib爬取网页" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/爬虫/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/爬虫/pycharm/1.urllib爬取网页.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.8.json格式">
     <configuration name="1.urllib" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -418,7 +331,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2.get_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="4.UA标示" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -426,11 +339,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day3/pycharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/爬虫/pycharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day3/pycharm/2.get_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/爬虫/pycharm/4.UA标示.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -439,7 +352,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3.163图片" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="4.header" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -451,7 +364,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day3/pycharm/3.163图片.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day3/pycharm/4.header.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="8.json格式" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/爬虫/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/爬虫/pycharm/8.json格式.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -515,6 +449,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python1/Day4/pycharm/stack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python2/爬虫/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python2/爬虫/pycharm/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -588,11 +543,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.3.163图片" />
-        <item itemvalue="Python.2.get_data" />
+        <item itemvalue="Python.8.json格式" />
+        <item itemvalue="Python.4.header" />
+        <item itemvalue="Python.4.UA标示" />
         <item itemvalue="Python.2" />
-        <item itemvalue="Python.1.urllib爬取网页" />
-        <item itemvalue="Python.运算符重载" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -795,23 +750,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="863" height="706" extended-state="6" />
+    <frame x="0" y="28" width="874" height="706" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79403794" visible="true" weight="0.37947494" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.37926972" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24478595" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.2148071" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.39527026" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4846698" visible="true" weight="0.19572954" />
-      <window_info anchor="bottom" id="Python Console" order="6" sideWeight="0.49297297" weight="0.32206404" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48329356" weight="0.37544483" />
+      <window_info anchor="bottom" id="Python Console" order="6" sideWeight="0.49297297" weight="0.3202847" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3260135" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49292454" weight="0.22635135" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48687088" weight="0.32263514" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49292454" weight="0.22597864" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48687088" weight="0.40925267" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32933104" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5070755" side_tool="true" weight="0.22635135" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51670647" side_tool="true" weight="0.37544483" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -898,65 +854,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="done  Day5" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/pycharm/hunter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/人开枪射击子弹/human.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#21#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/人开枪射击子弹/bullet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/人开枪射击子弹/gun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/pycharm/oop_6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/pycharm/oop_2_组合.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/继承/1.继承.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/继承/person.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/继承/worker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1198,61 +1095,105 @@
     <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/陈都灵小姐姐.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day3/Day3.txt">
+    <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/163pic.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/1.urllib爬取网页.py">
+    <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/1.urllib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="198">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1548865095761&amp;di=629c1fa056cd032b2320d6a3126b378c&amp;imgtype=0&amp;src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201505%2F30%2F20150530093303_atUNP.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/2F20150530093303_atUNP.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/atUNP.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="270">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/3.163图片.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="39" column="40" lean-forward="true" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding>
+            <element signature="e#21#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/3保存爬取内容.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/1.urllib.py">
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/1.urllib爬取网页.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day3/Day3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/4.UA标示.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/4.header.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/9.json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/8.json格式.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/2.get_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="54">
+          <caret line="5" column="31" lean-forward="true" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/4.UA标示.py">
+    <entry file="file://$PROJECT_DIR$/python2/爬虫/pycharm/5.UA标示.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/163pic.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day3/pycharm/3.163图片.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding>
-            <element signature="e#21#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

@@ -105,6 +105,13 @@ json文件组成
 		
 
 
+命令行可视化JOSN
+	[root@lenovo pycharm]# cat test.json | python3 -m json.tool
+	{
+	    "name": "yy",
+	    "age": 18,
+	    "grade": 100
+	}
 
 
 
