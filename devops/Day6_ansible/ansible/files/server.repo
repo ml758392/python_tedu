@@ -1,0 +1,5 @@
+[development]
+name=$basearch-$releasever
+enable=1
+gpgcheck=0
+baseurl=ftp://192.168.142.10/rhel7

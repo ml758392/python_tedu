@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: id root
+      shell: id root
+      register: result
+    - name: debug
+      debug:
+        var: result.stdout
+  

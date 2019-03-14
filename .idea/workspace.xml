@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="done  Day5">
-      <change afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/1.apiinfo_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/2.hostinfo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/dingtalk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python100例/简书/58-pickle存储器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day6_ansible/pycharm/1_ansible.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day4/NSD_DEVOPS_04.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/NSD_DEVOPS_04.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day4/day12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/day12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day4/pycharm/1.mymail.py" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/pycharm/1.mymail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day4/pycharm/2.intermail.py" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/pycharm/2.intermail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day4/pycharm/3.requests参数.py" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/pycharm/3.requests参数.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day4/pycharm/4.request请求头.py" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/pycharm/4.request请求头.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day4/pycharm/python.html" beforeDir="false" afterPath="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/pycharm/python.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Day5/NSD_DEVOPS_05.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Day5/day13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Day6/NSD_DEVOPS_06.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops/Day6/day14.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,37 +25,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/1_ansible.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/day14.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/dingtalk.py">
+        <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="205">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
               <folding>
-                <element signature="e#21#32#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/1.apiinfo_version.py">
+        <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="219">
+              <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
               <folding>
-                <element signature="e#21#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/2.hostinfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding>
-                <element signature="e#21#32#0" expanded="true" />
+                <element signature="e#0#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,11 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/继承/worker.py" />
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/继承/作业.py" />
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多继承/father.py" />
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多继承/mother.py" />
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多继承/child.py" />
         <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/mouse.py" />
         <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/cat.py" />
         <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/animal.py" />
@@ -149,6 +146,11 @@
         <option value="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/2.py" />
         <option value="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/2.hostinfo.py" />
         <option value="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/dingtalk.py" />
+        <option value="$PROJECT_DIR$/devops/pycharm/1.ansible.py" />
+        <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/1_ansible.py" />
+        <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ansible.py" />
+        <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py" />
+        <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py" />
       </list>
     </option>
   </component>
@@ -164,7 +166,31 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
+              <item name="devops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="5_张志刚" type="b2602c69:ProjectViewProjectNode" />
+              <item name="5_张志刚" type="462c0819:PsiDirectoryNode" />
+              <item name="devops" type="462c0819:PsiDirectoryNode" />
+              <item name="Day6_ansible" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -195,7 +221,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.2">
+  <component name="RunManager" selected="Python.3.playbook">
+    <configuration name="1_ansible" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="5_张志刚" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day6_ansible/pycharm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/1_ansible.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="1.apiinfo_version" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -238,7 +285,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3.requests参数" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="2_ansible" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,11 +293,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day4/pycharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day6_ansible/pycharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day4/pycharm/3.requests参数.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -259,7 +306,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4.request请求头" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="3.playbook" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="5_张志刚" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,11 +314,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day4/pycharm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day6_ansible/pycharm" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day4/pycharm/4.request请求头.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -314,27 +361,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day2_基础/pycharm/game_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mymail" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="5_张志刚" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/devops/Day4/pycharm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devops/Day4/pycharm/1.mymail.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -429,11 +455,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.3.playbook" />
+        <item itemvalue="Python.2_ansible" />
+        <item itemvalue="Python.1_ansible" />
         <item itemvalue="Python.2" />
         <item itemvalue="Python.1.apiinfo_version" />
-        <item itemvalue="Python.4.request请求头" />
-        <item itemvalue="Python.3.requests参数" />
-        <item itemvalue="Python.mymail" />
       </list>
     </recent_temporary>
   </component>
@@ -636,10 +662,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1017" height="716" extended-state="6" />
+    <frame x="0" y="28" width="921" height="727" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.21090534" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.20977354" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24475524" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.21396825" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -647,13 +673,13 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.39527026" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48329356" weight="0.3688811" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48329356" weight="0.36878216" />
       <window_info anchor="bottom" id="Python Console" order="6" sideWeight="0.49297297" weight="0.31993008" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3258427" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49292454" weight="0.22469983" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48687088" weight="0.6555944" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48687088" weight="0.46655232" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32933104" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51670647" side_tool="true" weight="0.3688811" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51670647" side_tool="true" weight="0.36878216" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -751,57 +777,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/sunckProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#21#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/动态给实例添加属性/动态给对象添加属性.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/pycharm/9.封装进程对象.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="910" column="42" lean-forward="true" selection-start-line="910" selection-start-column="42" selection-end-line="910" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/1.thread.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day1_fork_thread/Thread/8.生产者与消费者.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="e#21#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/pycharm/9.析构函数.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/对象属性和类属性和方法.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -1056,10 +1031,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/2.hostinfo.py">
+    <entry file="file://$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/dingtalk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state relative-caret-position="486">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
           <folding>
             <element signature="e#21#32#0" expanded="true" />
           </folding>
@@ -1069,19 +1044,74 @@
     <entry file="file://$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/1.apiinfo_version.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#21#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/dingtalk.py">
+    <entry file="file://$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix/2.hostinfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="234">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
             <element signature="e#21#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pycharm/1.ansible.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/vimrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/site-packages/ansible/parsing/dataloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/1_ansible.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/day14.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>

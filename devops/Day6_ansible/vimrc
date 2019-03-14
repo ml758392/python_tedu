@@ -1,0 +1,4 @@
+set ai    # 自动缩进
+set ts=4  # tab键是4个空格
+set et    # tab键转成空格
+autocmd FileType yaml setlocal sw=2 ts=2 et ai  # yml文件生效

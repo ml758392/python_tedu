@@ -1,0 +1,15 @@
+---
+- name: init system
+  gather_facts: no
+  hosts: all
+  tasks:
+    - name: upload public key
+      authorized_key:
+        user: root
+        state: present
+        key: "{{ lookup('file', '/home/.ssh/id_rsa.pub') }}"
+    - name: upload yum configure file
+      copy:
+        src: files/server.repo
+        dest: /etcyum.repos.d/server.repo
+
