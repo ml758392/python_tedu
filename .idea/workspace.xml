@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc4dda46-be7b-4dd0-b722-899ccfcf8961" name="Default Changelist" comment="done  Day5">
-      <change afterPath="$PROJECT_DIR$/devops/Day6_ansible/pycharm/1_ansible.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops/Day6_ansible/pycharm/mycopy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day5/NSD_DEVOPS_05.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day5/day13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day6/NSD_DEVOPS_06.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devops/Day6/day14.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/1_ansible.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/mycopy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="360">
+              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+              <folding>
+                <element signature="e#23#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,17 +34,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/day14.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+            <state relative-caret-position="305">
+              <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="925">
+              <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -58,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+            <state relative-caret-position="1080">
+              <caret line="60" column="52" lean-forward="true" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -100,10 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/mouse.py" />
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/cat.py" />
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/animal.py" />
-        <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/1.多态.py" />
         <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/多态/person.py" />
         <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/对象属性和类属性.py" />
         <option value="$PROJECT_DIR$/python2/Day3_modlue_oop/动态给实例添加属性/动态给对象添加属性.py" />
@@ -151,6 +144,10 @@
         <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ansible.py" />
         <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py" />
         <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py" />
+        <option value="$PROJECT_DIR$/devops/Day6_ansible/4.自定义module.py" />
+        <option value="$PROJECT_DIR$/devops/Day6_ansible/4_自定义module.py" />
+        <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/4_自定义module.py" />
+        <option value="$PROJECT_DIR$/devops/Day6_ansible/pycharm/mycopy.py" />
       </list>
     </option>
   </component>
@@ -197,16 +194,16 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python2/Tkinter" />
+      <recent name="$PROJECT_DIR$/devops/Day1_fork_thread/TCP多进程" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/devops/Day6_ansible/pycharm" />
       <recent name="$PROJECT_DIR$/devops/Day4_json_requests_zabbix-api/zabbix" />
       <recent name="$PROJECT_DIR$/python2/Day3_modlue_oop" />
       <recent name="$PROJECT_DIR$/python2/Day3_modlue_oop/人开枪射击子弹" />
       <recent name="$PROJECT_DIR$/devops/Day1_fork_thread/生成器" />
-      <recent name="$PROJECT_DIR$/devops/Day2_database/pycharm_c" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/python2/Tkinter" />
-      <recent name="$PROJECT_DIR$/devops/Day1_fork_thread/TCP多进程" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -662,10 +659,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="921" height="727" extended-state="6" />
+    <frame x="0" y="28" width="881" height="727" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.20977354" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79403794" weight="0.20911215" />
       <window_info id="Favorites" order="1" sideWeight="0.20596206" side_tool="true" weight="0.24475524" />
       <window_info id="Structure" order="2" sideWeight="0.20284697" side_tool="true" weight="0.21396825" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -777,13 +774,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/对象属性和类属性和方法.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python2/Day3_modlue_oop/运算符重载.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1061,13 +1051,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/devops/pycharm/1.ansible.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pycharm/1.ansible.py" />
     <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/vimrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1084,22 +1068,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/1_ansible.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/day14.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/3.playbook.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+        <state relative-caret-position="1080">
+          <caret line="60" column="52" lean-forward="true" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -1108,10 +1088,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/2_ad_hoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        <state relative-caret-position="925">
+          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/day14.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/Day6_ansible/pycharm/mycopy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
